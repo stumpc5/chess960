@@ -16,7 +16,7 @@ Consult the [project description](project_description.md) for details.
 
 The results are found [here](README_ANALYSIS.md).
 
-## Who Should Read This:
+## Who Should Read This
 
 - Amateur and professional Chess960 players.
 - Anyone curious about the scientific analysis of Chess960 openings.

@@ -16,7 +16,7 @@ Consult the [project description](project_description.md) for details.
 
 The results have their own [markdown page](README_ANALYSIS.md) analyzing all 960 starting positions.
 
-Here is the example for the standard opening and the opening with queen and king interchanged:
+Here is the example for the standard opening and the opening with Queen and King interchanged:
 
 | Board                            | # Played Matches        | White           | Draw           | Black           |
 |----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|

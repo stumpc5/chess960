@@ -1,10 +1,12 @@
 from read_pgn           import ReadPGN
 from starting_positions import AllStartingPositions
 from identify_openings  import IdentifyOpenings
-from markdown_templates import header_template, openings_template, opening_template
+from markdown_templates import header_template, openings_template, opening_template, board_template
+
+MARKDOWN_FOLDER = "../BoardAnalysis"
 
 def GenerateOpeningTable(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbose=True):
-    matches = ReadPGN(board, verbose=verbose)
+    matches = ReadPGN(board, max_size=500, verbose=verbose)
 
     openings_table = dict()
     winning  = 0
@@ -15,7 +17,7 @@ def GenerateOpeningTable(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbos
 
     return stats, openings_table
 
-def GenerateMarkdown(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbose=True):
+def GenerateBoardMarkdown(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbose=True, save_result=False):
     stats, opening_tables = GenerateOpeningTable(board=board, thresholds=thresholds, verbose=verbose)
 
     # formating the header
@@ -35,7 +37,7 @@ def GenerateMarkdown(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbose=Tr
 
         #formating the opening heading
         threshold_data = {
-            'threshold' : threshold
+            'threshold' : ToPer(threshold)
         }
         openings_header = openings_template.format(**threshold_data)
 
@@ -52,7 +54,37 @@ def GenerateMarkdown(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbose=Tr
             openings_header += opening_tmp + "\n"
         header += "\n\n" + openings_header
 
-    return header
+    if save_result:
+        with open(MARKDOWN_FOLDER + f'/{ board }.md', 'w') as file:
+            file.write(header)
+        return stats
+    else:
+        return header
+
+def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True):
+    if boards is None:
+        boards = AllStartingPositions()
+
+    readme_boards = []
+
+    for board in boards:
+        stats = GenerateBoardMarkdown(board=board, thresholds=thresholds, verbose=verbose, save_result=True)
+        nr_matches, (percent_white, percent_draw, percent_black) = stats
+        board_data = {
+            'board'         : board,
+            'nr_matches'    : nr_matches,
+            'percent_white' : ToPer(percent_white),
+            'percent_draw'  : ToPer(percent_draw),
+            'percent_black' : ToPer(percent_black),
+        }
+        readme_boards.append(board_template.format(**board_data))
+
+    with open('../readme_template.md', 'r') as file:
+        readme_template = file.read()
+    readme = readme_template % "\n".join(readme_boards)
+
+    with open('../README.md', 'w') as file:
+        file.write(readme)
 
 def ToPer(x):
     return str(round(x*1000)/10) + "%"

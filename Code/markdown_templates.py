@@ -15,3 +15,5 @@ openings_template = """## Openings for threshold = {threshold}
 """
 
 opening_template = """| {opening} | {moves}    | {percent_white} | {percent_draw} | {percent_black} |"""
+
+board_template = """| [{board}](BoardAnalysis/{board}) | {nr_matches}            | {percent_white} | {percent_draw} | {percent_black} |"""

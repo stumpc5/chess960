@@ -14,7 +14,7 @@ Consult the [project description](project_description.md) for details.
 
 ## Results
 
-The results are found [here](README_ANALYSIS.md).
+The results have their own [markdown page](README_ANALYSIS.md) containing all 960 starting positions, some statistics and links to the respective openings.
 
 ## Who Should Read This
 

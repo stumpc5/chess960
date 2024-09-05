@@ -134,3 +134,13 @@
 | [BQNBRNKR](BoardAnalysis/bqnbrnkr.md) | 1000            | 37.9% | 29.8% | 32.3% |
 | [BQNNRBKR](BoardAnalysis/bqnnrbkr.md) | 1000            | 38.9% | 31.5% | 29.6% |
 | [BQNNRKRB](BoardAnalysis/bqnnrkrb.md) | 1000            | 36.5% | 34.1% | 29.4% |
+| [BQNRKBNR](BoardAnalysis/bqnrkbnr.md) | 1000            | 38.5% | 28.1% | 33.4% |
+| [BQNRKBRN](BoardAnalysis/bqnrkbrn.md) | 1000            | 41.8% | 26.9% | 31.3% |
+| [BQNRKNRB](BoardAnalysis/bqnrknrb.md) | 1000            | 38.4% | 32.1% | 29.5% |
+| [BQNRKRNB](BoardAnalysis/bqnrkrnb.md) | 1000            | 31.3% | 37.5% | 31.2% |
+| [BQNRNBKR](BoardAnalysis/bqnrnbkr.md) | 1000            | 39.4% | 29.8% | 30.8% |
+| [BQNRNKRB](BoardAnalysis/bqnrnkrb.md) | 1000            | 36.1% | 36.6% | 27.3% |
+| [BQRBKNNR](BoardAnalysis/bqrbknnr.md) | 1000            | 35.2% | 32.7% | 32.1% |
+| [BQRBKNRN](BoardAnalysis/bqrbknrn.md) | 1000            | 39.4% | 26.9% | 33.7% |
+| [BQRBKRNN](BoardAnalysis/bqrbkrnn.md) | 1000            | 38.2% | 33.4% | 28.4% |
+| [BQRBNKNR](BoardAnalysis/bqrbnknr.md) | 1000            | 31.9% | 35.3% | 32.8% |

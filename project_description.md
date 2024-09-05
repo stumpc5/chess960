@@ -7,7 +7,7 @@ At any given stage of the opening, neither player has a strong incentive to devi
 
 **Objective:**
 
-Identify optimal openings for all Chess960 variants.
+Identify openings for all Chess960 variants.
 
 **Our Approach:**
 
@@ -19,7 +19,7 @@ Identify optimal openings for all Chess960 variants.
 We applied our method to two key datasets:
 
 1. Classical chess matches downloaded from [Lichess](https://database.lichess.org/).
-2. Chess960 matches we generated using the super-human capabilities of [Stockfish](https://stockfishchess.org/).
+2. Chess960 matches we generated using the super-human capabilities of [Stockfish 16](https://stockfishchess.org/).
 
 **Key Discoveries:**
 
@@ -32,17 +32,17 @@ We applied our method to two key datasets:
 
 **Looking Ahead:**
 
-Our methods may as well be applied to other datasets of chess matches, or to entirely different games to explore new insights.
+Our methods may as well be applied to other datasets of chess matches, or to entirely different games to gain new insights.
 
 ---
 
 ## Defining a Opening
 
-_We now give the technical definitions of a "game", a "match", and an "opening"_
+_We now give the technical definitions of a "game", a "match", and an "opening."_
 
 ### Basic Concepts
 
-- **Game:** A game starts with an initial state and proceeds through a series of valid moves, alternating between two players.
+- **Game:** A game starts with an initial state and proceeds through a series of valid moves, alternating between the two players.
 - **Match:** A match is a sequence of these valid moves, culminating in a result: win (1), loss (0), or draw (1/2), seen from the player doing the first move.
 
 Moreover:
@@ -74,8 +74,6 @@ If the dataset **D** has only 100 matches and the threshold **t** is set to **t=
 
 If the dataset contains matches with different initial moves and **t** is set to **t=1**, the only opening sequence would be **no moves at all**.
 
-Here’s an improved version of your markdown, making it more engaging and accessible to both amateur and professional Chess960 players, as well as those interested in the scientific analysis of Chess960 openings:
-
 ---
 
 ## Discoveries
@@ -89,7 +87,7 @@ A higher threshold means that an initial sequence must be played more frequently
 #### Threshold Sensitivity:
 
 Consider two thresholds, **t1 < t2**.
-By definition, if a sequence of moves qualifies as an opening under the higher threshold **t2**, then the same sequence (or a prefix) will also be an opening under the lower threshold **t1**.
+By definition, if a sequence of moves qualifies as an opening under the higher threshold **t2**, then (a prefix of) this sequence will also be an opening under the lower threshold **t1**.
 
 This means in particular, that one might see the base of an opening for a larger threshold which then branches out into multiple variations of the same opening.
 This is a well-known phenomenon in classical chess, see for example the [many variations of the **Ruy Lopez** opening](https://www.chess.com/forum/view/chess-openings/all-ruy-lopez-variations).
@@ -110,7 +108,7 @@ Due to these limitations, we decided not to use the Lichess dataset for Chess960
 
 ### Stockfish Data
 
-To overcome the limitations of human games, we turned to [Stockfish](https://stockfishchess.org/) (version 16), running it at super-human skill levels.
+To overcome the limitations of human games, we turned to [Stockfish 16](https://stockfishchess.org/), running it at super-human skill levels.
 Stockfish played **20,000 games** for each of the 960 different Chess960 starting positions.
 
 #### Match Setup
@@ -132,4 +130,6 @@ Since the matches were played at a super-human level, we assumed that a move seq
 At each step, both players made optimal (or near-optimal) moves.
 
 #### Key Theoretical Insight:
-The high level of play by Stockfish and the large volume of matches ensure that the formal and intuitive definitions of an opening coincide within this dataset.
+
+The super-human level and the large number of analyzed matches ensure that the formal and intuitive definitions of an opening coincide within this dataset.
+The formal definition can therefore be used to idenfity openings for the various Chess960 openings.

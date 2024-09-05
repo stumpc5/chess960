@@ -105,5 +105,5 @@ def BetterOpenings(matches, opening):
         for move, (count, (white, draw, black)) in next_steps.items()
         if count > 0
     ]
-    next_steps = sorted(next_steps, key=lambda x: x[1][0])
+    next_steps = sorted(next_steps, key=lambda x: -x[1][0])
     return next_steps

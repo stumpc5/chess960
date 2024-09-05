@@ -16,6 +16,13 @@ Consult the [project description](project_description.md) for details.
 
 The results have their own [markdown page](README_ANALYSIS.md) analyzing all 960 starting positions.
 
+Here is the example for the standard opening and the opening with queen and king interchanged:
+
+| # Matches                | White wins      | Draw           | Black wins      |
+|:------------------------:|:---------------:|:--------------:|:---------------:|
+| [RNBQKBNR](BoardAnalysis/rnbqkbnr.md) | 2000 | 39.8% | 32.8% | 27.4% |
+| [RNBKQBNR](BoardAnalysis/rnbkqbnr.md) | 2000 | 40.8% | 32.6% | 26.6% |
+
 ## Who Should Read This
 
 - Amateur and professional Chess960 players.

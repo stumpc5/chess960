@@ -84,12 +84,12 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
         }
         readme_boards.append(board_template.format(**board_data))
 
-    with open('../readme_template.md', 'r') as file:
-        readme_template = file.read()
-    readme = readme_template % "\n".join(readme_boards)
+        with open('../readme_template.md', 'r') as file:
+            readme_template = file.read()
+        readme = readme_template % "\n".join(readme_boards)
 
-    with open('../README.md', 'w') as file:
-        file.write(readme)
+        with open('../README.md', 'w') as file:
+            file.write(readme)
 
 def ToPer(x):
     return str(round(x*1000)/10) + "%"

@@ -34,6 +34,16 @@
 | [BBQNRNKR](BoardAnalysis/bbqnrnkr.md) | 1000            | 42.4% | 27.0% | 30.6% |
 | [BBQRKNNR](BoardAnalysis/bbqrknnr.md) | 1000            | 39.2% | 31.1% | 29.7% |
 | [BBQRKNRN](BoardAnalysis/bbqrknrn.md) | 1000            | 39.4% | 29.3% | 31.3% |
+| [BBQRKRNN](BoardAnalysis/bbqrkrnn.md) | 1000            | 45.8% | 28.0% | 26.2% |
+| [BBQRNKNR](BoardAnalysis/bbqrnknr.md) | 1000            | 40.8% | 30.1% | 29.1% |
+| [BBQRNKRN](BoardAnalysis/bbqrnkrn.md) | 1000            | 32.7% | 38.2% | 29.1% |
+| [BBQRNNKR](BoardAnalysis/bbqrnnkr.md) | 1000            | 36.9% | 32.3% | 30.8% |
+| [BBRKNNQR](BoardAnalysis/bbrknnqr.md) | 1000            | 40.4% | 32.1% | 27.5% |
+| [BBRKNNRQ](BoardAnalysis/bbrknnrq.md) | 1000            | 46.7% | 27.3% | 26.0% |
+| [BBRKNQNR](BoardAnalysis/bbrknqnr.md) | 1000            | 38.1% | 30.1% | 31.8% |
+| [BBRKNQRN](BoardAnalysis/bbrknqrn.md) | 1000            | 40.8% | 34.0% | 25.2% |
+| [BBRKNRNQ](BoardAnalysis/bbrknrnq.md) | 1000            | 41.6% | 29.5% | 28.9% |
+| [BBRKNRQN](BoardAnalysis/bbrknrqn.md) | 1000            | 37.5% | 29.1% | 33.4% |
 
 # Comparison to other Chess960 databases
 

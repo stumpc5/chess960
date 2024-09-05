@@ -1,4 +1,4 @@
-# Opening Analysis for the board `bbrknnqr`
+# Opening Analysis for the board `BBRKNNQR`
 
 **Overall Statistics:**
 

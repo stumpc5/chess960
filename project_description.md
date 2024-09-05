@@ -1,4 +1,4 @@
-# Identifying Chess960 Openings
+# Opening Analysis for Chess960: Project Description
 
 **What is an Opening:**
 

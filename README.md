@@ -42,7 +42,6 @@ TBA
 
 ## Acknowledgements
 
-* This README was automatically filled with the data.
 * The experiments were conducted using large computers at both involved universities.
 * The authors thank Nathan Chapelier-Laget and Alexander Ivanov for useful discussions.
 

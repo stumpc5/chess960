@@ -2,9 +2,14 @@
 
 ## Objective
 
-Identifying optimal openings.
+Identify optimal openings.
 
-**Details:** We analyze about **20 million Chess960 matches** generated with **Stockfish 16**, more than **20.000 matches for each starting position**. Details are found in the [project description](project_description.md).
+We analyze about **20 million Chess960 matches** generated with **Stockfish 16**, more than **20.000 matches for each starting position**.
+We then give a formal definition of an opening and apply it to the dataset.
+
+This approach allows us to rediscovered traditional chess openings, and to identified novel openings across various Chess960 variants.
+
+Consult the [project description](project_description.md) for details.
 
 ## Results
 

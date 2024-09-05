@@ -1,10 +1,6 @@
-# Opening Analysis for Chess960
+# Opening Analysis for Chess960: Results
 
-**Objective:** Identifying optimal openings.
-
-**Details:** We analyze about **20 million Chess960 matches** generated with **Stockfish 16**, more than **20.000 matches for each starting position**. Details are found in the [project description](project_description.md).
-
-# Results
+## Results
 
 | Board                            | # Played Matches        | White           | Draw           | Black           |
 |----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|
@@ -149,3 +145,6 @@
 | [BQRKNBNR](BoardAnalysis/bqrknbnr.md) | 1000            | 35.0% | 33.9% | 31.1% |
 | [BQRKNBRN](BoardAnalysis/bqrknbrn.md) | 1000            | 38.1% | 32.1% | 29.8% |
 | [BQRKNNRB](BoardAnalysis/bqrknnrb.md) | 1000            | 35.9% | 37.1% | 27.0% |
+| [BQRKNRNB](BoardAnalysis/bqrknrnb.md) | 1000            | 35.7% | 37.3% | 27.0% |
+| [BQRKRBNN](BoardAnalysis/bqrkrbnn.md) | 1000            | 40.9% | 29.9% | 29.2% |
+| [BQRKRNNB](BoardAnalysis/bqrkrnnb.md) | 1000            | 39.9% | 33.7% | 26.4% |

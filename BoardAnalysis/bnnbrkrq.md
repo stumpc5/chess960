@@ -10,9 +10,9 @@
 
 ## Openings for threshold = 5.0%
 
-(We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
+(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | e4 | g5 <p> b6 <p> e5 <p> g6 | 3.9% <p> 2.1% <p> 1.8% <p> 1.4% | 39.7% <p> 35.7% <p> 51.4% <p> 58.6% | 28.2% <p> 23.8% <p> 25.7% <p> 6.9% | 32.1% <p> 40.5% <p> 22.9% <p> 34.5% |
 | b3 &rarr; h5 &rarr; e4 | e5 <p> b6 | 4.0% <p> 3.2% | 47.5% <p> 55.6% | 25.0% <p> 20.6% | 27.5% <p> 23.8% |
@@ -25,9 +25,9 @@
 
 ## Openings for threshold = 2.0%
 
-(We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
+(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | e4 &rarr; b6 | b3 | 1.5% | 46.7% | 30.0% | 23.3% |
 | g4 &rarr; g6 | e3 <p> h4 <p> c4 | 1.4% <p> 0.6% <p> 0.6% | 67.9% <p> 46.2% <p> 25.0% | 7.1% <p> 38.5% <p> 0.0% | 25.0% <p> 15.4% <p> 75.0% |
@@ -51,9 +51,9 @@
 
 ## Openings for threshold = 1.0%
 
-(We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
+(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | h4 | b6 <p> h5 | 1.0% <p> 0.7% | 20.0% <p> 50.0% | 45.0% <p> 21.4% | 35.0% <p> 28.6% |
 | e4 &rarr; h5 | b3 <p> Nd3 | 0.5% <p> 0.4% | 30.0% <p> 62.5% | 30.0% <p> 25.0% | 40.0% <p> 12.5% |

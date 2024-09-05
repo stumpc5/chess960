@@ -10,9 +10,9 @@
 
 ## Openings for threshold = 5.0%
 
-(We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
+(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | b4 | f5 <p> b6 <p> f6 | 2.4% <p> 2.0% <p> 1.0% | 35.4% <p> 40.0% <p> 40.0% | 31.2% <p> 22.5% <p> 20.0% | 33.3% <p> 37.5% <p> 40.0% |
 | f4 | f5 <p> b6 | 4.2% <p> 3.4% | 36.5% <p> 27.9% | 24.7% <p> 38.2% | 38.8% <p> 33.8% |
@@ -27,9 +27,9 @@
 
 ## Openings for threshold = 2.0%
 
-(We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
+(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | b4 &rarr; f5 | f4 <p> h4 | 1.4% <p> 0.5% | 29.6% <p> 50.0% | 40.7% <p> 40.0% | 29.6% <p> 10.0% |
 | f4 &rarr; b6 | Qf2 <p> b4 | 1.2% <p> 1.2% | 24.0% <p> 40.0% | 52.0% <p> 28.0% | 24.0% <p> 32.0% |
@@ -53,9 +53,9 @@
 
 ## Openings for threshold = 1.0%
 
-(We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
+(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | b4 &rarr; b6 | f4 <p> h4 <p> f3 <p> d3 | 0.8% <p> 0.4% <p> 0.4% <p> 0.2% | 40.0% <p> 37.5% <p> 28.6% <p> 40.0% | 33.3% <p> 25.0% <p> 14.3% <p> 20.0% | 26.7% <p> 37.5% <p> 57.1% <p> 40.0% |
 | e4 &rarr; f6 | f4 <p> b3 | 0.8% <p> 0.3% | 35.3% <p> 33.3% | 29.4% <p> 50.0% | 35.3% <p> 16.7% |

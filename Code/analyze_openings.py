@@ -46,7 +46,8 @@ def GenerateBoardMarkdown(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbo
             min_prob = moves[0][1][0] / 3
             moves = [ move for move in moves if move[1][0] >= min_prob ]
             opening_data = {
-                'opening'       : " &rarr; ".join(opening),
+                # old separator &rarr; 
+                'opening'       : " ".join(opening),
                 'moves'         : " <p> ".join(move for move,_ in moves),
                 'move_prob'     : " <p> ".join(ToPer(prob) for _,(prob,_) in moves),
                 'percent_white' : " <p> ".join(ToPer(per[0]) for _,(_,per) in moves),

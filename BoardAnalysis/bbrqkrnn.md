@@ -10,9 +10,9 @@
 
 ## Openings for threshold = 5.0%
 
-(We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
+(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | b3 &rarr; b5 | Bxg7 | 4.8% | 43.2% | 35.8% | 21.1% |
 | e4 &rarr; Nh6 &rarr; c4 | c5 <p> O-O <p> b6 | 2.2% <p> 1.4% <p> 1.3% | 37.2% <p> 42.9% <p> 61.5% | 27.9% <p> 28.6% <p> 26.9% | 34.9% <p> 28.6% <p> 11.5% |
@@ -24,9 +24,9 @@
 
 ## Openings for threshold = 2.0%
 
-(We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
+(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | Ng3 | Nf6 <p> Nh6 | 1.5% <p> 0.8% | 26.7% <p> 58.8% | 46.7% <p> 11.8% | 26.7% <p> 29.4% |
 | c4 &rarr; c5 | b3 <p> Nh3 <p> Ng3 | 0.8% <p> 0.6% <p> 0.6% | 41.2% <p> 38.5% <p> 63.6% | 23.5% <p> 15.4% <p> 27.3% | 35.3% <p> 46.2% <p> 9.1% |
@@ -52,9 +52,9 @@
 
 ## Openings for threshold = 1.0%
 
-(We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
+(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | Nh3 | b6 <p> c5 <p> Nf6 <p> b5 | 0.4% <p> 0.4% <p> 0.2% <p> 0.2% | 44.4% <p> 50.0% <p> 75.0% <p> 0.0% | 44.4% <p> 37.5% <p> 0.0% <p> 33.3% | 11.1% <p> 12.5% <p> 25.0% <p> 66.7% |
 | Ng3 &rarr; Nf6 | Nh3 <p> c4 <p> b3 | 0.6% <p> 0.5% <p> 0.4% | 36.4% <p> 0.0% <p> 50.0% | 54.5% <p> 50.0% <p> 25.0% | 9.1% <p> 50.0% <p> 25.0% |

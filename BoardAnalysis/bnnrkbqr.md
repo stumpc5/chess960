@@ -10,9 +10,9 @@
 
 ## Openings for threshold = 5.0%
 
-(We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
+(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | Nd3 | b6 <p> h5 <p> f6 | 2.6% <p> 2.0% <p> 1.2% | 29.4% <p> 41.0% <p> 44.0% | 33.3% <p> 25.6% <p> 28.0% | 37.3% <p> 33.3% <p> 28.0% |
 | Nc3 | Nd6 <p> b6 <p> d5 | 3.6% <p> 2.8% <p> 2.6% | 32.4% <p> 26.8% <p> 34.0% | 32.4% <p> 42.9% <p> 34.0% | 35.2% <p> 30.4% <p> 32.1% |
@@ -28,9 +28,9 @@
 
 ## Openings for threshold = 2.0%
 
-(We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
+(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | Nd3 &rarr; b6 | b3 <p> O-O-O | 1.4% <p> 0.8% | 31.0% <p> 25.0% | 31.0% <p> 37.5% | 37.9% <p> 37.5% |
 | Nc3 &rarr; d5 | b3 <p> e3 | 1.2% <p> 0.8% | 33.3% <p> 40.0% | 41.7% <p> 26.7% | 25.0% <p> 33.3% |
@@ -55,9 +55,9 @@
 
 ## Openings for threshold = 1.0%
 
-(We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
+(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | c4 | e5 <p> b6 <p> Nc6 <p> f6 | 0.5% <p> 0.3% <p> 0.3% <p> 0.2% | 40.0% <p> 0.0% <p> 50.0% <p> 0.0% | 40.0% <p> 16.7% <p> 16.7% <p> 50.0% | 20.0% <p> 83.3% <p> 33.3% <p> 50.0% |
 | d4 | b6 <p> e6 | 1.0% <p> 0.6% | 40.0% <p> 23.1% | 15.0% <p> 61.5% | 45.0% <p> 15.4% |

@@ -10,9 +10,9 @@
 
 ## Openings for threshold = 5.0%
 
-(We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
+(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | b3 | b5 <p> d5 | 2.6% <p> 1.8% | 35.8% <p> 17.1% | 26.4% <p> 31.4% | 37.7% <p> 51.4% |
 | d4 | d5 <p> b5 <p> g6 | 4.3% <p> 4.2% <p> 3.6% | 37.2% <p> 44.7% <p> 33.8% | 38.4% <p> 22.4% <p> 39.4% | 24.4% <p> 32.9% <p> 26.8% |
@@ -26,9 +26,9 @@
 
 ## Openings for threshold = 2.0%
 
-(We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
+(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | O-O | g6 <p> b5 <p> c5 | 1.4% <p> 0.9% <p> 0.6% | 40.7% <p> 22.2% <p> 54.5% | 37.0% <p> 33.3% <p> 36.4% | 22.2% <p> 44.4% <p> 9.1% |
 | b3 &rarr; b5 | d4 | 1.6% | 40.6% | 28.1% | 31.2% |
@@ -53,9 +53,9 @@
 
 ## Openings for threshold = 1.0%
 
-(We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
+(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | O-O &rarr; g6 | g3 <p> c4 | 0.8% <p> 0.4% | 47.1% <p> 37.5% | 35.3% <p> 37.5% | 17.6% <p> 25.0% |
 | b3 &rarr; d5 | d4 <p> O-O <p> g3 <p> c4 | 0.6% <p> 0.5% <p> 0.4% <p> 0.3% | 9.1% <p> 30.0% <p> 12.5% <p> 16.7% | 27.3% <p> 10.0% <p> 37.5% <p> 66.7% | 63.6% <p> 60.0% <p> 50.0% <p> 16.7% |

@@ -6,4 +6,3 @@
 | [BBNNRKQR](BoardAnalysis/bbnnrkqr.md) | 2000            | 41.0% | 29.3% | 29.6% |
 | [BBNNRKRQ](BoardAnalysis/bbnnrkrq.md) | 2000            | 48.0% | 23.0% | 29.0% |
 | [BBNNRQKR](BoardAnalysis/bbnnrqkr.md) | 2000            | 38.4% | 27.6% | 34.0% |
-| [BBNQNRKR](BoardAnalysis/bbnqnrkr.md) | 2000            | 39.1% | 29.8% | 31.0% |

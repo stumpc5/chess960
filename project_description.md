@@ -2,17 +2,12 @@
 
 **What is an Opening:**
 
-An opening is an initial sequence of moves made by both players, where each move is considered optimal based on established principles and strategies.
-At any given stage of the opening, neither player has an incentive to deviate from the standard progression, as doing so could result in a suboptimal position.
+An opening is an initial sequence of moves made by both players, where each move is considered (nearly) optimal based on established principles and strategies.
+At any given stage of the opening, neither player has a strong incentive to deviate from the given progression, as doing so could result in a suboptimal position.
 
 **Objective:**
 
-Discover possible openings for all Chess960 variants.
-
-**Who Should Read This:**
-
-- Amateur and professional Chess960 players.
-- Anyone curious about the scientific analysis of Chess960 openings.
+Identify optimal openings for all Chess960 variants.
 
 **Our Approach:**
 

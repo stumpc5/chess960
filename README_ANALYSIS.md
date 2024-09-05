@@ -1,7 +1,5 @@
 # Opening Analysis for Chess960: Results
 
-## Results
-
 | Board                            | # Played Matches        | White           | Draw           | Black           |
 |----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|
 | [BBNNQRKR](BoardAnalysis/bbnnqrkr.md) | 1000            | 44.9% | 27.5% | 27.6% |
@@ -148,3 +146,8 @@
 | [BQRKNRNB](BoardAnalysis/bqrknrnb.md) | 1000            | 35.7% | 37.3% | 27.0% |
 | [BQRKRBNN](BoardAnalysis/bqrkrbnn.md) | 1000            | 40.9% | 29.9% | 29.2% |
 | [BQRKRNNB](BoardAnalysis/bqrkrnnb.md) | 1000            | 39.9% | 33.7% | 26.4% |
+| [BQRNKBNR](BoardAnalysis/bqrnkbnr.md) | 1000            | 36.9% | 31.9% | 31.2% |
+| [BQRNKBRN](BoardAnalysis/bqrnkbrn.md) | 1000            | 46.8% | 26.8% | 26.4% |
+| [BQRNKNRB](BoardAnalysis/bqrnknrb.md) | 1000            | 34.9% | 34.6% | 30.5% |
+| [BQRNKRNB](BoardAnalysis/bqrnkrnb.md) | 1000            | 38.1% | 34.5% | 27.4% |
+| [BQRNNBKR](BoardAnalysis/bqrnnbkr.md) | 1000            | 39.3% | 32.0% | 28.7% |

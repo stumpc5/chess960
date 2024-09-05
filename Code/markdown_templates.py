@@ -10,7 +10,7 @@ header_template = """# Opening Analysis for the board `{board}`
 
 openings_template = """## Openings for threshold = {threshold}
 
-(We only show those next moves that happen with at least 1/3 of the likeliness of the most likely next move.)
+(The next moves are sorted by likeliness and we only show those next moves that happen with at least 1/3 of the likeliness of the most likely next move.)
 
 | Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|

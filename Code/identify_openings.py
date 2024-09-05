@@ -100,8 +100,10 @@ def BetterOpenings(matches, opening):
     total_matches = len(matches)
 
     # Calculate the percentages of white wins, draws, and black wins for each next move
-    return [
+    next_steps = [
         (move, (count / total_matches, (white / count, draw / count, black / count)))
         for move, (count, (white, draw, black)) in next_steps.items()
         if count > 0
     ]
+    next_steps = sorted(next_steps, key=lambda x: x[1][0])
+    return next_steps

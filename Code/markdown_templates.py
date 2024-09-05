@@ -10,7 +10,7 @@ header_template = """# Opening Analysis for the board `{board}`
 
 openings_template = """## Openings for threshold = {threshold}
 
-| Opening   | Next moves | Move prob  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 """
 

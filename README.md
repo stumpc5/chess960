@@ -4,10 +4,11 @@
 
 Identify optimal openings.
 
-We analyze about **20 million Chess960 matches** generated with **Stockfish 16**, more than **20.000 matches for each starting position**.
-We then give a formal definition of an opening and apply it to the dataset.
+* We analyze about **20 million Chess960 matches** generated with **Stockfish 16**.
 
-This approach allows us to rediscovered traditional chess openings, and to identified novel openings across various Chess960 variants.
+* We give a formal definition of an opening and apply it to the dataset.
+
+* This let us rediscover traditional chess openings, and identify novel openings across various Chess960 variants.
 
 Consult the [project description](project_description.md) for details.
 

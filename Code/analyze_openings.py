@@ -1,3 +1,4 @@
+import time
 from read_pgn           import ReadPGN
 from starting_positions import AllStartingPositions
 from identify_openings  import IdentifyOpenings
@@ -6,7 +7,7 @@ from markdown_templates import header_template, openings_template, opening_templ
 MARKDOWN_FOLDER = "../BoardAnalysis"
 
 def GenerateOpeningTable(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbose=True):
-    matches = ReadPGN(board, max_size=500, verbose=verbose)
+    matches = ReadPGN(board, max_size=1000, verbose=verbose)
 
     openings_table = dict()
     winning  = 0
@@ -42,7 +43,6 @@ def GenerateBoardMarkdown(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbo
         openings_header = openings_template.format(**threshold_data)
 
         for opening, moves in openings:
-            print(moves)
             opening_data = {
                 'opening'       : " &rarr; ".join(opening),
                 'moves'         : " <p> ".join(move for move,_ in moves),
@@ -67,7 +67,12 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
 
     readme_boards = []
 
-    for board in boards:
+    start_time = time.time()
+
+    for i,board in enumerate(boards):
+        if verbose:
+            elapsed_time = time.time() - start_time
+            print(f"{ i+1 }/{ len(boards) } (elapsed time: {elapsed_time:.1f} sec): Generating { board }. ")
         stats = GenerateBoardMarkdown(board=board, thresholds=thresholds, verbose=verbose, save_result=True)
         nr_matches, (percent_white, percent_draw, percent_black) = stats
         board_data = {

@@ -51,12 +51,8 @@ def ReadPGN(board, folder=DATAFOLDER, max_size=float('inf'), verbose=False):
                     raise ValueError(f"Unrecognized result: {result}")
 
                 games.append((moves, result))
-
-                if verbose and len(games) % 100 == 0:
-                    print(f"Processed {len(games)} games")
-
         if verbose:
-            print(f"Total games processed: {len(games)}")
+            print(f"Total games processed for board '{board}': {len(games)}")
         return games
 
     except tarfile.TarError as e:

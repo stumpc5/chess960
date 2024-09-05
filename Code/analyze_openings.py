@@ -24,7 +24,7 @@ def GenerateBoardMarkdown(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbo
     # formating the header
     nr_matches, (percent_white, percent_draw, percent_black) = stats
     header_data = {
-        'board'         : board,
+        'board'         : board.upper(),
         'nr_matches'    : nr_matches,
         'percent_white' : ToPer(percent_white),
         'percent_draw'  : ToPer(percent_draw),
@@ -69,14 +69,15 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
 
     start_time = time.time()
 
-    for i,board in enumerate(boards):
+    for i, board in enumerate(boards):
         if verbose:
             elapsed_time = time.time() - start_time
-            print(f"{ i+1 }/{ len(boards) } (elapsed time: {elapsed_time:.1f} sec): Generating { board }. ")
+            print(f"{ i+1 }/{ len(boards) } (elapsed time: {elapsed_time:.1f} sec): Generating { board.upper() }. ")
         stats = GenerateBoardMarkdown(board=board, thresholds=thresholds, verbose=verbose, save_result=True)
         nr_matches, (percent_white, percent_draw, percent_black) = stats
         board_data = {
-            'board'         : board,
+            'board_name'    : board.upper(),
+            'board_link'    : board,
             'nr_matches'    : nr_matches,
             'percent_white' : ToPer(percent_white),
             'percent_draw'  : ToPer(percent_draw),

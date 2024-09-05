@@ -43,6 +43,8 @@ def GenerateBoardMarkdown(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbo
         openings_header = openings_template.format(**threshold_data)
 
         for opening, moves in openings:
+            min_prob = moves[0][1][0] / 3
+            moves = [ move for move in moves if move[1][0] >= min_prob ]
             opening_data = {
                 'opening'       : " &rarr; ".join(opening),
                 'moves'         : " <p> ".join(move for move,_ in moves),

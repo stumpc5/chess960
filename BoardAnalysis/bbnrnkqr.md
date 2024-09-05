@@ -12,7 +12,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | b3 &rarr; c5 | c4 <p> e4 <p> f3 | 2.4% <p> 1.7% <p> 1.7% | 43.8% <p> 26.5% <p> 67.6% | 31.2% <p> 47.1% <p> 20.6% | 25.0% <p> 26.5% <p> 11.8% |
 | d4 &rarr; f6 | f3 <p> b3 <p> Ned3 | 4.6% <p> 4.0% <p> 2.5% | 48.4% <p> 43.0% <p> 32.0% | 25.3% <p> 27.8% <p> 34.0% | 26.4% <p> 29.1% <p> 34.0% |
@@ -28,7 +28,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | b3 &rarr; d5 | f3 <p> d4 | 1.8% <p> 1.2% | 41.7% <p> 40.0% | 27.8% <p> 24.0% | 30.6% <p> 36.0% |
 | d4 &rarr; f5 | f3 <p> b3 <p> Ncd3 | 1.8% <p> 1.4% <p> 0.6% | 41.7% <p> 44.4% <p> 50.0% | 27.8% <p> 22.2% <p> 16.7% | 30.6% <p> 33.3% <p> 33.3% |
@@ -59,7 +59,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | b3 &rarr; b6 | d4 <p> c4 | 0.8% <p> 0.6% | 41.2% <p> 45.5% | 29.4% <p> 18.2% | 29.4% <p> 36.4% |
 | b3 &rarr; f6 | f3 <p> d4 <p> c4 | 0.7% <p> 0.6% <p> 0.6% | 50.0% <p> 23.1% <p> 45.5% | 21.4% <p> 53.8% <p> 36.4% | 28.6% <p> 23.1% <p> 18.2% |

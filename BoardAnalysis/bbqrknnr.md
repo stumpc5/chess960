@@ -12,7 +12,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | c4 &rarr; b6 | e4 <p> b3 <p> Nf3 | 3.0% <p> 2.2% <p> 1.6% | 49.2% <p> 42.2% <p> 43.8% | 32.2% <p> 35.6% <p> 21.9% | 18.6% <p> 22.2% <p> 34.4% |
 | c4 &rarr; c5 | b3 <p> Nf3 <p> e4 | 4.2% <p> 2.8% <p> 2.2% | 43.5% <p> 42.9% <p> 39.5% | 22.4% <p> 17.9% <p> 32.6% | 34.1% <p> 39.3% <p> 27.9% |
@@ -27,7 +27,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | d4 &rarr; b5 | Nf3 <p> Ne3 | 1.4% <p> 0.7% | 25.9% <p> 42.9% | 33.3% <p> 21.4% | 40.7% <p> 35.7% |
 | Nf3 &rarr; b6 | d4 <p> b3 | 1.2% <p> 0.7% | 52.2% <p> 50.0% | 13.0% <p> 14.3% | 34.8% <p> 35.7% |
@@ -56,7 +56,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | b4 &rarr; Nf6 | c4 <p> Bxf6 | 0.6% <p> 0.4% | 23.1% <p> 11.1% | 15.4% <p> 66.7% | 61.5% <p> 22.2% |
 | d4 &rarr; Nf6 | Ne3 <p> b3 <p> Nf3 <p> c4 | 0.4% <p> 0.2% <p> 0.2% <p> 0.2% | 12.5% <p> 20.0% <p> 60.0% <p> 50.0% | 50.0% <p> 60.0% <p> 40.0% <p> 25.0% | 37.5% <p> 20.0% <p> 0.0% <p> 25.0% |

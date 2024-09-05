@@ -12,7 +12,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | c4 &rarr; b5 | b3 <p> cxb5 <p> c5 | 2.6% <p> 1.8% <p> 1.2% | 39.6% <p> 65.7% <p> 52.0% | 26.4% <p> 14.3% <p> 12.0% | 34.0% <p> 20.0% <p> 36.0% |
 | c4 &rarr; b6 &rarr; b4 | c5 <p> Nh6 <p> Nf6 <p> h5 | 2.1% <p> 1.9% <p> 1.6% <p> 1.4% | 52.4% <p> 28.9% <p> 58.1% <p> 27.6% | 19.0% <p> 34.2% <p> 12.9% <p> 31.0% | 28.6% <p> 36.8% <p> 29.0% <p> 41.4% |
@@ -27,7 +27,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | g4 &rarr; g6 | Nd3 <p> c4 | 1.6% <p> 0.6% | 51.6% <p> 53.8% | 22.6% <p> 15.4% | 25.8% <p> 30.8% |
 | b4 &rarr; b5 | a4 <p> h4 <p> Nf3 | 1.1% <p> 0.4% <p> 0.4% | 36.4% <p> 55.6% <p> 50.0% | 40.9% <p> 11.1% <p> 12.5% | 22.7% <p> 33.3% <p> 37.5% |
@@ -54,7 +54,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | b4 &rarr; b6 | c4 <p> h4 | 0.9% <p> 0.3% | 38.9% <p> 16.7% | 33.3% <p> 33.3% | 27.8% <p> 50.0% |
 | g4 &rarr; g6 &rarr; Nd3 | Nd6 <p> c5 | 0.8% <p> 0.4% | 60.0% <p> 44.4% | 26.7% <p> 22.2% | 13.3% <p> 33.3% |

@@ -12,7 +12,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | b4 | f6 <p> b6 <p> d5 | 4.3% <p> 4.2% <p> 1.9% | 38.4% <p> 37.6% <p> 34.2% | 27.9% <p> 24.7% <p> 18.4% | 33.7% <p> 37.6% <p> 47.4% |
 | c4 &rarr; c5 | f3 <p> Be4 <p> b3 | 2.5% <p> 1.8% <p> 1.8% | 46.0% <p> 31.4% <p> 31.4% | 24.0% <p> 17.1% <p> 42.9% | 30.0% <p> 51.4% <p> 25.7% |
@@ -29,7 +29,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | f3 &rarr; c5 | c4 <p> b3 | 1.6% <p> 0.9% | 29.0% <p> 33.3% | 19.4% <p> 33.3% | 51.6% <p> 33.3% |
 | b3 &rarr; c5 | c4 <p> f3 | 1.6% <p> 0.8% | 51.5% <p> 12.5% | 24.2% <p> 18.8% | 24.2% <p> 68.8% |
@@ -58,7 +58,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | b4 &rarr; d5 | Ne3 <p> c4 | 1.0% <p> 0.7% | 31.6% <p> 42.9% | 36.8% <p> 0.0% | 31.6% <p> 57.1% |
 | d4 &rarr; f6 | c4 | 1.0% | 63.2% | 26.3% | 10.5% |

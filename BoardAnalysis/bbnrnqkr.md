@@ -12,7 +12,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | c4 &rarr; e5 | e4 <p> f4 <p> b3 <p> Nf3 <p> h4 | 1.4% <p> 1.3% <p> 1.3% <p> 0.8% <p> 0.5% | 55.2% <p> 38.5% <p> 57.7% <p> 37.5% <p> 60.0% | 24.1% <p> 30.8% <p> 19.2% <p> 31.2% <p> 20.0% | 20.7% <p> 30.8% <p> 23.1% <p> 31.2% <p> 20.0% |
 | c4 &rarr; c5 | b3 <p> e4 <p> b4 | 2.8% <p> 2.7% <p> 1.4% | 49.1% <p> 44.4% <p> 31.0% | 32.7% <p> 27.8% <p> 34.5% | 18.2% <p> 27.8% <p> 34.5% |
@@ -31,7 +31,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | c4 &rarr; e5 | e4 <p> f4 <p> b3 <p> Nf3 <p> h4 | 1.4% <p> 1.3% <p> 1.3% <p> 0.8% <p> 0.5% | 55.2% <p> 38.5% <p> 57.7% <p> 37.5% <p> 60.0% | 24.1% <p> 30.8% <p> 19.2% <p> 31.2% <p> 20.0% | 20.7% <p> 30.8% <p> 23.1% <p> 31.2% <p> 20.0% |
 | c4 &rarr; c5 &rarr; e4 | e5 <p> b6 <p> h5 | 1.2% <p> 1.1% <p> 0.4% | 54.2% <p> 45.5% <p> 12.5% | 33.3% <p> 27.3% <p> 12.5% | 12.5% <p> 27.3% <p> 75.0% |
@@ -59,7 +59,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | c4 &rarr; e6 | e4 <p> h4 | 0.6% <p> 0.4% | 54.5% <p> 62.5% | 18.2% <p> 25.0% | 27.3% <p> 12.5% |
 | b3 &rarr; e6 | e4 <p> c4 | 0.8% <p> 0.3% | 31.2% <p> 16.7% | 43.8% <p> 50.0% | 25.0% <p> 33.3% |

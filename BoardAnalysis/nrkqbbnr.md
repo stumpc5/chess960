@@ -1,90 +1,101 @@
-# Opening Analysis for the board `nrkqbbnr`
+# Opening Analysis for the board `NRKQBBNR`
 
 **Overall Statistics:**
 
 | #Matches                | White           | Draw           | Black           |
 |:-----------------------:|:---------------:|:--------------:|:---------------:|
-| 1000            | 40.5% | 32.0% | 27.5% |
+| 2000            | 41.8% | 30.2% | 28.0% |
 
 
 
 ## Openings for threshold = 5.0%
 
-| Opening   | Next moves | White wins      | Draw           | Black wins      |
-|-----------|------------|:---------------:|:--------------:|:---------------:|
-| e2e4 &rarr; a8b6 | d2d4 <p> c2c4 <p> f2f4 <p> d1e2    | 35.5% <p> 56.7% <p> 0.0% <p> 100.0% | 35.5% <p> 20.0% <p> 0.0% <p> 0.0% | 29.0% <p> 23.3% <p> 100.0% <p> 0.0% |
-| e2e4 &rarr; e7e5 &rarr; f2f4 | d8f6 <p> e5f4 <p> d7d6 <p> f7f5    | 30.0% <p> 27.3% <p> 0.0% <p> 36.4% | 30.0% <p> 45.5% <p> 100.0% <p> 18.2% | 40.0% <p> 27.3% <p> 0.0% <p> 45.5% |
-| e2e4 &rarr; e7e5 &rarr; d2d4 | d8e7 <p> d8f6 <p> d7d5 <p> a8b6 <p> f7f5 <p> d8g5    | 30.0% <p> 50.0% <p> 31.2% <p> 66.7% <p> 0.0% <p> 100.0% | 42.0% <p> 30.0% <p> 43.8% <p> 22.2% <p> 100.0% <p> 0.0% | 28.0% <p> 20.0% <p> 25.0% <p> 11.1% <p> 0.0% <p> 0.0% |
-| c2c4 &rarr; e7e5 &rarr; d2d4 &rarr; e5d4 &rarr; d1d4 | g8e7 <p> d8f6 <p> f7f5 <p> c7c5 <p> a8b6 <p> d8g5 <p> d8e7    | 35.9% <p> 40.0% <p> 25.0% <p> 0.0% <p> 0.0% <p> 0.0% <p> 50.0% | 35.9% <p> 60.0% <p> 25.0% <p> 50.0% <p> 83.3% <p> 100.0% <p> 0.0% | 28.2% <p> 0.0% <p> 50.0% <p> 50.0% <p> 16.7% <p> 0.0% <p> 50.0% |
-| e2e4 &rarr; e7e6 &rarr; d2d4 &rarr; d7d5 &rarr; e4e5 | d8d7 <p> a8b6 <p> a7a6 <p> h7h5 <p> g8e7 <p> f7f6    | 57.1% <p> 47.1% <p> 28.6% <p> 100.0% <p> 100.0% <p> 66.7% | 42.9% <p> 26.5% <p> 42.9% <p> 0.0% <p> 0.0% <p> 33.3% | 0.0% <p> 26.5% <p> 28.6% <p> 0.0% <p> 0.0% <p> 0.0% |
-| e2e4 &rarr; d7d5 &rarr; e4d5 &rarr; d8d5 &rarr; c2c4 &rarr; d5d7 | d1e2 <p> f2f4 <p> g1f3 <p> d2d4 <p> d1c2    | 72.4% <p> 41.0% <p> 55.6% <p> 50.0% <p> 25.0% | 20.7% <p> 43.6% <p> 22.2% <p> 0.0% <p> 50.0% | 6.9% <p> 15.4% <p> 22.2% <p> 50.0% <p> 25.0% |
+(We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
+
+| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+|-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
+| d4 | d5 | 3.6% | 39.7% | 20.5% | 39.7% |
+| e4 &rarr; Nb6 | d4 <p> c4 | 3.4% <p> 2.7% | 41.8% <p> 50.0% | 38.8% <p> 18.5% | 19.4% <p> 31.5% |
+| e4 &rarr; e5 &rarr; f4 | exf4 <p> Qf6 <p> f5 | 2.0% <p> 1.8% <p> 1.2% | 32.5% <p> 34.3% <p> 37.5% | 32.5% <p> 31.4% <p> 29.2% | 35.0% <p> 34.3% <p> 33.3% |
+| e4 &rarr; e5 &rarr; d4 | Qe7 <p> Qf6 <p> d5 | 3.9% <p> 1.9% <p> 1.4% | 30.8% <p> 52.6% <p> 44.4% | 43.6% <p> 23.7% <p> 37.0% | 25.6% <p> 23.7% <p> 18.5% |
+| c4 &rarr; e5 &rarr; d4 &rarr; exd4 &rarr; Qxd4 | Ne7 | 4.0% | 35.0% | 31.2% | 33.8% |
+| e4 &rarr; e6 &rarr; d4 &rarr; d5 &rarr; e5 | Nb6 | 3.2% | 44.6% | 23.1% | 32.3% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; c4 &rarr; Qd7 | f4 <p> Qe2 <p> Nf3 | 3.6% <p> 3.5% <p> 1.3% | 43.7% <p> 55.7% <p> 50.0% | 42.3% <p> 24.3% <p> 30.8% | 14.1% <p> 20.0% <p> 19.2% |
 
 
 ## Openings for threshold = 2.0%
 
-| Opening   | Next moves | White wins      | Draw           | Black wins      |
-|-----------|------------|:---------------:|:--------------:|:---------------:|
-| a1b3 | a8b6 <p> d7d5 <p> e7e6 <p> g8f6    | 33.3% <p> 50.0% <p> 50.0% <p> 100.0% | 33.3% <p> 7.1% <p> 50.0% <p> 0.0% | 33.3% <p> 42.9% <p> 0.0% <p> 0.0% |
-| c2c4 &rarr; f7f6 | e2e3 <p> d2d4 <p> e2e4 <p> a1c2    | 54.5% <p> 45.5% <p> 41.7% <p> 0.0% | 18.2% <p> 27.3% <p> 25.0% <p> 100.0% | 27.3% <p> 27.3% <p> 33.3% <p> 0.0% |
-| d2d4 &rarr; d7d5 | e2e3 <p> a1b3 <p> e2e4 <p> f2f3    | 33.3% <p> 25.0% <p> 0.0% <p> 33.3% | 22.2% <p> 25.0% <p> 50.0% <p> 33.3% | 44.4% <p> 50.0% <p> 50.0% <p> 33.3% |
-| e2e4 &rarr; a8b6 &rarr; c2c4 | d7d6 <p> e7e5 <p> c7c5 <p> e7e6    | 44.4% <p> 46.7% <p> 100.0% <p> 100.0% | 22.2% <p> 26.7% <p> 0.0% <p> 0.0% | 33.3% <p> 26.7% <p> 0.0% <p> 0.0% |
-| e2e4 &rarr; a8b6 &rarr; d2d4 | e7e5 <p> d7d5 <p> d7d6 <p> e7e6    | 18.2% <p> 50.0% <p> 0.0% <p> 100.0% | 27.3% <p> 37.5% <p> 66.7% <p> 0.0% | 54.5% <p> 12.5% <p> 33.3% <p> 0.0% |
-| e2e4 &rarr; e7e5 &rarr; g1f3 | d8e7 <p> g8f6 <p> a8b6 <p> d7d6 <p> f7f5    | 75.0% <p> 26.7% <p> 100.0% <p> 0.0% <p> 100.0% | 25.0% <p> 40.0% <p> 0.0% <p> 0.0% <p> 0.0% | 0.0% <p> 33.3% <p> 0.0% <p> 100.0% <p> 0.0% |
-| e2e4 &rarr; d7d5 &rarr; d1e2 | e7e6 <p> d5e4    | 38.9% <p> 0.0% | 22.2% <p> 75.0% | 38.9% <p> 25.0% |
-| e2e4 &rarr; d7d5 &rarr; a1b3 | e7e6 <p> e7e5 <p> d5e4 <p> a8b6    | 26.3% <p> 75.0% <p> 58.8% <p> 0.0% | 26.3% <p> 25.0% <p> 23.5% <p> 0.0% | 47.4% <p> 0.0% <p> 17.6% <p> 100.0% |
-| c2c4 &rarr; e7e5 &rarr; e2e4 &rarr; f7f5 | e4f5 <p> f2f3 <p> d2d3    | 46.2% <p> 0.0% <p> 50.0% | 23.1% <p> 28.6% <p> 0.0% | 30.8% <p> 71.4% <p> 50.0% |
-| e2e4 &rarr; e7e5 &rarr; f2f4 &rarr; e5f4 | d1f3 <p> d1g4    | 30.0% <p> 0.0% | 45.0% <p> 50.0% | 25.0% <p> 50.0% |
-| e2e4 &rarr; e7e5 &rarr; d2d4 &rarr; d8f6 | g1f3 <p> a1b3 <p> d4e5 <p> g1e2    | 44.4% <p> 66.7% <p> 40.0% <p> 100.0% | 38.9% <p> 16.7% <p> 20.0% <p> 0.0% | 16.7% <p> 16.7% <p> 40.0% <p> 0.0% |
-| e2e4 &rarr; e7e5 &rarr; d2d4 &rarr; d8e7 &rarr; g1f3 | e5d4 <p> d7d6 <p> f7f5 <p> g8f6 <p> a8b6    | 42.9% <p> 33.3% <p> 50.0% <p> 33.3% <p> 0.0% | 28.6% <p> 66.7% <p> 37.5% <p> 66.7% <p> 100.0% | 28.6% <p> 0.0% <p> 12.5% <p> 0.0% <p> 0.0% |
-| e2e4 &rarr; d7d5 &rarr; e4d5 &rarr; d8d5 &rarr; g1f3 | c8b8 <p> a8b6 <p> f7f6 <p> e7e5    | 41.2% <p> 40.0% <p> 28.6% <p> 100.0% | 23.5% <p> 40.0% <p> 71.4% <p> 0.0% | 35.3% <p> 20.0% <p> 0.0% <p> 0.0% |
-| e2e4 &rarr; d7d5 &rarr; e4d5 &rarr; d8d5 &rarr; d1e2 | c8b8 <p> d5f5 <p> e7e5 <p> f7f6 <p> c7c5 <p> a8b6    | 18.2% <p> 0.0% <p> 0.0% <p> 0.0% <p> 50.0% <p> 100.0% | 45.5% <p> 100.0% <p> 80.0% <p> 0.0% <p> 0.0% <p> 0.0% | 36.4% <p> 0.0% <p> 20.0% <p> 100.0% <p> 50.0% <p> 0.0% |
-| c2c4 &rarr; e7e5 &rarr; d2d4 &rarr; e5d4 &rarr; d1d4 &rarr; g8e7 | d4c3 <p> d4d3 <p> b2b4 <p> a1c2 <p> e2e4 <p> c1b1 <p> e2e3    | 50.0% <p> 31.6% <p> 28.6% <p> 100.0% <p> 0.0% <p> 20.0% <p> 0.0% | 50.0% <p> 47.4% <p> 28.6% <p> 0.0% <p> 0.0% <p> 20.0% <p> 100.0% | 0.0% <p> 21.1% <p> 42.9% <p> 0.0% <p> 100.0% <p> 60.0% <p> 0.0% |
-| e2e4 &rarr; d7d5 &rarr; e4d5 &rarr; d8d5 &rarr; c2c4 &rarr; d5c6 | d2d4 <p> b2b4 <p> g1f3 <p> f2f4    | 72.7% <p> 44.4% <p> 30.0% <p> 0.0% | 18.2% <p> 0.0% <p> 40.0% <p> 100.0% | 9.1% <p> 55.6% <p> 30.0% <p> 0.0% |
-| e2e4 &rarr; e7e6 &rarr; d2d4 &rarr; d7d5 &rarr; e4e5 &rarr; a8b6 | h2h4 <p> f2f4 <p> a1b3    | 0.0% <p> 61.1% <p> 50.0% | 50.0% <p> 22.2% <p> 20.0% | 50.0% <p> 16.7% <p> 30.0% |
-| e2e4 &rarr; d7d5 &rarr; e4d5 &rarr; d8d5 &rarr; c2c4 &rarr; d5f5 &rarr; d2d4 | a8b6 <p> c8b8 <p> f5f4 <p> e7e5    | 33.3% <p> 33.3% <p> 42.9% <p> 100.0% | 33.3% <p> 33.3% <p> 28.6% <p> 0.0% | 33.3% <p> 33.3% <p> 28.6% <p> 0.0% |
-| e2e4 &rarr; d7d5 &rarr; e4d5 &rarr; d8d5 &rarr; c2c4 &rarr; d5d7 &rarr; f2f4 | c7c5 <p> c8b8 <p> e7e6 <p> f7f6    | 60.0% <p> 47.1% <p> 30.8% <p> 25.0% | 20.0% <p> 41.2% <p> 53.8% <p> 50.0% | 20.0% <p> 11.8% <p> 15.4% <p> 25.0% |
-| e2e4 &rarr; d7d5 &rarr; e4d5 &rarr; d8d5 &rarr; c2c4 &rarr; d5d7 &rarr; d1e2 | c8b8 <p> e7e6 <p> f7f6 <p> a8b6    | 58.3% <p> 100.0% <p> 88.9% <p> 71.4% | 41.7% <p> 0.0% <p> 0.0% <p> 14.3% | 0.0% <p> 0.0% <p> 11.1% <p> 14.3% |
+(We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
+
+| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+|-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
+| Nb3 | d5 <p> Nb6 <p> e6 | 1.6% <p> 0.8% <p> 0.6% | 46.9% <p> 56.2% <p> 36.4% | 25.0% <p> 18.8% <p> 36.4% | 28.1% <p> 25.0% <p> 27.3% |
+| d4 &rarr; d5 | e3 <p> Nb3 | 1.8% <p> 1.4% | 35.1% <p> 48.1% | 18.9% <p> 22.2% | 45.9% <p> 29.6% |
+| c4 &rarr; f6 | e3 <p> d4 <p> e4 | 1.0% <p> 0.9% <p> 0.9% | 60.0% <p> 44.4% <p> 38.9% | 20.0% <p> 27.8% <p> 33.3% | 20.0% <p> 27.8% <p> 27.8% |
+| c4 &rarr; e5 &rarr; e4 | f5 <p> c5 | 2.0% <p> 0.8% | 32.5% <p> 18.8% | 17.5% <p> 31.2% | 50.0% <p> 50.0% |
+| e4 &rarr; Nb6 &rarr; c4 | e5 <p> d6 | 1.5% <p> 0.8% | 46.7% <p> 41.2% | 20.0% <p> 17.6% | 33.3% <p> 41.2% |
+| e4 &rarr; Nb6 &rarr; d4 | d5 <p> e5 | 1.6% <p> 1.3% | 45.5% <p> 34.6% | 42.4% <p> 38.5% | 12.1% <p> 26.9% |
+| e4 &rarr; e5 &rarr; Nf3 | Nf6 | 1.6% | 28.1% | 37.5% | 34.4% |
+| e4 &rarr; e5 &rarr; f4 | exf4 <p> Qf6 <p> f5 | 2.0% <p> 1.8% <p> 1.2% | 32.5% <p> 34.3% <p> 37.5% | 32.5% <p> 31.4% <p> 29.2% | 35.0% <p> 34.3% <p> 33.3% |
+| e4 &rarr; d5 &rarr; Qe2 | e6 | 1.9% | 39.5% | 21.1% | 39.5% |
+| e4 &rarr; d5 &rarr; Nb3 | e6 <p> dxe4 <p> e5 | 1.5% <p> 1.3% <p> 0.5% | 26.7% <p> 53.8% <p> 50.0% | 26.7% <p> 19.2% <p> 30.0% | 46.7% <p> 26.9% <p> 20.0% |
+| e4 &rarr; e5 &rarr; d4 &rarr; Qe7 | Nf3 <p> dxe5 <p> Nb3 | 1.6% <p> 1.0% <p> 0.8% | 33.3% <p> 28.6% <p> 35.3% | 48.5% <p> 38.1% <p> 35.3% | 18.2% <p> 33.3% <p> 29.4% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; Qe2 | O-O-O <p> e5 | 1.2% <p> 0.6% | 25.0% <p> 23.1% | 37.5% <p> 53.8% | 37.5% <p> 23.1% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; Nf3 | O-O-O <p> Nb6 <p> f6 | 1.2% <p> 0.8% <p> 0.6% | 37.5% <p> 41.2% <p> 36.4% | 29.2% <p> 29.4% <p> 63.6% | 33.3% <p> 29.4% <p> 0.0% |
+| c4 &rarr; e5 &rarr; d4 &rarr; exd4 &rarr; Qxd4 &rarr; Ne7 | Qd3 <p> b4 | 2.0% <p> 0.9% | 27.5% <p> 44.4% | 40.0% <p> 16.7% | 32.5% <p> 38.9% |
+| e4 &rarr; e6 &rarr; d4 &rarr; d5 &rarr; e5 &rarr; Nb6 | f4 <p> Nb3 | 1.6% <p> 1.0% | 54.5% <p> 45.0% | 15.2% <p> 20.0% | 30.3% <p> 35.0% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; c4 &rarr; Qf5 | d4 <p> Qf3 | 1.8% <p> 1.1% | 47.2% <p> 40.9% | 27.8% <p> 50.0% | 25.0% <p> 9.1% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; c4 &rarr; Qc6 | Nf3 <p> d4 <p> b4 | 1.6% <p> 1.2% <p> 1.0% | 35.5% <p> 58.3% <p> 42.9% | 41.9% <p> 20.8% <p> 4.8% | 22.6% <p> 20.8% <p> 52.4% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; c4 &rarr; Qd7 &rarr; Qe2 | O-O-O <p> f6 <p> Nb6 | 1.5% <p> 1.0% <p> 0.6% | 40.0% <p> 71.4% <p> 66.7% | 36.7% <p> 14.3% <p> 8.3% | 23.3% <p> 14.3% <p> 25.0% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; c4 &rarr; Qd7 &rarr; f4 | O-O-O <p> e6 <p> c5 | 1.5% <p> 1.0% <p> 0.6% | 50.0% <p> 42.9% <p> 46.2% | 40.0% <p> 38.1% <p> 38.5% | 10.0% <p> 19.0% <p> 15.4% |
 
 
 ## Openings for threshold = 1.0%
 
-| Opening   | Next moves | White wins      | Draw           | Black wins      |
-|-----------|------------|:---------------:|:--------------:|:---------------:|
-| e2e3 | e7e6 <p> e7e5 <p> d7d5    | 42.9% <p> 25.0% <p> 40.0% | 42.9% <p> 0.0% <p> 20.0% | 14.3% <p> 75.0% <p> 40.0% |
-| a1b3 &rarr; d7d5 | d2d4 <p> e2e3 <p> e2e4 <p> g1f3    | 60.0% <p> 33.3% <p> 40.0% <p> 100.0% | 0.0% <p> 0.0% <p> 20.0% <p> 0.0% | 40.0% <p> 66.7% <p> 40.0% <p> 0.0% |
-| c2c4 &rarr; d7d6 | e2e3 <p> d2d4 <p> e2e4    | 33.3% <p> 60.0% <p> 50.0% | 44.4% <p> 20.0% <p> 33.3% | 22.2% <p> 20.0% <p> 16.7% |
-| c2c4 &rarr; f7f6 &rarr; d2d4 | e8g6 <p> d7d5 <p> e7e5    | 0.0% <p> 0.0% <p> 71.4% | 66.7% <p> 100.0% <p> 0.0% | 33.3% <p> 0.0% <p> 28.6% |
-| c2c4 &rarr; f7f6 &rarr; e2e3 | c7c6 <p> e7e5 <p> e8g6 <p> e8f7    | 33.3% <p> 80.0% <p> 0.0% <p> 50.0% | 0.0% <p> 0.0% <p> 100.0% <p> 50.0% | 66.7% <p> 20.0% <p> 0.0% <p> 0.0% |
-| d2d4 &rarr; d7d5 &rarr; a1b3 | a8b6 <p> e7e6 <p> g8f6    | 25.0% <p> 0.0% <p> 100.0% | 37.5% <p> 0.0% <p> 0.0% | 37.5% <p> 100.0% <p> 0.0% |
-| d2d4 &rarr; d7d5 &rarr; e2e3 | g8f6 <p> e7e6 <p> a8b6    | 0.0% <p> 55.6% <p> 16.7% | 0.0% <p> 11.1% <p> 50.0% | 100.0% <p> 33.3% <p> 33.3% |
-| e2e4 &rarr; e7e6 &rarr; g1f3 | d7d5 <p> a8b6 <p> g7g6    | 42.9% <p> 20.0% <p> 100.0% | 42.9% <p> 40.0% <p> 0.0% | 14.3% <p> 40.0% <p> 0.0% |
-| c2c4 &rarr; f7f6 &rarr; e2e4 &rarr; e7e5 | d2d4 <p> g1e2 <p> a1c2    | 50.0% <p> 33.3% <p> 50.0% | 0.0% <p> 66.7% <p> 0.0% | 50.0% <p> 0.0% <p> 50.0% |
-| c2c4 &rarr; e7e5 &rarr; d2d4 &rarr; d8e7 | d4e5 <p> e2e3 <p> a1c2    | 0.0% <p> 40.0% <p> 0.0% | 0.0% <p> 20.0% <p> 50.0% | 100.0% <p> 40.0% <p> 50.0% |
-| e2e4 &rarr; a8b6 &rarr; d2d4 &rarr; e7e5 | h2h4 <p> a1b3 <p> d4e5 <p> c2c4 <p> a2a4    | 0.0% <p> 0.0% <p> 25.0% <p> 25.0% <p> 0.0% | 100.0% <p> 0.0% <p> 25.0% <p> 25.0% <p> 0.0% | 0.0% <p> 100.0% <p> 50.0% <p> 50.0% <p> 100.0% |
-| e2e4 &rarr; e7e5 &rarr; g1f3 &rarr; g8f6 | f3e5 <p> a1b3 <p> d1e2 <p> d2d3    | 14.3% <p> 50.0% <p> 0.0% <p> 33.3% | 57.1% <p> 0.0% <p> 100.0% <p> 33.3% | 28.6% <p> 50.0% <p> 0.0% <p> 33.3% |
-| e2e4 &rarr; e7e5 &rarr; f2f4 &rarr; f7f5 | f4e5 <p> e4f5 <p> a1b3 <p> g1h3    | 25.0% <p> 60.0% <p> 0.0% <p> 0.0% | 25.0% <p> 20.0% <p> 0.0% <p> 0.0% | 50.0% <p> 20.0% <p> 100.0% <p> 100.0% |
-| e2e4 &rarr; e7e5 &rarr; f2f4 &rarr; d8f6 | g1h3 <p> g1e2 <p> g2g3    | 33.3% <p> 30.0% <p> 0.0% | 33.3% <p> 30.0% <p> 0.0% | 33.3% <p> 40.0% <p> 100.0% |
-| e2e4 &rarr; e7e5 &rarr; d2d4 &rarr; d7d5 | g1f3 <p> d4e5 <p> a1b3    | 20.0% <p> 44.4% <p> 0.0% | 40.0% <p> 33.3% <p> 100.0% | 40.0% <p> 22.2% <p> 0.0% |
-| e2e4 &rarr; d7d5 &rarr; d1e2 &rarr; e7e6 | e4d5 <p> d2d4 <p> d2d3 <p> c1b1 <p> a1b3    | 40.0% <p> 62.5% <p> 0.0% <p> 0.0% <p> 0.0% | 20.0% <p> 25.0% <p> 0.0% <p> 0.0% <p> 100.0% | 40.0% <p> 12.5% <p> 100.0% <p> 100.0% <p> 0.0% |
-| e2e4 &rarr; d7d5 &rarr; a1b3 &rarr; d5e4 | f2f3 <p> d1g4 <p> d1e2    | 70.0% <p> 33.3% <p> 100.0% | 10.0% <p> 50.0% <p> 0.0% | 20.0% <p> 16.7% <p> 0.0% |
-| c2c4 &rarr; e7e5 &rarr; e2e4 &rarr; f7f5 &rarr; e4f5 | d8f6 <p> g8h6 <p> a8b6    | 42.9% <p> 75.0% <p> 0.0% | 28.6% <p> 25.0% <p> 0.0% | 28.6% <p> 0.0% <p> 100.0% |
-| e2e4 &rarr; a8b6 &rarr; c2c4 &rarr; e7e5 &rarr; d2d4 | d7d6 <p> e5d4    | 60.0% <p> 50.0% | 20.0% <p> 16.7% | 20.0% <p> 33.3% |
-| e2e4 &rarr; a8b6 &rarr; d2d4 &rarr; d7d5 &rarr; e4e5 | b8a8 <p> e7e6 <p> b6c4    | 0.0% <p> 80.0% <p> 50.0% | 50.0% <p> 20.0% <p> 50.0% | 50.0% <p> 0.0% <p> 0.0% |
-| e2e4 &rarr; e7e5 &rarr; f2f4 &rarr; e5f4 &rarr; d1f3 | a8b6 <p> f7f5 <p> d8e7 <p> g7g5 <p> g8h6    | 16.7% <p> 0.0% <p> 60.0% <p> 100.0% <p> 0.0% | 50.0% <p> 66.7% <p> 20.0% <p> 0.0% <p> 100.0% | 33.3% <p> 33.3% <p> 20.0% <p> 0.0% <p> 0.0% |
-| e2e4 &rarr; e7e5 &rarr; d2d4 &rarr; d8e7 &rarr; d4e5 | e7e5 <p> f7f6    | 0.0% <p> 37.5% | 33.3% <p> 37.5% | 66.7% <p> 25.0% |
-| e2e4 &rarr; e7e5 &rarr; d2d4 &rarr; d8e7 &rarr; a1b3 | a8b6 <p> c8b8 <p> f7f5 <p> g8f6 <p> d7d6    | 0.0% <p> 14.3% <p> 0.0% <p> 100.0% <p> 0.0% | 0.0% <p> 42.9% <p> 0.0% <p> 0.0% <p> 100.0% | 100.0% <p> 42.9% <p> 100.0% <p> 0.0% <p> 0.0% |
-| e2e4 &rarr; e7e5 &rarr; d2d4 &rarr; d8e7 &rarr; g1f3 | e5d4 <p> d7d6 <p> f7f5 <p> g8f6 <p> a8b6    | 42.9% <p> 33.3% <p> 50.0% <p> 33.3% <p> 0.0% | 28.6% <p> 66.7% <p> 37.5% <p> 66.7% <p> 100.0% | 28.6% <p> 0.0% <p> 12.5% <p> 0.0% <p> 0.0% |
-| e2e4 &rarr; e7e6 &rarr; d2d4 &rarr; a8b6 &rarr; c2c4 | d7d5 <p> d7d6 <p> c7c5    | 66.7% <p> 33.3% <p> 33.3% | 33.3% <p> 50.0% <p> 33.3% | 0.0% <p> 16.7% <p> 33.3% |
-| e2e4 &rarr; e7e5 &rarr; d2d4 &rarr; d8f6 &rarr; g1f3 &rarr; e5d4 | d1d4 <p> f3d4 <p> b2b4 <p> e4e5    | 60.0% <p> 0.0% <p> 25.0% <p> 66.7% | 20.0% <p> 66.7% <p> 75.0% <p> 33.3% | 20.0% <p> 33.3% <p> 0.0% <p> 0.0% |
-| e2e4 &rarr; d7d5 &rarr; a1b3 &rarr; e7e6 &rarr; e4d5 &rarr; e6d5 | d2d4 <p> d1f3 <p> g2g3 <p> g1f3    | 16.7% <p> 50.0% <p> 0.0% <p> 0.0% | 0.0% <p> 50.0% <p> 50.0% <p> 0.0% | 83.3% <p> 0.0% <p> 50.0% <p> 100.0% |
-| e2e4 &rarr; d7d5 &rarr; e4d5 &rarr; d8d5 &rarr; g1f3 &rarr; c8b8 | d1e2 <p> d2d4 <p> c2c4    | 25.0% <p> 42.9% <p> 50.0% | 25.0% <p> 28.6% <p> 16.7% | 50.0% <p> 28.6% <p> 33.3% |
-| e2e4 &rarr; d7d5 &rarr; e4d5 &rarr; d8d5 &rarr; d1e2 &rarr; c8b8 | g1f3 <p> f2f4 <p> c2c4 <p> a1b3    | 16.7% <p> 0.0% <p> 33.3% <p> 0.0% | 33.3% <p> 0.0% <p> 66.7% <p> 100.0% | 50.0% <p> 100.0% <p> 0.0% <p> 0.0% |
-| e2e4 &rarr; d7d5 &rarr; e4d5 &rarr; d8d5 &rarr; c2c4 &rarr; d5d6 | g1f3 <p> b2b4 <p> d1e2 <p> d2d4    | 66.7% <p> 40.0% <p> 0.0% <p> 33.3% | 0.0% <p> 20.0% <p> 100.0% <p> 66.7% | 33.3% <p> 40.0% <p> 0.0% <p> 0.0% |
-| c2c4 &rarr; e7e5 &rarr; d2d4 &rarr; e5d4 &rarr; d1d4 &rarr; g8e7 &rarr; d4d3 | f7f6 <p> a8b6 <p> e7c6 <p> a7a5    | 22.2% <p> 50.0% <p> 40.0% <p> 0.0% | 66.7% <p> 50.0% <p> 0.0% <p> 100.0% | 11.1% <p> 0.0% <p> 60.0% <p> 0.0% |
-| e2e4 &rarr; d7d5 &rarr; e4d5 &rarr; d8d5 &rarr; c2c4 &rarr; d5f5 &rarr; d1f3 | f5f3 <p> g7g6 <p> g8h6 <p> e7e6 <p> e8d7    | 42.9% <p> 0.0% <p> 0.0% <p> 0.0% <p> 100.0% | 42.9% <p> 50.0% <p> 100.0% <p> 100.0% <p> 0.0% | 14.3% <p> 50.0% <p> 0.0% <p> 0.0% <p> 0.0% |
-| e2e4 &rarr; d7d5 &rarr; e4d5 &rarr; d8d5 &rarr; c2c4 &rarr; d5f5 &rarr; d2d4 | a8b6 <p> c8b8 <p> f5f4 <p> e7e5    | 33.3% <p> 33.3% <p> 42.9% <p> 100.0% | 33.3% <p> 33.3% <p> 28.6% <p> 0.0% | 33.3% <p> 33.3% <p> 28.6% <p> 0.0% |
-| e2e4 &rarr; d7d5 &rarr; e4d5 &rarr; d8d5 &rarr; c2c4 &rarr; d5c6 &rarr; d2d4 | c8b8 <p> e7e5 <p> a8b6 <p> f7f6    | 100.0% <p> 0.0% <p> 66.7% <p> 100.0% | 0.0% <p> 100.0% <p> 16.7% <p> 0.0% | 0.0% <p> 0.0% <p> 16.7% <p> 0.0% |
-| e2e4 &rarr; e7e6 &rarr; d2d4 &rarr; d7d5 &rarr; e4e5 &rarr; a8b6 &rarr; f2f4 | a7a6 <p> b6c4 <p> f7f6 <p> g7g5 <p> c7c5 <p> d8d7    | 83.3% <p> 60.0% <p> 33.3% <p> 100.0% <p> 0.0% <p> 100.0% | 0.0% <p> 40.0% <p> 0.0% <p> 0.0% <p> 100.0% <p> 0.0% | 16.7% <p> 0.0% <p> 66.7% <p> 0.0% <p> 0.0% <p> 0.0% |
-| e2e4 &rarr; d7d5 &rarr; e4d5 &rarr; d8d5 &rarr; c2c4 &rarr; d5d7 &rarr; f2f4 &rarr; e7e6 | d2d4 <p> g1f3 <p> d1e2    | 28.6% <p> 0.0% <p> 66.7% | 71.4% <p> 66.7% <p> 0.0% | 0.0% <p> 33.3% <p> 33.3% |
-| e2e4 &rarr; d7d5 &rarr; e4d5 &rarr; d8d5 &rarr; c2c4 &rarr; d5d7 &rarr; d1e2 &rarr; c8b8 | g1f3 <p> c1b1 <p> f2f4    | 75.0% <p> 25.0% <p> 75.0% | 25.0% <p> 75.0% <p> 25.0% | 0.0% <p> 0.0% <p> 0.0% |
-| e2e4 &rarr; d7d5 &rarr; e4d5 &rarr; d8d5 &rarr; c2c4 &rarr; d5d7 &rarr; f2f4 &rarr; c8b8 &rarr; g1f3 | e7e6 <p> f7f6 <p> c7c5 <p> a8b6    | 100.0% <p> 0.0% <p> 20.0% <p> 0.0% | 0.0% <p> 100.0% <p> 60.0% <p> 100.0% | 0.0% <p> 0.0% <p> 20.0% <p> 0.0% |
+(We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
+
+| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+|-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
+| e3 | e6 <p> d5 <p> e5 | 0.6% <p> 0.6% <p> 0.5% | 38.5% <p> 45.5% <p> 50.0% | 23.1% <p> 27.3% <p> 10.0% | 38.5% <p> 27.3% <p> 40.0% |
+| Nb3 &rarr; d5 | e4 <p> d4 <p> e3 | 0.8% <p> 0.4% <p> 0.4% | 40.0% <p> 55.6% <p> 42.9% | 33.3% <p> 22.2% <p> 14.3% | 26.7% <p> 22.2% <p> 42.9% |
+| d4 &rarr; Nb6 | e4 | 1.0% | 57.9% | 31.6% | 10.5% |
+| c4 &rarr; d6 | e3 <p> d4 <p> e4 | 0.8% <p> 0.6% <p> 0.4% | 20.0% <p> 33.3% <p> 50.0% | 53.3% <p> 50.0% <p> 37.5% | 26.7% <p> 16.7% <p> 12.5% |
+| c4 &rarr; f6 | e3 <p> d4 <p> e4 | 1.0% <p> 0.9% <p> 0.9% | 60.0% <p> 44.4% <p> 38.9% | 20.0% <p> 27.8% <p> 33.3% | 20.0% <p> 27.8% <p> 27.8% |
+| d4 &rarr; d5 &rarr; Nb3 | e6 <p> Nb6 | 0.6% <p> 0.6% | 58.3% <p> 36.4% | 8.3% <p> 36.4% | 33.3% <p> 27.3% |
+| d4 &rarr; d5 &rarr; e3 | Nb6 <p> e6 | 0.8% <p> 0.8% | 17.6% <p> 56.2% | 29.4% <p> 12.5% | 52.9% <p> 31.2% |
+| e4 &rarr; e6 &rarr; Nf3 | d5 <p> Nb6 | 0.8% <p> 0.6% | 35.3% <p> 27.3% | 35.3% <p> 54.5% | 29.4% <p> 18.2% |
+| c4 &rarr; e5 &rarr; e3 &rarr; d5 | Nf3 | 0.6% | 15.4% | 23.1% | 61.5% |
+| c4 &rarr; e5 &rarr; d4 &rarr; Qe7 | e3 | 1.0% | 47.4% | 15.8% | 36.8% |
+| e4 &rarr; Nb6 &rarr; c4 &rarr; e5 | d4 <p> Nf3 | 0.8% <p> 0.6% | 64.7% <p> 27.3% | 11.8% <p> 18.2% | 23.5% <p> 54.5% |
+| e4 &rarr; Nb6 &rarr; d4 &rarr; e5 | c4 <p> dxe5 | 0.6% <p> 0.4% | 45.5% <p> 22.2% | 36.4% <p> 44.4% | 18.2% <p> 33.3% |
+| e4 &rarr; e6 &rarr; d4 &rarr; Nb6 | c4 | 1.0% | 40.0% | 30.0% | 30.0% |
+| e4 &rarr; e5 &rarr; Nf3 &rarr; Nf6 | Nxe5 <p> d3 | 0.8% <p> 0.4% | 25.0% <p> 12.5% | 43.8% <p> 50.0% | 31.2% <p> 37.5% |
+| e4 &rarr; e5 &rarr; f4 &rarr; f5 | exf5 <p> fxe5 | 0.6% <p> 0.4% | 50.0% <p> 37.5% | 33.3% <p> 25.0% | 16.7% <p> 37.5% |
+| e4 &rarr; e5 &rarr; f4 &rarr; Qf6 | Nh3 <p> Ne2 | 1.0% <p> 0.7% | 36.8% <p> 35.7% | 31.6% <p> 35.7% | 31.6% <p> 28.6% |
+| e4 &rarr; e5 &rarr; d4 &rarr; Nb6 | dxe5 <p> Nb3 <p> c4 | 0.4% <p> 0.4% <p> 0.2% | 33.3% <p> 57.1% <p> 50.0% | 55.6% <p> 14.3% <p> 25.0% | 11.1% <p> 28.6% <p> 25.0% |
+| e4 &rarr; e5 &rarr; d4 &rarr; d5 | dxe5 <p> Nf3 | 0.7% <p> 0.6% | 42.9% <p> 54.5% | 35.7% <p> 27.3% | 21.4% <p> 18.2% |
+| e4 &rarr; d5 &rarr; Qe2 &rarr; e6 | d4 <p> exd5 | 0.8% <p> 0.6% | 47.1% <p> 36.4% | 17.6% <p> 27.3% | 35.3% <p> 36.4% |
+| e4 &rarr; d5 &rarr; Nb3 &rarr; dxe4 | f3 <p> Qg4+ | 0.8% <p> 0.4% | 68.8% <p> 22.2% | 6.2% <p> 44.4% | 25.0% <p> 33.3% |
+| c4 &rarr; e5 &rarr; e4 &rarr; f5 &rarr; exf5 | Qf6 | 0.8% | 46.7% | 26.7% | 26.7% |
+| e4 &rarr; Nb6 &rarr; d4 &rarr; d5 &rarr; e5 | e6 <p> Nc4 | 0.8% <p> 0.3% | 66.7% <p> 50.0% | 26.7% <p> 50.0% | 6.7% <p> 0.0% |
+| e4 &rarr; e5 &rarr; f4 &rarr; exf4 &rarr; Qf3 | Nb6 <p> f5 <p> Qe7 | 0.5% <p> 0.5% <p> 0.5% | 20.0% <p> 0.0% <p> 70.0% | 30.0% <p> 60.0% <p> 10.0% | 50.0% <p> 40.0% <p> 20.0% |
+| e4 &rarr; e5 &rarr; d4 &rarr; Qf6 &rarr; Nf3 | exd4 | 0.9% | 44.4% | 38.9% | 16.7% |
+| e4 &rarr; e5 &rarr; d4 &rarr; Qe7 &rarr; dxe5 | f6 | 0.8% | 35.3% | 41.2% | 23.5% |
+| e4 &rarr; e5 &rarr; d4 &rarr; Qe7 &rarr; Nf3 | f5 <p> exd4 | 0.6% <p> 0.5% | 30.8% <p> 40.0% | 46.2% <p> 30.0% | 23.1% <p> 30.0% |
+| e4 &rarr; d5 &rarr; Nb3 &rarr; e6 &rarr; exd5 | exd5 | 0.9% | 16.7% | 27.8% | 55.6% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; Qe2 &rarr; O-O-O | c4 <p> Nf3 | 0.5% <p> 0.4% | 20.0% <p> 44.4% | 50.0% <p> 22.2% | 30.0% <p> 33.3% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; Nf3 &rarr; O-O-O | d4 <p> c4 <p> Qe2 | 0.6% <p> 0.4% <p> 0.2% | 41.7% <p> 42.9% <p> 20.0% | 33.3% <p> 14.3% <p> 40.0% | 25.0% <p> 42.9% <p> 40.0% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; c4 &rarr; Qe4 | Nf3 <p> d3 | 0.6% <p> 0.2% | 58.3% <p> 20.0% | 25.0% <p> 40.0% | 16.7% <p> 40.0% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; c4 &rarr; Qd6 | b4 | 0.8% | 50.0% | 18.8% | 31.2% |
+| c4 &rarr; e5 &rarr; d4 &rarr; exd4 &rarr; Qxd4 &rarr; Ne7 &rarr; Qd3 | f6 <p> Nc6 <p> Nb6 | 0.8% <p> 0.6% <p> 0.5% | 25.0% <p> 30.8% <p> 30.0% | 43.8% <p> 23.1% <p> 50.0% | 31.2% <p> 46.2% <p> 20.0% |
+| e4 &rarr; e6 &rarr; d4 &rarr; d5 &rarr; e5 &rarr; Nb6 &rarr; f4 | a6 <p> Nc4 <p> f6 | 0.6% <p> 0.3% <p> 0.2% | 66.7% <p> 50.0% <p> 50.0% | 8.3% <p> 33.3% <p> 0.0% | 25.0% <p> 16.7% <p> 50.0% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; c4 &rarr; Qf5 &rarr; Qf3 | Qxf3 | 0.6% | 46.2% | 46.2% | 7.7% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; c4 &rarr; Qf5 &rarr; d4 | O-O-O <p> Qf4+ | 0.8% <p> 0.6% | 37.5% <p> 41.7% | 31.2% <p> 33.3% | 31.2% <p> 25.0% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; c4 &rarr; Qc6 &rarr; b4 | e5 <p> O-O-O | 0.6% <p> 0.2% | 33.3% <p> 60.0% | 8.3% <p> 0.0% | 58.3% <p> 40.0% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; c4 &rarr; Qc6 &rarr; d4 | Nb6 <p> e5 | 0.8% <p> 0.2% | 66.7% <p> 0.0% | 13.3% <p> 60.0% | 20.0% <p> 40.0% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; c4 &rarr; Qc6 &rarr; Nf3 | Nb6 <p> f6 | 0.8% <p> 0.6% | 33.3% <p> 54.5% | 53.3% <p> 18.2% | 13.3% <p> 27.3% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; c4 &rarr; Qd7 &rarr; Nf3 | f6 <p> O-O-O | 0.9% <p> 0.3% | 50.0% <p> 50.0% | 44.4% <p> 0.0% | 5.6% <p> 50.0% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; c4 &rarr; Qd7 &rarr; Qe2 &rarr; f6 | g3 <p> d4 | 0.5% <p> 0.4% | 70.0% <p> 77.8% | 10.0% <p> 11.1% | 20.0% <p> 11.1% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; c4 &rarr; Qd7 &rarr; Qe2 &rarr; O-O-O | Nf3 <p> O-O-O <p> f4 | 0.6% <p> 0.6% <p> 0.3% | 46.2% <p> 27.3% <p> 50.0% | 30.8% <p> 45.5% <p> 33.3% | 23.1% <p> 27.3% <p> 16.7% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; c4 &rarr; Qd7 &rarr; f4 &rarr; e6 | d4 <p> Nf3 <p> Qe2 | 0.4% <p> 0.4% <p> 0.2% | 33.3% <p> 57.1% <p> 40.0% | 66.7% <p> 28.6% <p> 0.0% | 0.0% <p> 14.3% <p> 60.0% |
+| e4 &rarr; d5 &rarr; exd5 &rarr; Qxd5 &rarr; c4 &rarr; Qd7 &rarr; f4 &rarr; O-O-O | Nf3 | 1.0% | 50.0% | 45.0% | 5.0% |

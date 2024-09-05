@@ -8,13 +8,13 @@ Identify optimal openings.
 
 * We give a formal definition of an opening and apply it to the dataset.
 
-* This let us rediscover traditional chess openings, and identify novel openings across various Chess960 variants.
+* We rediscover well-known chess openings and identify novel openings for all Chess960 variants.
 
 Consult the [project description](project_description.md) for details.
 
 ## Results
 
-The results have their own [markdown page](README_ANALYSIS.md) containing all 960 starting positions, some statistics and links to the respective openings.
+The results have their own [markdown page](README_ANALYSIS.md) analyzing all 960 starting positions.
 
 ## Who Should Read This
 

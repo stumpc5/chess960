@@ -7,7 +7,7 @@ from markdown_templates import header_template, openings_template, opening_templ
 MARKDOWN_FOLDER = "../BoardAnalysis"
 
 def GenerateOpeningTable(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbose=True):
-    matches = ReadPGN(board, max_size=1000, verbose=verbose)
+    matches = ReadPGN(board, max_size=2000, verbose=verbose)
 
     openings_table = dict()
     winning  = 0
@@ -76,24 +76,29 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
         if verbose:
             elapsed_time = time.time() - start_time
             print(f"{ i+1 }/{ len(boards) } (elapsed time: {elapsed_time:.1f} sec): Generating { board.upper() }. ")
-        stats = GenerateBoardMarkdown(board=board, thresholds=thresholds, verbose=verbose, save_result=True)
-        nr_matches, (percent_white, percent_draw, percent_black) = stats
-        board_data = {
-            'board_name'    : board.upper(),
-            'board_link'    : board,
-            'nr_matches'    : nr_matches,
-            'percent_white' : ToPer(percent_white),
-            'percent_draw'  : ToPer(percent_draw),
-            'percent_black' : ToPer(percent_black),
-        }
-        readme_boards.append(board_template.format(**board_data))
 
-        with open('../readme_template.md', 'r') as file:
-            readme_template = file.read()
-        readme = readme_template % "\n".join(readme_boards)
+        try:
+            stats = GenerateBoardMarkdown(board=board, thresholds=thresholds, verbose=verbose, save_result=True)
+        except FileNotFoundError:
+            pass
+        else:
+            nr_matches, (percent_white, percent_draw, percent_black) = stats
+            board_data = {
+                'board_name'    : board.upper(),
+                'board_link'    : board,
+                'nr_matches'    : nr_matches,
+                'percent_white' : ToPer(percent_white),
+                'percent_draw'  : ToPer(percent_draw),
+                'percent_black' : ToPer(percent_black),
+            }
+            readme_boards.append(board_template.format(**board_data))
 
-        with open('../README_ANALYSIS.md', 'w') as file:
-            file.write(readme)
+            with open('../readme_template.md', 'r') as file:
+                readme_template = file.read()
+            readme = readme_template % "\n".join(readme_boards)
+
+            with open('../README_ANALYSIS.md', 'w') as file:
+                file.write(readme)
 
 def ToPer(x):
     return str(round(x*1000)/10) + "%"

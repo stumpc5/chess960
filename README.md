@@ -53,6 +53,6 @@ TBA
 * The experiments were conducted using large computers at both involved universities.
 * The authors thank Nathan Chapelier-Laget and Alexander Ivanov for useful discussions.
 
-## Licence
+## License
 
 The work in this repository is licensed under the [CC BY-NC license](https://creativecommons.org/licenses/by-nc/4.0/). The license is found [here](/LICENSE.md).

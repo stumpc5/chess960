@@ -27,7 +27,7 @@ We rediscover well-known openings and their variations, such as the [**Ruy Lopez
 | [RNBQKBNR](BoardAnalysis/rnbqkbnr.md) | 2000 | 39.8% | 32.8% | 27.4% |
 | [RNBKQBNR](BoardAnalysis/rnbkqbnr.md) | 2000 | 40.8% | 32.6% | 26.6% |
 
-All 960 starting positions have their own [markdown page](README_ANALYSIS.md).
+* [Results for all 960 starting positions](README_ANALYSIS.md)
 
 ## Comparison to other Chess960 databases
 

@@ -46,6 +46,7 @@ def GenerateBoardMarkdown(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbo
             opening_data = {
                 'opening'       : " &rarr; ".join(opening),
                 'moves'         : " <p> ".join(move for move,_ in moves),
+                'move_prob'     : " <p> ".join(ToPer(prob) for _,(prob,_) in moves),
                 'percent_white' : " <p> ".join(ToPer(per[0]) for _,(_,per) in moves),
                 'percent_draw'  : " <p> ".join(ToPer(per[1]) for _,(_,per) in moves),
                 'percent_black' : " <p> ".join(ToPer(per[2]) for _,(_,per) in moves),

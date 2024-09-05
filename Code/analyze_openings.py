@@ -76,11 +76,12 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
     for i, board in enumerate(boards):
         if verbose:
             elapsed_time = time.time() - start_time
-            print(f"{ i+1 }/{ len(boards) } (elapsed time: {elapsed_time:.1f} sec): Generating { board.upper() }. ")
+            print(f"{ i+1 }/{ len(boards) } (time: {elapsed_time:.1f} sec): Generating { board.upper() }")
 
         try:
-            stats = GenerateBoardMarkdown(board=board, thresholds=thresholds, verbose=verbose, save_result=True)
+            stats = GenerateBoardMarkdown(board=board, thresholds=thresholds, verbose=False, save_result=True)
         except FileNotFoundError:
+            print(f"                  ERROR: no pgn's found for board { board.upper() }")
             pass
         else:
             nr_matches, (percent_white, percent_draw, percent_black) = stats

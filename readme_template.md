@@ -1,10 +1,8 @@
-# Project Description
-
-We analyze about **20 million Chess960 matches** generated with **Stockfish 16**, more than **20.000 matches for each starting position**.
+# Opening Analysis for Chess960
 
 **Objective:** Identifying optimal openings.
 
-**Details:** [Project description](project_description.md).
+**Details:** We analyze about **20 million Chess960 matches** generated with **Stockfish 16**, more than **20.000 matches for each starting position**. Details are found in the [project description](project_description.md).
 
 # Results
 

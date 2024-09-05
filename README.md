@@ -18,8 +18,8 @@ The results have their own [markdown page](README_ANALYSIS.md) analyzing all 960
 
 Here is the example for the standard opening and the opening with queen and king interchanged:
 
-| # Matches                | White wins      | Draw           | Black wins      |
-|:------------------------:|:---------------:|:--------------:|:---------------:|
+| Board                            | # Played Matches        | White           | Draw           | Black           |
+|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|
 | [RNBQKBNR](BoardAnalysis/rnbqkbnr.md) | 2000 | 39.8% | 32.8% | 27.4% |
 | [RNBKQBNR](BoardAnalysis/rnbkqbnr.md) | 2000 | 40.8% | 32.6% | 26.6% |
 

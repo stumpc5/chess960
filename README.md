@@ -10,7 +10,7 @@ We analyze about **20 million Chess960 matches** generated with **Stockfish 16**
 
 | Board                            | # Played Matches        | White           | Draw           | Black           |
 |----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|
-| [rnbqkbnr](BoardAnalysis/rnbqkbnr) | 500            | 44.2% | 32.0% | 23.8% |
+| [rnbqkbnr](BoardAnalysis/rnbqkbnr.md) | 500            | 44.2% | 32.0% | 23.8% |
 
 # Authors
 

@@ -12,6 +12,11 @@ Identify optimal openings.
 
 Consult the [project description](project_description.md) for details.
 
+## Who Should Read This
+
+- Amateur and professional Chess960 players.
+- Anyone curious about the scientific analysis of Chess960 openings.
+
 ## Results
 
 The results have their own [markdown page](README_ANALYSIS.md) analyzing all 960 starting positions.
@@ -23,11 +28,6 @@ We rediscover well-known openings and their variations, such as the [**Ruy Lopez
 |----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|
 | [RNBQKBNR](BoardAnalysis/rnbqkbnr.md) | 2000 | 39.8% | 32.8% | 27.4% |
 | [RNBKQBNR](BoardAnalysis/rnbkqbnr.md) | 2000 | 40.8% | 32.6% | 26.6% |
-
-## Who Should Read This
-
-- Amateur and professional Chess960 players.
-- Anyone curious about the scientific analysis of Chess960 openings.
 
 ## Comparison to other Chess960 databases
 

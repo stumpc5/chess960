@@ -89,7 +89,7 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
             readme_template = file.read()
         readme = readme_template % "\n".join(readme_boards)
 
-        with open('../README.md', 'w') as file:
+        with open('../README_ANALYSIS.md', 'w') as file:
             file.write(readme)
 
 def ToPer(x):

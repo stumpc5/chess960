@@ -1,6 +1,16 @@
 # Project Description
 
-This project aims at identifying Chess960 openings. We provide a [detailed project description](project_description.md).
+We analyze about **20 million Chess960 matches** generated with **Stockfish 16**, more than **20.000 matches for each starting position**.
+
+**Objective:** Identifying optimal openings.
+
+**Details:** [Project description](project_description.md).
+
+# Results
+
+| Board                            | # Played Matches        | White           | Draw           | Black           |
+|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|
+| [rnbqkbnr](BoardAnalysis/rnbqkbnr) | 500            | 44.2% | 32.0% | 23.8% |
 
 # Authors
 
@@ -9,6 +19,7 @@ This project aims at identifying Chess960 openings. We provide a [detailed proje
 
 # Acknowledgements
 
+* This README was automatically filled with the data.
 * The experiments were conducted using large computers at both involved universities.
 * The authors thank Nathan Chapelier-Laget and Alexander Ivanov for useful discussions.
 

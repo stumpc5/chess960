@@ -2,9 +2,9 @@ header_template = """# Opening Analysis for the board `{board}`
 
 **Overall Statistics:**
 
-| #Matches                | White           | Draw           | Black           |
-|:-----------------------:|:---------------:|:--------------:|:---------------:|
-| {nr_matches}            | {percent_white} | {percent_draw} | {percent_black} |
+| # Matches                | White wins      | Draw           | Black wins      |
+|:------------------------:|:---------------:|:--------------:|:---------------:|
+| {nr_matches}             | {percent_white} | {percent_draw} | {percent_black} |
 
 For all openings, the next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.
 """

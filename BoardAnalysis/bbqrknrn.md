@@ -6,11 +6,10 @@
 |:-----------------------:|:---------------:|:--------------:|:---------------:|
 | 2000            | 39.0% | 29.6% | 31.4% |
 
+For all openings, the next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.
 
 
 ## Openings for threshold = 5.0%
-
-(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
 | Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
@@ -27,8 +26,6 @@
 
 
 ## Openings for threshold = 2.0%
-
-(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
 | Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
@@ -55,8 +52,6 @@
 
 
 ## Openings for threshold = 1.0%
-
-(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
 | Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|

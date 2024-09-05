@@ -133,11 +133,3 @@ At each step, both players made optimal (or near-optimal) moves.
 
 #### Key Theoretical Insight:
 The high level of play by Stockfish and the large volume of matches ensure that the formal and intuitive definitions of an opening coincide within this dataset.
-
-#### Visualizing the Results
-
-**TBA**
-
-### Code
-
-**TBA**

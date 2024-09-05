@@ -1,3 +1,4 @@
+import re
 import io
 import os
 import tarfile
@@ -18,7 +19,7 @@ def ReadPGN(board, folder=DATAFOLDER, max_size=float('inf'), verbose=False):
         List[Tuple[Tuple[str], float]]: A list of tuples where each tuple contains the moves as strings and the game result as a float.
     """
 
-    games = []
+    matches = []
     filename = f"data_{board}.pgn"
     tar_path = os.path.join(folder, f"{filename}.tar.gz")
 
@@ -30,32 +31,52 @@ def ReadPGN(board, folder=DATAFOLDER, max_size=float('inf'), verbose=False):
             fileobj = tar.extractfile(filename)
             if fileobj is None:
                 raise FileNotFoundError(f"File {filename} not found inside the archive.")
-            
-            pgn = io.TextIOWrapper(fileobj, encoding='utf-8')
-            
-            while len(games) < max_size:
-                game = chess.pgn.read_game(pgn)
-                if game is None:
-                    break  # No more games to read
-                
-                moves = tuple(str(move) for move in game.mainline_moves())
-                result = game.headers.get("Result", "Unknown").split("-")[0]
+            match = []
+            empty_line_count = 0
+            for line in fileobj:
+                line = line.decode('utf-8').strip()
+                if line == "":
+                    empty_line_count += 1
+                    if empty_line_count % 2 == 0:
+                        moves, res = ParseMatch("\n".join(match))
 
-                if result == "1":
-                    result = 1.0
-                elif result == "1/2":
-                    result = 0.5
-                elif result == "0":
-                    result = 0.0
-                else:
-                    raise ValueError(f"Unrecognized result: {result}")
+                        if res == "1-0":
+                            res = 1.0
+                        elif res == "1/2-1/2":
+                            res = 0.5
+                        elif res == "0-1":
+                            res = 0.0
+                        else:
+                            raise ValueError(f"Unrecognized result: {result}")
 
-                games.append((moves, result))
+                        matches.append((moves, res))
+                        match = []
+                        if len(matches) == max_size:
+                            break
+                        empty_line_count = False
+                    else:
+                        empty_line_count = True
+                match.append(line)
         if verbose:
-            print(f"Total games processed for board '{board}': {len(games)}")
-        return games
+            print(f"Total matches processed for board '{board}': {len(matches)}")
+        return matches
 
     except tarfile.TarError as e:
         raise RuntimeError(f"Error processing tar archive: {str(e)}")
     except Exception as e:
         raise RuntimeError(f"Unexpected error occurred: {str(e)}")
+
+def ParseMatch(match):
+    meta, match = match.split("\n\n")
+    match = " ".join(match.splitlines())
+    match = re.sub(r'\{.*?\}', '', match)
+    match = re.sub(r'\d+\.\.\.', '', match).strip()
+    match = re.sub(r'\s+', ' ', match)
+    match = re.sub(r'\d+\.\s*', '', match)
+
+    match = match.split(" ")
+    res = match[-1]
+    match = match[:-1]
+    assert res in ["0-1", "1/2-1/2", "1-0"]
+
+    return match, res

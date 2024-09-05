@@ -37,7 +37,7 @@ TBA
 
 ## Authors
 
-* [Galen Dorpalen-Barry](ttps://galen.dorpalen-barry.org/) (Texas A&M, USA)
+* [Galen Dorpalen-Barry](https://galen.dorpalen-barry.org/) (Texas A&M, USA)
 * [Christian Stump](https://homepage.rub.de/christian.stump/) (Ruhr University Bochum, Germany)
 
 ## Acknowledgements

@@ -2,9 +2,9 @@
 
 **Overall Statistics:**
 
-| #Matches                | White           | Draw           | Black           |
-|:-----------------------:|:---------------:|:--------------:|:---------------:|
-| 2000            | 37.6% | 29.4% | 33.0% |
+| # Matches                | White wins      | Draw           | Black wins      |
+|:------------------------:|:---------------:|:--------------:|:---------------:|
+| 2000             | 37.6% | 29.4% | 33.0% |
 
 For all openings, the next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.
 

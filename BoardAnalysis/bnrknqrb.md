@@ -2,15 +2,14 @@
 
 **Overall Statistics:**
 
-| #Matches                | White           | Draw           | Black           |
-|:-----------------------:|:---------------:|:--------------:|:---------------:|
-| 2000            | 37.2% | 33.1% | 29.8% |
+| # Matches                | White wins      | Draw           | Black wins      |
+|:------------------------:|:---------------:|:--------------:|:---------------:|
+| 2000             | 37.2% | 33.1% | 29.8% |
 
+For all openings, the next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.
 
 
 ## Openings for threshold = 5.0%
-
-(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
 | Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
@@ -23,8 +22,6 @@
 
 
 ## Openings for threshold = 2.0%
-
-(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
 | Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
@@ -51,8 +48,6 @@
 
 
 ## Openings for threshold = 1.0%
-
-(The next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.)
 
 | Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|

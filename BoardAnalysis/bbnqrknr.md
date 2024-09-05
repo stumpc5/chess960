@@ -12,7 +12,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | e4 &rarr; b6 | d4 <p> c4 <p> b4 | 2.5% <p> 2.4% <p> 1.6% | 42.0% <p> 50.0% <p> 35.5% | 28.0% <p> 25.0% <p> 35.5% | 30.0% <p> 25.0% <p> 29.0% |
 | c4 &rarr; b6 | d4 <p> e4 <p> b4 <p> Nh3 | 2.8% <p> 2.4% <p> 2.2% <p> 1.0% | 36.4% <p> 40.4% <p> 46.5% <p> 45.0% | 32.7% <p> 23.4% <p> 23.3% <p> 25.0% | 30.9% <p> 36.2% <p> 30.2% <p> 30.0% |
@@ -29,7 +29,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | b3 | c5 <p> b5 <p> e5 | 1.4% <p> 1.0% <p> 0.9% | 39.3% <p> 42.1% <p> 33.3% | 28.6% <p> 21.1% <p> 33.3% | 32.1% <p> 36.8% <p> 33.3% |
 | e4 &rarr; e5 &rarr; d4 | exd4 | 2.0% | 47.5% | 30.0% | 22.5% |
@@ -64,7 +64,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | b3 &rarr; c5 | e4 <p> c4 <p> Nh3 | 0.6% <p> 0.5% <p> 0.2% | 38.5% <p> 50.0% <p> 20.0% | 38.5% <p> 10.0% <p> 40.0% | 23.1% <p> 40.0% <p> 40.0% |
 | e4 &rarr; b5 | b4 <p> d4 | 1.0% <p> 0.6% | 47.4% <p> 38.5% | 26.3% <p> 23.1% | 26.3% <p> 38.5% |

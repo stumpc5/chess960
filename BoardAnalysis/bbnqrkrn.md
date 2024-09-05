@@ -12,7 +12,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | b3 &rarr; c5 | O-O <p> Ng3 <p> c4 | 2.4% <p> 2.2% <p> 1.6% | 40.4% <p> 26.7% <p> 31.2% | 27.7% <p> 42.2% <p> 40.6% | 31.9% <p> 31.1% <p> 28.1% |
 | Ng3 &rarr; O-O | b4 <p> c4 <p> d4 | 2.8% <p> 1.6% <p> 1.2% | 41.1% <p> 42.4% <p> 30.4% | 28.6% <p> 30.3% <p> 43.5% | 30.4% <p> 27.3% <p> 26.1% |
@@ -29,7 +29,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | e3 | c5 <p> O-O <p> b6 <p> Ng6 | 1.4% <p> 1.0% <p> 0.7% <p> 0.6% | 33.3% <p> 50.0% <p> 35.7% <p> 54.5% | 18.5% <p> 20.0% <p> 14.3% <p> 27.3% | 48.1% <p> 30.0% <p> 50.0% <p> 18.2% |
 | b3 &rarr; b6 | O-O <p> c4 <p> Ng3 | 1.0% <p> 0.6% <p> 0.4% | 30.0% <p> 66.7% <p> 37.5% | 30.0% <p> 25.0% <p> 0.0% | 40.0% <p> 8.3% <p> 62.5% |
@@ -59,7 +59,7 @@
 
 (We only show those next moves that happen with at least 1/3 of the likelihood of the most likely next move.)
 
-| Opening   | Next moves | Opening percentage  | White wins      | Draw           | Black wins      |
+| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      |
 |-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|
 | e3 &rarr; c5 | O-O <p> Ng3 | 0.8% <p> 0.3% | 31.2% <p> 33.3% | 12.5% <p> 16.7% | 56.2% <p> 50.0% |
 | b3 &rarr; b6 | O-O <p> c4 <p> Ng3 | 1.0% <p> 0.6% <p> 0.4% | 30.0% <p> 66.7% <p> 37.5% | 30.0% <p> 25.0% <p> 0.0% | 40.0% <p> 8.3% <p> 62.5% |

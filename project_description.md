@@ -3,7 +3,7 @@
 **What is an Opening:**
 
 An opening is an initial sequence of moves made by both players, where each move is considered (nearly) optimal based on established principles and strategies.
-At any given stage of the opening, both player have a strong incentive to stay in the given progression as deviating could result in a suboptimal position.
+At any given stage of the opening, both player have a strong incentive to stay in the given progression as deviating could result in suboptimal positions.
 
 **Objective:**
 

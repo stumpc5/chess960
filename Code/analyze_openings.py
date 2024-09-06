@@ -105,7 +105,7 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
             # writing the data again in the order given by advantage for white
             readme_boards_sorted = []
             for board_data in sorted(board_datas, key=lambda D: -float(D['points'])):
-                readme_boards_sorted.append(board_template.format(**board_datas[-1]))
+                readme_boards_sorted.append(board_template.format(**board_data))
 
             readme = readme_template % ("\n".join(readme_boards), "\n".join(readme_boards_sorted))
 

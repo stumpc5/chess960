@@ -1,5 +1,7 @@
 # Opening Analysis for Chess960
 
+**This project is still under development**
+
 ## Objective
 
 Identify optimal openings.
@@ -24,10 +26,24 @@ We rediscover well-known openings and their variations, such as the [**Ruy Lopez
 
 | Board                            | # Played Matches        | White           | Draw           | Black           |
 |----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|
-| [RNBQKBNR](BoardAnalysis/rnbqkbnr.md) | 2000 | 39.8% | 32.8% | 27.4% |
-| [RNBKQBNR](BoardAnalysis/rnbkqbnr.md) | 2000 | 40.8% | 32.6% | 26.6% |
+| [RNBQKBNR](BoardAnalysis/rnbqkbnr.md) | 19640 | 24.6% | 57.9% | 17.5% |
+| [RNBKQBNR](BoardAnalysis/rnbkqbnr.md) | 19640 | 32.0% | 51.1% | 16.9% |
 
 [Results for all 960 starting positions](README_ANALYSIS.md)
+
+## Feedback
+
+Please send an email to christian.stump@rub.de and to dorpalen-barry@tamu.edu for any feedback.
+
+We are in particular interested feedback concerning the following points:
+
+* Do you have comments about our Stockfish setup?
+  - Do you see better ways to generate datasets?
+  - Would it be reasonable to increase the database size?
+
+* Are there reasonable ways to group openings into categories?
+  - The board setup might suggest certain types of opening strategies.
+  - Which properties of the board configuration imply which types of openings?
 
 ## Comparison to other Chess960 databases
 

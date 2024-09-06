@@ -29,6 +29,7 @@ def GenerateBoardMarkdown(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbo
         'percent_white' : ToPer(percent_white),
         'percent_draw'  : ToPer(percent_draw),
         'percent_black' : ToPer(percent_black),
+        'points'        : ToPer(percent_white + percent_draw/2)[:-1],
     }
     header = header_template.format(**header_data)
 
@@ -56,6 +57,7 @@ def GenerateBoardMarkdown(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbo
                 'percent_white' : " <p> ".join(ToPer(per[0]) for _,(_,per) in moves),
                 'percent_draw'  : " <p> ".join(ToPer(per[1]) for _,(_,per) in moves),
                 'percent_black' : " <p> ".join(ToPer(per[2]) for _,(_,per) in moves),
+                'points'        : " <p> ".join(ToPer(per[0] + per[1]/2)[:-1] for _,(_,per) in moves),
             }
             opening_tmp = opening_template.format(**opening_data)
             openings_header += opening_tmp + "\n"

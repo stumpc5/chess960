@@ -9,8 +9,8 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 
 ## Sorted by board name
 
-| Index | Board                            | # Played Matches        | White           | Draw           | Black           | Points for White |
-|:-----:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:----------------:|
+| Index | Board                            | # Played Matches        | White           | Draw           | Black           | Average points for White |
+|:-----:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
 |1 | BBNNQRKR | 4648 | 50.0 | 3.6 | 46.3 | 51.9|
 |2 | BBNNRKQR | 4860 | 49.8 | 3.5 | 46.7 | 51.5|
 |3 | BBNNRKRQ | 4826 | 50.4 | 3.3 | 46.3 | 52.1|
@@ -975,8 +975,8 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 ----
 # Sorted by Advantage for White
 
-| Index | Board                            | # Played Matches        | White           | Draw           | Black           | Points for White |
-|:-----:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:----------------:|
+| Index | Board                            | # Played Matches        | White           | Draw           | Black           | Average points for White |
+|:-----:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
 820 | RNBKRBQN | 4826 | 51.5 | 3.8 | 44.8 | 53.3|
 |51 | BBRNNQKR | 4845 | 51.6 | 3.3 | 45.2 | 53.2|
 |493 | QBNRBKNR | 4788 | 51.6 | 2.9 | 45.5 | 53.0|

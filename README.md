@@ -36,8 +36,6 @@ We rediscover well-known openings and their variations, such as the [**Ruy Lopez
 
 Please send an email to christian.stump@rub.de and to dorpalen-barry@tamu.edu for any feedback.
 
-We are in particular interested feedback concerning the following points:
-
 * Do you have comments about our Stockfish setup?
   - Do you see better ways to generate datasets?
   - Would it be reasonable to increase the database size?

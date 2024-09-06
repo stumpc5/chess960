@@ -7,7 +7,7 @@ from markdown_templates import header_template, openings_template, opening_templ
 MARKDOWN_FOLDER = "../BoardAnalysis"
 
 def GenerateOpeningTable(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbose=True):
-    matches = ReadPGN(board, max_size=50, verbose=verbose)
+    matches = ReadPGN(board, max_size=50000, verbose=verbose)
 
     openings_table = dict()
     winning  = 0

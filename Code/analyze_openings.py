@@ -7,7 +7,7 @@ from markdown_templates import header_template, openings_template, opening_templ
 MARKDOWN_FOLDER = "../BoardAnalysis"
 
 def GenerateOpeningTable(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbose=True):
-    matches = ReadPGN(board, max_size=100000, verbose=verbose)
+    matches = ReadPGN(board, max_size=100, verbose=verbose)
 
     openings_table = dict()
     winning  = 0
@@ -86,12 +86,14 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
         else:
             nr_matches, (percent_white, percent_draw, percent_black) = stats
             board_data = {
+                'board_index'   : i+1,
                 'board_name'    : board.upper(),
                 'board_link'    : board,
                 'nr_matches'    : nr_matches,
                 'percent_white' : ToPer(percent_white),
                 'percent_draw'  : ToPer(percent_draw),
                 'percent_black' : ToPer(percent_black),
+                'points'        : ToPer(percent_white + percent_draw/2)[:-1],
             }
             readme_boards.append(board_template.format(**board_data))
 

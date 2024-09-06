@@ -53,7 +53,7 @@ def GenerateBoardMarkdown(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbo
         'percent_white' : ToPer(percent_white),
         'percent_draw'  : ToPer(percent_draw),
         'percent_black' : ToPer(percent_black),
-        'points'        : ToPer(percent_white + percent_draw/2)[:-1],
+        'points'        : ToPer(percent_white + percent_draw/2),
     }
     header = header_template.format(**header_data)
 
@@ -81,7 +81,7 @@ def GenerateBoardMarkdown(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbo
                 'percent_white' : " <p> ".join(ToPer(per[0]) for _,(_,per) in moves),
                 'percent_draw'  : " <p> ".join(ToPer(per[1]) for _,(_,per) in moves),
                 'percent_black' : " <p> ".join(ToPer(per[2]) for _,(_,per) in moves),
-                'points'        : " <p> ".join(ToPer(per[0] + per[1]/2)[:-1] for _,(_,per) in moves),
+                'points'        : " <p> ".join(ToPer(per[0] + per[1]/2) for _,(_,per) in moves),
             }
             opening_tmp = opening_template.format(**opening_data)
             openings_header += opening_tmp + "\n"
@@ -131,13 +131,13 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
                 'percent_white' : ToPer(percent_white),
                 'percent_draw'  : ToPer(percent_draw),
                 'percent_black' : ToPer(percent_black),
-                'points'        : ToPer(percent_white + percent_draw/2)[:-1],
+                'points'        : ToPer(percent_white + percent_draw/2),
             } )
             readme_boards.append(board_template.format(**board_datas[-1]))
 
             # writing the data again in the order given by advantage for white
             readme_boards_sorted = []
-            for board_data in sorted(board_datas, key=lambda D: -float(D['points'])):
+            for board_data in sorted(board_datas, key=lambda D: -float(D['points'][:-1])):
                 readme_boards_sorted.append(board_template.format(**board_data))
 
             readme = readme_template % ("\n".join(readme_boards), "\n".join(readme_boards_sorted))

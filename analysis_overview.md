@@ -765,6 +765,42 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 757 | [RKNRBNQB](BoardAnalysis/rknrbnqb.md) | 19610            | 26.4% | 51.5% | 22.1% | 52.2
 | 758 | [RKNRBQNB](BoardAnalysis/rknrbqnb.md) | 19620            | 27.0% | 54.2% | 18.7% | 54.1
 | 759 | [RKNRNBBQ](BoardAnalysis/rknrnbbq.md) | 19620            | 33.0% | 50.5% | 16.6% | 58.2
+| 760 | [RKNRNQBB](BoardAnalysis/rknrnqbb.md) | 19620            | 29.6% | 50.6% | 19.8% | 54.9
+| 761 | [RKNRQBBN](BoardAnalysis/rknrqbbn.md) | 19620            | 27.0% | 56.4% | 16.5% | 55.2
+| 762 | [RKNRQNBB](BoardAnalysis/rknrqnbb.md) | 19620            | 28.2% | 52.0% | 19.8% | 54.2
+| 763 | [RKQBBNNR](BoardAnalysis/rkqbbnnr.md) | 19640            | 28.3% | 52.8% | 18.9% | 54.7
+| 764 | [RKQBBNRN](BoardAnalysis/rkqbbnrn.md) | 19620            | 29.7% | 51.6% | 18.7% | 55.5
+| 765 | [RKQBBRNN](BoardAnalysis/rkqbbrnn.md) | 19630            | 29.3% | 52.1% | 18.5% | 55.4
+| 766 | [RKQBNNBR](BoardAnalysis/rkqbnnbr.md) | 19630            | 27.2% | 54.3% | 18.5% | 54.4
+| 767 | [RKQBNRBN](BoardAnalysis/rkqbnrbn.md) | 19620            | 27.6% | 52.2% | 20.2% | 53.7
+| 768 | [RKQBRNBN](BoardAnalysis/rkqbrnbn.md) | 19630            | 30.2% | 51.6% | 18.2% | 56.0
+| 769 | [RKQNBBNR](BoardAnalysis/rkqnbbnr.md) | 19635            | 26.5% | 54.6% | 18.9% | 53.8
+| 770 | [RKQNBBRN](BoardAnalysis/rkqnbbrn.md) | 19611            | 28.3% | 53.5% | 18.2% | 55.1
+| 771 | [RKQNBNRB](BoardAnalysis/rkqnbnrb.md) | 19630            | 28.3% | 52.7% | 18.9% | 54.7
+| 772 | [RKQNBRNB](BoardAnalysis/rkqnbrnb.md) | 19620            | 26.5% | 55.7% | 17.8% | 54.4
+| 773 | [RKQNNBBR](BoardAnalysis/rkqnnbbr.md) | 19630            | 27.6% | 54.3% | 18.1% | 54.8
+| 774 | [RKQNNRBB](BoardAnalysis/rkqnnrbb.md) | 19630            | 25.8% | 51.6% | 22.6% | 51.6
+| 775 | [RKQNRBBN](BoardAnalysis/rkqnrbbn.md) | 19620            | 31.3% | 52.9% | 15.8% | 57.8
+| 776 | [RKQNRNBB](BoardAnalysis/rkqnrnbb.md) | 19620            | 30.6% | 49.4% | 20.1% | 55.3
+| 777 | [RKQRBBNN](BoardAnalysis/rkqrbbnn.md) | 19630            | 26.8% | 55.3% | 17.9% | 54.4
+| 778 | [RKQRBNNB](BoardAnalysis/rkqrbnnb.md) | 19630            | 28.3% | 54.4% | 17.3% | 55.5
+| 779 | [RKQRNBBN](BoardAnalysis/rkqrnbbn.md) | 19630            | 23.5% | 59.2% | 17.3% | 53.1
+| 780 | [RKQRNNBB](BoardAnalysis/rkqrnnbb.md) | 19630            | 32.2% | 49.5% | 18.3% | 56.9
+| 781 | [RKRBBNNQ](BoardAnalysis/rkrbbnnq.md) | 19630            | 26.9% | 52.8% | 20.3% | 53.3
+| 782 | [RKRBBNQN](BoardAnalysis/rkrbbnqn.md) | 19620            | 27.1% | 53.4% | 19.5% | 53.8
+| 783 | [RKRBBQNN](BoardAnalysis/rkrbbqnn.md) | 19633            | 24.5% | 55.1% | 20.4% | 52.1
+| 784 | [RKRBNNBQ](BoardAnalysis/rkrbnnbq.md) | 19620            | 34.0% | 48.5% | 17.5% | 58.2
+| 785 | [RKRBNQBN](BoardAnalysis/rkrbnqbn.md) | 19630            | 39.6% | 44.3% | 16.1% | 61.8
+| 786 | [RKRBQNBN](BoardAnalysis/rkrbqnbn.md) | 19630            | 27.3% | 54.2% | 18.5% | 54.4
+| 787 | [RKRNBBNQ](BoardAnalysis/rkrnbbnq.md) | 19630            | 28.0% | 52.4% | 19.6% | 54.2
+| 788 | [RKRNBBQN](BoardAnalysis/rkrnbbqn.md) | 19620            | 26.9% | 54.4% | 18.7% | 54.1
+| 789 | [RKRNBNQB](BoardAnalysis/rkrnbnqb.md) | 19630            | 27.2% | 52.2% | 20.6% | 53.3
+| 790 | [RKRNBQNB](BoardAnalysis/rkrnbqnb.md) | 19620            | 23.8% | 54.8% | 21.3% | 51.3
+| 791 | [RKRNNBBQ](BoardAnalysis/rkrnnbbq.md) | 19620            | 30.4% | 51.4% | 18.2% | 56.1
+| 792 | [RKRNNQBB](BoardAnalysis/rkrnnqbb.md) | 19620            | 24.4% | 54.6% | 21.1% | 51.6
+| 793 | [RKRNQBBN](BoardAnalysis/rkrnqbbn.md) | 19630            | 25.5% | 55.8% | 18.8% | 53.4
+| 794 | [RKRNQNBB](BoardAnalysis/rkrnqnbb.md) | 19630            | 29.1% | 51.6% | 19.3% | 54.9
+| 795 | [RKRQBBNN](BoardAnalysis/rkrqbbnn.md) | 19630            | 22.1% | 56.9% | 21.0% | 50.6
 
 ----
 # Sorted by Advantage for White
@@ -782,6 +818,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 57 | [BBRQKRNN](BoardAnalysis/bbrqkrnn.md) | 19610            | 39.6% | 44.7% | 15.7% | 62.0
 | 578 | [QRKNRNBB](BoardAnalysis/qrknrnbb.md) | 19620            | 41.2% | 41.7% | 17.1% | 62.0
 | 13 | [BBNRKRNQ](BoardAnalysis/bbnrkrnq.md) | 19680            | 40.4% | 42.8% | 16.8% | 61.8
+| 785 | [RKRBNQBN](BoardAnalysis/rkrbnqbn.md) | 19630            | 39.6% | 44.3% | 16.1% | 61.8
 | 467 | [NRQBKRBN](BoardAnalysis/nrqbkrbn.md) | 19690            | 38.0% | 47.1% | 14.9% | 61.6
 | 286 | [NBRKQRBN](BoardAnalysis/nbrkqrbn.md) | 19680            | 38.6% | 45.9% | 15.5% | 61.5
 | 3 | [BBNNRKRQ](BoardAnalysis/bbnnrkrq.md) | 19690            | 40.4% | 41.8% | 17.8% | 61.3
@@ -840,6 +877,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 685 | [RBQNBKNR](BoardAnalysis/rbqnbknr.md) | 19640            | 33.7% | 49.1% | 17.2% | 58.2
 | 745 | [RKNNRBBQ](BoardAnalysis/rknnrbbq.md) | 19620            | 33.3% | 49.6% | 17.0% | 58.2
 | 759 | [RKNRNBBQ](BoardAnalysis/rknrnbbq.md) | 19620            | 33.0% | 50.5% | 16.6% | 58.2
+| 784 | [RKRBNNBQ](BoardAnalysis/rkrbnnbq.md) | 19620            | 34.0% | 48.5% | 17.5% | 58.2
 | 159 | [BRKBQRNN](BoardAnalysis/brkbqrnn.md) | 19619            | 31.7% | 52.9% | 15.4% | 58.1
 | 233 | [BRQKRBNN](BoardAnalysis/brqkrbnn.md) | 19620            | 33.7% | 48.9% | 17.5% | 58.1
 | 493 | [QBNRBKNR](BoardAnalysis/qbnrbknr.md) | 19690            | 34.1% | 48.1% | 17.8% | 58.1
@@ -852,6 +890,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 344 | [NQBRKBRN](BoardAnalysis/nqbrkbrn.md) | 19680            | 32.2% | 51.3% | 16.6% | 57.8
 | 377 | [NRBBKRNQ](BoardAnalysis/nrbbkrnq.md) | 19680            | 35.0% | 45.6% | 19.4% | 57.8
 | 484 | [QBBNRNKR](BoardAnalysis/qbbnrnkr.md) | 19690            | 33.4% | 48.8% | 17.8% | 57.8
+| 775 | [RKQNRBBN](BoardAnalysis/rkqnrbbn.md) | 19620            | 31.3% | 52.9% | 15.8% | 57.8
 | 283 | [NBRKNQBR](BoardAnalysis/nbrknqbr.md) | 19650            | 34.1% | 47.3% | 18.6% | 57.7
 | 500 | [QBRKBNRN](BoardAnalysis/qbrkbnrn.md) | 19620            | 34.1% | 47.1% | 18.8% | 57.7
 | 528 | [QNNRKRBB](BoardAnalysis/qnnrkrbb.md) | 19690            | 32.8% | 49.8% | 17.4% | 57.7
@@ -888,6 +927,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 754 | [RKNQRNBB](BoardAnalysis/rknqrnbb.md) | 19620            | 32.0% | 50.1% | 17.9% | 57.0
 | 433 | [NRKQNBBR](BoardAnalysis/nrkqnbbr.md) | 19680            | 32.0% | 49.8% | 18.2% | 56.9
 | 501 | [QBRKBRNN](BoardAnalysis/qbrkbrnn.md) | 19620            | 29.8% | 54.1% | 16.1% | 56.9
+| 780 | [RKQRNNBB](BoardAnalysis/rkqrnnbb.md) | 19630            | 32.2% | 49.5% | 18.3% | 56.9
 | 234 | [BRQKRNNB](BoardAnalysis/brqkrnnb.md) | 19620            | 31.6% | 50.4% | 18.0% | 56.8
 | 434 | [NRKQNRBB](BoardAnalysis/nrkqnrbb.md) | 19680            | 31.2% | 51.1% | 17.7% | 56.8
 | 458 | [NRNKRQBB](BoardAnalysis/nrnkrqbb.md) | 19700            | 32.0% | 49.6% | 18.4% | 56.8
@@ -945,6 +985,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 565 | [QRKBBNNR](BoardAnalysis/qrkbbnnr.md) | 19640            | 30.8% | 50.5% | 18.6% | 56.1
 | 567 | [QRKBBRNN](BoardAnalysis/qrkbbrnn.md) | 19620            | 31.6% | 48.9% | 19.4% | 56.1
 | 634 | [RBKNBQRN](BoardAnalysis/rbknbqrn.md) | 19620            | 29.8% | 52.6% | 17.6% | 56.1
+| 791 | [RKRNNBBQ](BoardAnalysis/rkrnnbbq.md) | 19620            | 30.4% | 51.4% | 18.2% | 56.1
 | 48 | [BBRNKRQN](BoardAnalysis/bbrnkrqn.md) | 19630            | 29.9% | 52.1% | 17.9% | 56.0
 | 218 | [BRNQKBRN](BoardAnalysis/brnqkbrn.md) | 19630            | 31.3% | 49.3% | 19.4% | 56.0
 | 295 | [NBRQBKNR](BoardAnalysis/nbrqbknr.md) | 19700            | 28.8% | 54.3% | 16.9% | 56.0
@@ -953,6 +994,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 492 | [QBNNRKBR](BoardAnalysis/qbnnrkbr.md) | 19700            | 29.1% | 53.8% | 17.1% | 56.0
 | 589 | [QRNKBBNR](BoardAnalysis/qrnkbbnr.md) | 19640            | 30.1% | 51.9% | 18.1% | 56.0
 | 638 | [RBKNNRBQ](BoardAnalysis/rbknnrbq.md) | 19620            | 28.4% | 55.2% | 16.4% | 56.0
+| 768 | [RKQBRNBN](BoardAnalysis/rkqbrnbn.md) | 19630            | 30.2% | 51.6% | 18.2% | 56.0
 | 2 | [BBNNRKQR](BoardAnalysis/bbnnrkqr.md) | 19709            | 31.5% | 48.8% | 19.7% | 55.9
 | 175 | [BRKQNBNR](BoardAnalysis/brkqnbnr.md) | 19640            | 30.4% | 50.9% | 18.7% | 55.9
 | 257 | [NBBRNQKR](BoardAnalysis/nbbrnqkr.md) | 19700            | 28.8% | 54.4% | 16.9% | 55.9
@@ -990,6 +1032,8 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 518 | [QNBRKBRN](BoardAnalysis/qnbrkbrn.md) | 19670            | 28.6% | 53.7% | 17.7% | 55.5
 | 731 | [RKNBBRNQ](BoardAnalysis/rknbbrnq.md) | 19620            | 28.8% | 53.4% | 17.8% | 55.5
 | 753 | [RKNQRBBN](BoardAnalysis/rknqrbbn.md) | 19620            | 29.4% | 52.2% | 18.4% | 55.5
+| 764 | [RKQBBNRN](BoardAnalysis/rkqbbnrn.md) | 19620            | 29.7% | 51.6% | 18.7% | 55.5
+| 778 | [RKQRBNNB](BoardAnalysis/rkqrbnnb.md) | 19630            | 28.3% | 54.4% | 17.3% | 55.5
 | 207 | [BRNKRBNQ](BoardAnalysis/brnkrbnq.md) | 19630            | 29.9% | 51.0% | 19.1% | 55.4
 | 326 | [NNRKBBRQ](BoardAnalysis/nnrkbbrq.md) | 19700            | 28.2% | 54.4% | 17.3% | 55.4
 | 327 | [NNRKBQRB](BoardAnalysis/nnrkbqrb.md) | 19690            | 28.9% | 52.9% | 18.1% | 55.4
@@ -1001,6 +1045,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 701 | [RKBBRNQN](BoardAnalysis/rkbbrnqn.md) | 19630            | 27.8% | 55.2% | 16.9% | 55.4
 | 704 | [RKBNNBRQ](BoardAnalysis/rkbnnbrq.md) | 19618            | 29.0% | 52.7% | 18.2% | 55.4
 | 729 | [RKNBBQNR](BoardAnalysis/rknbbqnr.md) | 19620            | 29.5% | 51.7% | 18.8% | 55.4
+| 765 | [RKQBBRNN](BoardAnalysis/rkqbbrnn.md) | 19630            | 29.3% | 52.1% | 18.5% | 55.4
 | 34 | [BBRKNQRN](BoardAnalysis/bbrknqrn.md) | 19620            | 27.7% | 55.3% | 17.0% | 55.3
 | 37 | [BBRKQNNR](BoardAnalysis/bbrkqnnr.md) | 19630            | 29.1% | 52.5% | 18.4% | 55.3
 | 90 | [BNRBKRQN](BoardAnalysis/bnrbkrqn.md) | 19670            | 27.4% | 55.7% | 16.9% | 55.3
@@ -1009,6 +1054,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 619 | [RBBNNKQR](BoardAnalysis/rbbnnkqr.md) | 19690            | 29.9% | 50.7% | 19.4% | 55.3
 | 648 | [RBKQRNBN](BoardAnalysis/rbkqrnbn.md) | 19630            | 28.5% | 53.5% | 18.0% | 55.3
 | 702 | [RKBBRQNN](BoardAnalysis/rkbbrqnn.md) | 19620            | 27.8% | 55.0% | 17.2% | 55.3
+| 776 | [RKQNRNBB](BoardAnalysis/rkqnrnbb.md) | 19620            | 30.6% | 49.4% | 20.1% | 55.3
 | 17 | [BBNRNQKR](BoardAnalysis/bbnrnqkr.md) | 19707            | 29.2% | 52.1% | 18.8% | 55.2
 | 61 | [BNNBQRKR](BoardAnalysis/bnnbqrkr.md) | 19697            | 30.1% | 50.1% | 19.8% | 55.2
 | 70 | [BNNRKRQB](BoardAnalysis/bnnrkrqb.md) | 19710            | 27.5% | 55.4% | 17.1% | 55.2
@@ -1030,6 +1076,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 674 | [RBNQBKRN](BoardAnalysis/rbnqbkrn.md) | 19640            | 28.2% | 54.1% | 17.8% | 55.2
 | 691 | [RKBBNNQR](BoardAnalysis/rkbbnnqr.md) | 19630            | 27.7% | 55.0% | 17.3% | 55.2
 | 736 | [RKNBQRBN](BoardAnalysis/rknbqrbn.md) | 19620            | 26.7% | 57.1% | 16.2% | 55.2
+| 761 | [RKNRQBBN](BoardAnalysis/rknrqbbn.md) | 19620            | 27.0% | 56.4% | 16.5% | 55.2
 | 5 | [BBNQNRKR](BoardAnalysis/bbnqnrkr.md) | 19690            | 30.0% | 50.3% | 19.8% | 55.1
 | 54 | [BBRNQNKR](BoardAnalysis/bbrnqnkr.md) | 19660            | 31.4% | 47.4% | 21.2% | 55.1
 | 190 | [BRNBKQRN](BoardAnalysis/brnbkqrn.md) | 19633            | 27.8% | 54.5% | 17.7% | 55.1
@@ -1045,6 +1092,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 699 | [RKBBQRNN](BoardAnalysis/rkbbqrnn.md) | 19636            | 28.6% | 53.0% | 18.4% | 55.1
 | 737 | [RKNBRNBQ](BoardAnalysis/rknbrnbq.md) | 19630            | 29.2% | 51.8% | 19.0% | 55.1
 | 747 | [RKNQBBNR](BoardAnalysis/rknqbbnr.md) | 19620            | 29.4% | 51.3% | 19.2% | 55.1
+| 770 | [RKQNBBRN](BoardAnalysis/rkqnbbrn.md) | 19611            | 28.3% | 53.5% | 18.2% | 55.1
 | 31 | [BBRKNNQR](BoardAnalysis/bbrknnqr.md) | 19620            | 27.1% | 55.9% | 17.0% | 55.0
 | 38 | [BBRKQNRN](BoardAnalysis/bbrkqnrn.md) | 19610            | 30.2% | 49.7% | 20.1% | 55.0
 | 261 | [NBNQBRKR](BoardAnalysis/nbnqbrkr.md) | 19690            | 29.6% | 50.9% | 19.5% | 55.0
@@ -1070,6 +1118,8 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 646 | [RBKQNNBR](BoardAnalysis/rbkqnnbr.md) | 19630            | 27.2% | 55.5% | 17.3% | 54.9
 | 671 | [RBNNKRBQ](BoardAnalysis/rbnnkrbq.md) | 19670            | 26.8% | 56.1% | 17.1% | 54.9
 | 712 | [RKBNRBQN](BoardAnalysis/rkbnrbqn.md) | 19610            | 28.2% | 53.4% | 18.4% | 54.9
+| 760 | [RKNRNQBB](BoardAnalysis/rknrnqbb.md) | 19620            | 29.6% | 50.6% | 19.8% | 54.9
+| 794 | [RKRNQNBB](BoardAnalysis/rkrnqnbb.md) | 19630            | 29.1% | 51.6% | 19.3% | 54.9
 | 76 | [BNQBRNKR](BoardAnalysis/bnqbrnkr.md) | 19700            | 28.4% | 52.8% | 18.8% | 54.8
 | 114 | [BNRNQKRB](BoardAnalysis/bnrnqkrb.md) | 19700            | 27.1% | 55.5% | 17.5% | 54.8
 | 177 | [BRKQNNRB](BoardAnalysis/brkqnnrb.md) | 19640            | 27.9% | 53.8% | 18.2% | 54.8
@@ -1079,6 +1129,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 468 | [NRQBNKBR](BoardAnalysis/nrqbnkbr.md) | 19710            | 27.2% | 55.1% | 17.7% | 54.8
 | 640 | [RBKNQRBN](BoardAnalysis/rbknqrbn.md) | 19620            | 28.3% | 53.1% | 18.6% | 54.8
 | 751 | [RKNQNBBR](BoardAnalysis/rknqnbbr.md) | 19620            | 29.2% | 51.1% | 19.6% | 54.8
+| 773 | [RKQNNBBR](BoardAnalysis/rkqnnbbr.md) | 19630            | 27.6% | 54.3% | 18.1% | 54.8
 | 6 | [BBNQRKNR](BoardAnalysis/bbnqrknr.md) | 19700            | 28.8% | 51.7% | 19.5% | 54.7
 | 42 | [BBRKRQNN](BoardAnalysis/bbrkrqnn.md) | 19630            | 26.8% | 55.8% | 17.4% | 54.7
 | 103 | [BNRKQNRB](BoardAnalysis/bnrkqnrb.md) | 19690            | 27.0% | 55.4% | 17.6% | 54.7
@@ -1098,6 +1149,8 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 688 | [RBQNKNBR](BoardAnalysis/rbqnknbr.md) | 19630            | 29.5% | 50.4% | 20.1% | 54.7
 | 749 | [RKNQBNRB](BoardAnalysis/rknqbnrb.md) | 19620            | 27.5% | 54.4% | 18.1% | 54.7
 | 752 | [RKNQNRBB](BoardAnalysis/rknqnrbb.md) | 19620            | 29.8% | 49.7% | 20.4% | 54.7
+| 763 | [RKQBBNNR](BoardAnalysis/rkqbbnnr.md) | 19640            | 28.3% | 52.8% | 18.9% | 54.7
+| 771 | [RKQNBNRB](BoardAnalysis/rkqnbnrb.md) | 19630            | 28.3% | 52.7% | 18.9% | 54.7
 | 4 | [BBNNRQKR](BoardAnalysis/bbnnrqkr.md) | 19700            | 30.1% | 49.1% | 20.9% | 54.6
 | 26 | [BBQRKNRN](BoardAnalysis/bbqrknrn.md) | 19620            | 29.7% | 49.7% | 20.5% | 54.6
 | 204 | [BRNKQBRN](BoardAnalysis/brnkqbrn.md) | 19630            | 28.1% | 52.9% | 19.0% | 54.6
@@ -1147,6 +1200,10 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 652 | [RBKRNNBQ](BoardAnalysis/rbkrnnbq.md) | 19621            | 26.5% | 55.8% | 17.7% | 54.4
 | 723 | [RKBRNNQB](BoardAnalysis/rkbrnnqb.md) | 19630            | 28.0% | 52.8% | 19.2% | 54.4
 | 755 | [RKNRBBNQ](BoardAnalysis/rknrbbnq.md) | 19611            | 27.7% | 53.4% | 18.9% | 54.4
+| 766 | [RKQBNNBR](BoardAnalysis/rkqbnnbr.md) | 19630            | 27.2% | 54.3% | 18.5% | 54.4
+| 772 | [RKQNBRNB](BoardAnalysis/rkqnbrnb.md) | 19620            | 26.5% | 55.7% | 17.8% | 54.4
+| 777 | [RKQRBBNN](BoardAnalysis/rkqrbbnn.md) | 19630            | 26.8% | 55.3% | 17.9% | 54.4
+| 786 | [RKRBQNBN](BoardAnalysis/rkrbqnbn.md) | 19630            | 27.3% | 54.2% | 18.5% | 54.4
 | 28 | [BBQRNKNR](BoardAnalysis/bbqrnknr.md) | 19650            | 27.3% | 54.1% | 18.6% | 54.3
 | 64 | [BNNBRQKR](BoardAnalysis/bnnbrqkr.md) | 19700            | 27.3% | 54.0% | 18.7% | 54.3
 | 178 | [BRKQNRNB](BoardAnalysis/brkqnrnb.md) | 19620            | 27.9% | 52.9% | 19.2% | 54.3
@@ -1173,6 +1230,8 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 440 | [NRKRBQNB](BoardAnalysis/nrkrbqnb.md) | 19690            | 27.4% | 53.7% | 18.9% | 54.2
 | 529 | [QNRBBKNR](BoardAnalysis/qnrbbknr.md) | 19710            | 26.0% | 56.6% | 17.5% | 54.2
 | 711 | [RKBNRBNQ](BoardAnalysis/rkbnrbnq.md) | 19620            | 26.6% | 55.2% | 18.2% | 54.2
+| 762 | [RKNRQNBB](BoardAnalysis/rknrqnbb.md) | 19620            | 28.2% | 52.0% | 19.8% | 54.2
+| 787 | [RKRNBBNQ](BoardAnalysis/rkrnbbnq.md) | 19630            | 28.0% | 52.4% | 19.6% | 54.2
 | 109 | [BNRNKBQR](BoardAnalysis/bnrnkbqr.md) | 19710            | 27.4% | 53.3% | 19.2% | 54.1
 | 125 | [BQNNRBKR](BoardAnalysis/bqnnrbkr.md) | 19716            | 27.6% | 53.1% | 19.3% | 54.1
 | 163 | [BRKNNBQR](BoardAnalysis/brknnbqr.md) | 19620            | 26.4% | 55.4% | 18.2% | 54.1
@@ -1185,6 +1244,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 611 | [RBBKRNQN](BoardAnalysis/rbbkrnqn.md) | 19630            | 25.1% | 58.0% | 16.9% | 54.1
 | 651 | [RBKRBQNN](BoardAnalysis/rbkrbqnn.md) | 19620            | 26.1% | 55.9% | 18.0% | 54.1
 | 758 | [RKNRBQNB](BoardAnalysis/rknrbqnb.md) | 19620            | 27.0% | 54.2% | 18.7% | 54.1
+| 788 | [RKRNBBQN](BoardAnalysis/rkrnbbqn.md) | 19620            | 26.9% | 54.4% | 18.7% | 54.1
 | 30 | [BBQRNNKR](BoardAnalysis/bbqrnnkr.md) | 19670            | 28.2% | 51.6% | 20.2% | 54.0
 | 96 | [BNRBQNKR](BoardAnalysis/bnrbqnkr.md) | 19700            | 28.2% | 51.5% | 20.3% | 54.0
 | 126 | [BQNNRKRB](BoardAnalysis/bqnnrkrb.md) | 19716            | 26.0% | 56.1% | 17.9% | 54.0
@@ -1224,6 +1284,8 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 523 | [QNNBBRKR](BoardAnalysis/qnnbbrkr.md) | 19700            | 27.0% | 53.5% | 19.5% | 53.8
 | 532 | [QNRBKNBR](BoardAnalysis/qnrbknbr.md) | 19700            | 27.1% | 53.4% | 19.5% | 53.8
 | 756 | [RKNRBBQN](BoardAnalysis/rknrbbqn.md) | 19621            | 25.8% | 55.9% | 18.2% | 53.8
+| 769 | [RKQNBBNR](BoardAnalysis/rkqnbbnr.md) | 19635            | 26.5% | 54.6% | 18.9% | 53.8
+| 782 | [RKRBBNQN](BoardAnalysis/rkrbbnqn.md) | 19620            | 27.1% | 53.4% | 19.5% | 53.8
 | 154 | [BRKBNQRN](BoardAnalysis/brkbnqrn.md) | 19620            | 25.8% | 55.9% | 18.3% | 53.7
 | 170 | [BRKNQRNB](BoardAnalysis/brknqrnb.md) | 19610            | 24.9% | 57.6% | 17.6% | 53.7
 | 180 | [BRKQRNNB](BoardAnalysis/brkqrnnb.md) | 19610            | 24.9% | 57.6% | 17.5% | 53.7
@@ -1240,6 +1302,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 593 | [QRNKNBBR](BoardAnalysis/qrnknbbr.md) | 19630            | 26.5% | 54.4% | 19.1% | 53.7
 | 620 | [RBBNNKRQ](BoardAnalysis/rbbnnkrq.md) | 19680            | 27.7% | 52.2% | 20.2% | 53.7
 | 658 | [RBNKBQRN](BoardAnalysis/rbnkbqrn.md) | 19640            | 27.3% | 52.8% | 20.0% | 53.7
+| 767 | [RKQBNRBN](BoardAnalysis/rkqbnrbn.md) | 19620            | 27.6% | 52.2% | 20.2% | 53.7
 | 82 | [BNQRKRNB](BoardAnalysis/bnqrkrnb.md) | 19690            | 24.1% | 59.1% | 16.8% | 53.6
 | 156 | [BRKBNRQN](BoardAnalysis/brkbnrqn.md) | 19620            | 23.8% | 59.5% | 16.6% | 53.6
 | 195 | [BRNBNQKR](BoardAnalysis/brnbnqkr.md) | 19680            | 26.1% | 55.1% | 18.8% | 53.6
@@ -1280,6 +1343,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 436 | [NRKQRNBB](BoardAnalysis/nrkqrnbb.md) | 19680            | 25.8% | 55.3% | 18.9% | 53.4
 | 530 | [QNRBBKRN](BoardAnalysis/qnrbbkrn.md) | 19670            | 25.3% | 56.0% | 18.6% | 53.4
 | 535 | [QNRKBBNR](BoardAnalysis/qnrkbbnr.md) | 19710            | 26.1% | 54.5% | 19.4% | 53.4
+| 793 | [RKRNQBBN](BoardAnalysis/rkrnqbbn.md) | 19630            | 25.5% | 55.8% | 18.8% | 53.4
 | 49 | [BBRNNKQR](BoardAnalysis/bbrnnkqr.md) | 19650            | 26.8% | 52.9% | 20.3% | 53.3
 | 50 | [BBRNNKRQ](BoardAnalysis/bbrnnkrq.md) | 19680            | 28.9% | 48.7% | 22.4% | 53.3
 | 240 | [BRQNNKRB](BoardAnalysis/brqnnkrb.md) | 19680            | 23.2% | 60.2% | 16.6% | 53.3
@@ -1293,6 +1357,8 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 703 | [RKBNNBQR](BoardAnalysis/rkbnnbqr.md) | 19630            | 25.0% | 56.5% | 18.5% | 53.3
 | 707 | [RKBNQBNR](BoardAnalysis/rkbnqbnr.md) | 19620            | 25.5% | 55.6% | 18.9% | 53.3
 | 746 | [RKNNRQBB](BoardAnalysis/rknnrqbb.md) | 19620            | 27.0% | 52.6% | 20.4% | 53.3
+| 781 | [RKRBBNNQ](BoardAnalysis/rkrbbnnq.md) | 19630            | 26.9% | 52.8% | 20.3% | 53.3
+| 789 | [RKRNBNQB](BoardAnalysis/rkrnbnqb.md) | 19630            | 27.2% | 52.2% | 20.6% | 53.3
 | 58 | [BBRQNKNR](BoardAnalysis/bbrqnknr.md) | 19640            | 28.2% | 50.2% | 21.7% | 53.2
 | 117 | [BNRQKNRB](BoardAnalysis/bnrqknrb.md) | 19700            | 25.3% | 55.8% | 18.9% | 53.2
 | 185 | [BRKRQBNN](BoardAnalysis/brkrqbnn.md) | 19630            | 24.5% | 57.5% | 18.1% | 53.2
@@ -1327,6 +1393,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 698 | [RKBBQNRN](BoardAnalysis/rkbbqnrn.md) | 19620            | 25.1% | 56.1% | 18.9% | 53.1
 | 739 | [RKNNBBQR](BoardAnalysis/rknnbbqr.md) | 19620            | 24.5% | 57.3% | 18.2% | 53.1
 | 742 | [RKNNBRQB](BoardAnalysis/rknnbrqb.md) | 19620            | 24.7% | 56.7% | 18.6% | 53.1
+| 779 | [RKQRNBBN](BoardAnalysis/rkqrnbbn.md) | 19630            | 23.5% | 59.2% | 17.3% | 53.1
 | 124 | [BQNBRNKR](BoardAnalysis/bqnbrnkr.md) | 19690            | 27.5% | 51.1% | 21.4% | 53.0
 | 131 | [BQNRNBKR](BoardAnalysis/bqnrnbkr.md) | 19690            | 26.3% | 53.4% | 20.3% | 53.0
 | 138 | [BQRBNNKR](BoardAnalysis/bqrbnnkr.md) | 19670            | 25.3% | 55.4% | 19.3% | 53.0
@@ -1444,6 +1511,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 112 | [BNRNKRQB](BoardAnalysis/bnrnkrqb.md) | 19690            | 25.5% | 53.3% | 21.2% | 52.1
 | 239 | [BRQNNBKR](BoardAnalysis/brqnnbkr.md) | 19680            | 25.2% | 53.7% | 21.1% | 52.1
 | 305 | [NNBQRBKR](BoardAnalysis/nnbqrbkr.md) | 19690            | 21.7% | 60.8% | 17.5% | 52.1
+| 783 | [RKRBBQNN](BoardAnalysis/rkrbbqnn.md) | 19633            | 24.5% | 55.1% | 20.4% | 52.1
 | 7 | [BBNQRKRN](BoardAnalysis/bbnqrkrn.md) | 19690            | 23.6% | 56.8% | 19.6% | 52.0
 | 21 | [BBQNNRKR](BoardAnalysis/bbqnnrkr.md) | 19618            | 23.5% | 56.9% | 19.6% | 52.0
 | 104 | [BNRKQRNB](BoardAnalysis/bnrkqrnb.md) | 19680            | 23.5% | 57.0% | 19.5% | 52.0
@@ -1493,6 +1561,8 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 245 | [NBBQNRKR](BoardAnalysis/nbbqnrkr.md) | 19690            | 22.6% | 58.0% | 19.4% | 51.6
 | 428 | [NRKNRQBB](BoardAnalysis/nrknrqbb.md) | 19680            | 20.0% | 63.1% | 16.8% | 51.6
 | 655 | [RBNKBNQR](BoardAnalysis/rbnkbnqr.md) | 19630            | 24.0% | 55.3% | 20.7% | 51.6
+| 774 | [RKQNNRBB](BoardAnalysis/rkqnnrbb.md) | 19630            | 25.8% | 51.6% | 22.6% | 51.6
+| 792 | [RKRNNQBB](BoardAnalysis/rkrnnqbb.md) | 19620            | 24.4% | 54.6% | 21.1% | 51.6
 | 22 | [BBQNRKNR](BoardAnalysis/bbqnrknr.md) | 19700            | 26.2% | 50.6% | 23.2% | 51.5
 | 100 | [BNRKNRQB](BoardAnalysis/bnrknrqb.md) | 19690            | 20.2% | 62.6% | 17.3% | 51.5
 | 672 | [RBNNQKBR](BoardAnalysis/rbnnqkbr.md) | 19670            | 21.8% | 59.3% | 18.8% | 51.5
@@ -1507,6 +1577,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 221 | [BRNQNBKR](BoardAnalysis/brnqnbkr.md) | 19660            | 22.7% | 57.2% | 20.2% | 51.3
 | 348 | [NQBRNKRB](BoardAnalysis/nqbrnkrb.md) | 19690            | 20.9% | 60.9% | 18.2% | 51.3
 | 665 | [RBNKRNBQ](BoardAnalysis/rbnkrnbq.md) | 19640            | 22.1% | 58.4% | 19.4% | 51.3
+| 790 | [RKRNBQNB](BoardAnalysis/rkrnbqnb.md) | 19620            | 23.8% | 54.8% | 21.3% | 51.3
 | 274 | [NBQRKNBR](BoardAnalysis/nbqrknbr.md) | 19690            | 20.2% | 62.0% | 17.8% | 51.2
 | 496 | [QBNRKNBR](BoardAnalysis/qbnrknbr.md) | 19708            | 22.5% | 57.4% | 20.1% | 51.2
 | 551 | [QRBBNKRN](BoardAnalysis/qrbbnkrn.md) | 19633            | 21.6% | 59.2% | 19.2% | 51.2
@@ -1527,6 +1598,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 | 94 | [BNRBQKNR](BoardAnalysis/bnrbqknr.md) | 19700            | 23.3% | 54.6% | 22.1% | 50.6
 | 350 | [NQNBRKBR](BoardAnalysis/nqnbrkbr.md) | 19700            | 20.9% | 59.5% | 19.6% | 50.6
 | 365 | [NQRKNBBR](BoardAnalysis/nqrknbbr.md) | 19710            | 23.9% | 53.4% | 22.7% | 50.6
+| 795 | [RKRQBBNN](BoardAnalysis/rkrqbbnn.md) | 19630            | 22.1% | 56.9% | 21.0% | 50.6
 | 292 | [NBRNKQBR](BoardAnalysis/nbrnkqbr.md) | 19700            | 23.5% | 53.6% | 22.9% | 50.3
 | 442 | [NRKRNQBB](BoardAnalysis/nrkrnqbb.md) | 19670            | 23.9% | 52.8% | 23.3% | 50.3
 | 618 | [RBBNKRQN](BoardAnalysis/rbbnkrqn.md) | 19630            | 23.6% | 53.1% | 23.3% | 50.2

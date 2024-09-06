@@ -47,16 +47,20 @@ We are in particular interested feedback concerning the following points:
 
 ## Comparison to other Chess960 databases
 
+The following two projects have both analyzed Chess960 matches from Lichess.
+
 ### The "Chess960 Win by Position Setup" data
 
 An analysis of more than 4 million Chess960 matches from Lichess has been conducted [here](https://github.com/welyab/chess960-win-by-position-setup).
 We represent [their data in our format](chess960_win_by_position_data.md)  for comparison.
 
+They conclude that "white pieces have an advantage, \[and that\] the positions setup where black have an advantage are expressively less that positions where white won more."
+
 ### No variation is better than another
 
 Using A/B testing, 14 million Chess960 matches from Lichess were analyzed [here](https://towardsdatascience.com/analyzing-chess960-data-da5c8cdb01de).
 
-TBA
+They conclude that "there are no starting positions that favor any of the players more than other positions."
 
 ## Authors
 

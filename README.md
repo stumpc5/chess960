@@ -50,7 +50,6 @@ We are in particular interested feedback concerning the following points:
 ### The "Chess960 Win by Position Setup" data
 
 An analysis of more than 4 million Chess960 matches from Lichess has been conducted [here](https://github.com/welyab/chess960-win-by-position-setup).
-
 We represent [their data in our format](chess960_win_by_position_data.md)  for comparison.
 
 ### No variation is better than another

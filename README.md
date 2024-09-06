@@ -24,10 +24,11 @@ Consult the [project description](project_description.md) for details.
 Here is the example for the standard opening and the opening with Queen and King interchanged.
 We rediscover well-known openings and their variations, such as the [**Ruy Lopez**](https://www.chess.com/forum/view/chess-openings/all-ruy-lopez-variations).
 
-| Board                            | # Played Matches        | White           | Draw           | Black           |
-|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|
-| [RNBQKBNR](BoardAnalysis/rnbqkbnr.md) | 19640 | 24.6% | 57.9% | 17.5% |
-| [RNBKQBNR](BoardAnalysis/rnbkqbnr.md) | 19640 | 32.0% | 51.1% | 16.9% |
+
+| Index | Board                            | # Played Matches        | White           | Draw           | Black           | Average points for White |
+|:-----:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
+| 829 | [RNBQKBNR](BoardAnalysis/rnbqkbnr.md) | 19640            | 24.6% | 57.9% | 17.5% | 53.6
+| 815 | [RNBKQBNR](BoardAnalysis/rnbkqbnr.md) | 19640            | 32.0% | 51.1% | 16.9% | 57.5
 
 [Results for all 960 starting positions](analysis_overview.md)
 

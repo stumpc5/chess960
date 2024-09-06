@@ -6,11 +6,13 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 
 | Index | Board                            | # Played Matches        | White           | Draw           | Black           | Average points for White |
 |:-----:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
-%s
+| 1 | [BBNNQRKR](BoardAnalysis/bbnnqrkr.md) | 19700            | 37.3% | 45.0% | 17.7% | 59.8
+| 2 | [BBNNRKQR](BoardAnalysis/bbnnrkqr.md) | 19709            | 31.5% | 48.8% | 19.7% | 55.9
 
 ----
 # Sorted by Advantage for White
 
 | Index | Board                            | # Played Matches        | White           | Draw           | Black           | Average points for White |
 |:-----:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
-%s
+| 1 | [BBNNQRKR](BoardAnalysis/bbnnqrkr.md) | 19700            | 37.3% | 45.0% | 17.7% | 59.8
+| 2 | [BBNNRKQR](BoardAnalysis/bbnnrkqr.md) | 19709            | 31.5% | 48.8% | 19.7% | 55.9

@@ -9,6 +9,16 @@ OVERVIEW_FILE     = "../analysis_overview.md"
 OVERVIEW_TEMPLATE = "templates/overview_template.md"
 
 def GenerateOpeningTable(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbose=True):
+    """
+    Generates a table of chess openings based on the board position and thresholds provided.
+
+    Args:
+        board (str): The FEN string representing the board position. Defaults to the standard start position.
+        thresholds (list of float): A list of thresholds to filter openings.
+
+    Returns:
+        tuple: A tuple containing statistics and an openings table for each threshold.
+    """
     matches = ReadPGN(board, max_size=50000, verbose=verbose)
 
     openings_table = dict()
@@ -21,6 +31,18 @@ def GenerateOpeningTable(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbos
     return stats, openings_table
 
 def GenerateBoardMarkdown(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbose=True, save_result=False):
+    """
+    Generates markdown content summarizing the analysis of chess openings for a specific board position.
+
+    Args:
+        board (str): The FEN string representing the board position.
+        thresholds (list of float): A list of thresholds to filter openings.
+        save_result (bool): If True, saves the result to a markdown file.
+
+    Returns:
+        str or tuple: If save_result is False, returns the markdown content. 
+                      If save_result is True, returns the analysis statistics.
+    """
     stats, opening_tables = GenerateOpeningTable(board=board, thresholds=thresholds, verbose=verbose)
 
     # formating the header
@@ -73,6 +95,14 @@ def GenerateBoardMarkdown(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbo
         return header
 
 def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True):
+    """
+    Generates markdown files for all board positions or a list of specific board positions.
+
+    Args:
+        boards (list of str): A list of FEN strings representing the board positions.
+                              If None, generates for all starting positions.
+        thresholds (list of float): A list of thresholds to filter openings.
+    """
     if boards is None:
         boards = AllStartingPositions()
 
@@ -119,4 +149,7 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
             print(f"{ i+1 }/{ len(boards) } (time: {elapsed_time:.1f} sec): Generated { board.upper() } with { nr_matches } matches")
 
 def ToPer(x):
+    """
+    Floating-point value to percentage string formatted to one decimal place.
+    """
     return str(round(x*1000)/10) + "%"

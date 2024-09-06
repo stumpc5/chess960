@@ -4,7 +4,9 @@ from starting_positions import AllStartingPositions
 from identify_openings  import IdentifyOpenings
 from markdown_templates import header_template, openings_template, opening_template, board_template
 
-MARKDOWN_FOLDER = "../BoardAnalysis"
+MARKDOWN_FOLDER   = "../BoardAnalysis"
+OVERVIEW_FILE     = "../analysis_overview.md"
+OVERVIEW_TEMPLATE = "templates/overview_template.md"
 
 def GenerateOpeningTable(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbose=True):
     matches = ReadPGN(board, max_size=50000, verbose=verbose)
@@ -75,13 +77,12 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
         boards = AllStartingPositions()
 
     readme_boards = []
+    board_datas   = []
 
-    with open('../readme_template.md', 'r') as file:
+    with open(OVERVIEW_TEMPLATE, 'r') as file:
         readme_template = file.read()
 
     start_time = time.time()
-
-    board_datas = []
 
     for i, board in enumerate(boards):
         try:
@@ -111,7 +112,7 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
 
             readme = readme_template % ("\n".join(readme_boards), "\n".join(readme_boards_sorted))
 
-            with open('../README_ANALYSIS.md', 'w') as file:
+            with open(OVERVIEW_FILE, 'w') as file:
                 file.write(readme)
         if verbose:
             elapsed_time = time.time() - start_time

@@ -7,7 +7,7 @@ from markdown_templates import header_template, openings_template, opening_templ
 MARKDOWN_FOLDER = "../BoardAnalysis"
 
 def GenerateOpeningTable(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbose=True):
-    matches = ReadPGN(board, max_size=200000, verbose=verbose)
+    matches = ReadPGN(board, max_size=100000, verbose=verbose)
 
     openings_table = dict()
     winning  = 0
@@ -43,7 +43,10 @@ def GenerateBoardMarkdown(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbo
         openings_header = openings_template.format(**threshold_data)
 
         for opening, moves in openings:
-            min_prob = moves[0][1][0] / 3
+            if moves:
+                min_prob = moves[0][1][0] / 3
+            else:
+                min_prob = 0
             moves = [ move for move in moves if move[1][0] >= min_prob ]
             opening_data = {
                 # old separator &rarr; 
@@ -74,15 +77,12 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
     start_time = time.time()
 
     for i, board in enumerate(boards):
-        if verbose:
-            elapsed_time = time.time() - start_time
-            print(f"{ i+1 }/{ len(boards) } (time: {elapsed_time:.1f} sec): Generating { board.upper() }")
-
         try:
             stats = GenerateBoardMarkdown(board=board, thresholds=thresholds, verbose=False, save_result=True)
         except FileNotFoundError:
             print(f"                  ERROR: no pgn's found for board { board.upper() }")
             pass
+            nr_matches = 0
         else:
             nr_matches, (percent_white, percent_draw, percent_black) = stats
             board_data = {
@@ -101,6 +101,9 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
 
             with open('../README_ANALYSIS.md', 'w') as file:
                 file.write(readme)
+        if verbose:
+            elapsed_time = time.time() - start_time
+            print(f"{ i+1 }/{ len(boards) } (time: {elapsed_time:.1f} sec): Generated { board.upper() } with { nr_matches } matches")
 
 def ToPer(x):
     return str(round(x*1000)/10) + "%"

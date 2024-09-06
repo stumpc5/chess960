@@ -23,6 +23,7 @@ Consult the [project description](project_description.md) for details.
 
 Here is the example for the standard opening and the opening with Queen and King interchanged.
 We rediscover well-known openings and their variations, such as the [**Ruy Lopez**](https://www.chess.com/forum/view/chess-openings/all-ruy-lopez-variations).
+Click on the board link for details.
 
 
 | Index | Board                            | # Played Matches        | White           | Draw           | Black           | Average points for White |

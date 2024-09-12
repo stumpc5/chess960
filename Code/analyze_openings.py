@@ -146,13 +146,13 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
                 file.write(readme)
         if verbose:
             elapsed_time = time.time() - start_time
-            print(f"{ i+1 }/{ len(boards) } (time: {elapsed_time:.1f} sec): Generated { board.upper() } with { nr_matches } matches")
+            print(f"{ i }/{ len(boards) } (time: {elapsed_time:.1f} sec): Generated { board.upper() } with { nr_matches } matches")
 
 def ToPer(x, absolute=False):
     """
     Floating-point value to percentage string formatted to one decimal place.
     """
     if absolute is False:
-        return str(round(x*1000)/10) + "%"
+        return f"{100*x:.1f}%"
     else:
-        return str(round(x*1000)/1000)
+        return f"{x:.3f}"

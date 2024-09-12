@@ -28,8 +28,8 @@ Click on the board link for details.
 
 | SPI | Board                            | # Played Matches        | White           | Draw           | Black           | Average points for White |
 |:-----:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
-| 829 | [RNBQKBNR](BoardAnalysis/rnbqkbnr.md) | 19640            | 24.6% | 57.9% | 17.5% | 0.536 |
-| 815 | [RNBKQBNR](BoardAnalysis/rnbkqbnr.md) | 19640            | 32.0% | 51.1% | 16.9% | 0.575 |
+| 518 | [RNBQKBNR](BoardAnalysis/rnbqkbnr.md) | 19640            | 24.6% | 57.9% | 17.5% | 0.536 |
+| 534 | [RNBKQBNR](BoardAnalysis/rnbkqbnr.md) | 19640            | 32.0% | 51.1% | 16.9% | 0.575 |
 
 [Results for all 960 starting positions](analysis_overview.md)
 

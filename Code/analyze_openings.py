@@ -19,7 +19,7 @@ def GenerateOpeningTable(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbos
     Returns:
         tuple: A tuple containing statistics and an openings table for each threshold.
     """
-    matches = ReadPGN(board, max_size=50000, verbose=verbose)
+    matches = ReadPGN(board, max_size=100, verbose=verbose)
 
     openings_table = dict()
     winning  = 0
@@ -131,7 +131,7 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
                 'percent_white' : ToPer(percent_white),
                 'percent_draw'  : ToPer(percent_draw),
                 'percent_black' : ToPer(percent_black),
-                'points'        : ToPer(percent_white + percent_draw/2),
+                'points'        : ToPer(percent_white + percent_draw/2, absolute=True),
             } )
             readme_boards.append(board_template.format(**board_datas[-1]))
 
@@ -148,8 +148,11 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
             elapsed_time = time.time() - start_time
             print(f"{ i+1 }/{ len(boards) } (time: {elapsed_time:.1f} sec): Generated { board.upper() } with { nr_matches } matches")
 
-def ToPer(x):
+def ToPer(x, absolute=False):
     """
     Floating-point value to percentage string formatted to one decimal place.
     """
-    return str(round(x*1000)/10) + "%"
+    if absolute is False:
+        return str(round(x*1000)/10) + "%"
+    else:
+        return str(round(x*1000)/1000)

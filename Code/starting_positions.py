@@ -1,5 +1,14 @@
 import random
 
+def AllStartingPositions():
+    """
+    Generate all 960 possible starting positions for Chess960.
+
+    Returns:
+        List[str]: A sorted list of all unique Chess960 starting positions.
+    """
+    return [ Chess960StartingPosition(N) for N in range(960) ]
+
 def StartingPosition(at_random=True):
     """
     Generate a Chess960 starting position with pieces placed on the first rank.
@@ -12,54 +21,65 @@ def StartingPosition(at_random=True):
         str: A string representing the starting position of pieces on the first rank.
     """
     if at_random:
-        # Initialize an empty board (None represents an empty square)
-        start_pos = [None] * 8
-
-        # Place the black-squared bishop on an even index (0, 2, 4, 6)
-        black_bishop_index = random.choice([0, 2, 4, 6])
-        start_pos[black_bishop_index] = "b"
-
-        # Place the white-squared bishop on an odd index (1, 3, 5, 7)
-        white_bishop_index = random.choice([1, 3, 5, 7])
-        start_pos[white_bishop_index] = "b"
-
-        # Place the two knights
-        knight_indices = random.sample([i for i in range(8) if start_pos[i] is None], 2)
-        start_pos[knight_indices[0]] = "n"
-        start_pos[knight_indices[1]] = "n"
-
-        # Place the queen
-        queen_index = random.choice([i for i in range(8) if start_pos[i] is None])
-        start_pos[queen_index] = "q"
-
-        # Place the rooks and the king, ensuring rooks are on either side of the king
-        empty_indices = [i for i in range(8) if start_pos[i] is None]
-        rook1_index, king_index, rook2_index = sorted(empty_indices)  # Sort to ensure proper rook-king-rook sequence
-        start_pos[rook1_index] = "r"
-        start_pos[king_index] = "k"
-        start_pos[rook2_index] = "r"
-
-        # Join the list into a string representing the starting position
-        start_pos_str = "".join(start_pos)
+        
+        return Chess960StartingPosition(random.randint(0,959))
     else:
         # Standard chess starting position
-        start_pos_str = "rnbqkbnr"
+        return "rnbqkbnr"
 
-    return start_pos_str
+# The following was completely written by ChatGPT (immediately at first prompt)
+def Chess960StartingPosition(N):
+    # Step a: Place the first bishop on a bright square (b, d, f, h)
+    bright_squares = ['b', 'd', 'f', 'h']
+    B1 = N % 4
+    first_bishop = bright_squares[B1]
+    N2 = N // 4
 
-def AllStartingPositions():
-    """
-    Generate all 960 possible starting positions for Chess960.
+    # Step b: Place the second bishop on a dark square (a, c, e, g)
+    dark_squares = ['a', 'c', 'e', 'g']
+    B2 = N2 % 4
+    second_bishop = dark_squares[B2]
+    N3 = N2 // 4
 
-    Too lazy to make this more efficient.
-
-    Returns:
-        List[str]: A sorted list of all unique Chess960 starting positions.
-    """
-    positions = set()
-
-    # Generate positions until we have all 960 unique Chess960 configurations
-    while len(positions) < 960:
-        positions.add(StartingPosition(at_random=True))
+    # Step c: Place the queen on one of the remaining squares
+    remaining_squares = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+    remaining_squares.remove(first_bishop)
+    remaining_squares.remove(second_bishop)
     
-    return sorted(positions)
+    Q = N3 % 6
+    queen = remaining_squares[Q]
+    remaining_squares.remove(queen)
+    N4 = N3 // 6
+
+    # Step d: Place the knights based on N4 using the table
+    knight_positions = [
+        [0, 1], [0, 2], [0, 3], [0, 4], [1, 2], 
+        [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]
+    ]
+    knight_indices = knight_positions[N4]
+    knights = [remaining_squares[knight_indices[0]], remaining_squares[knight_indices[1]]]
+
+    # Remove knight squares from remaining squares
+    knight1 = remaining_squares.pop(knight_indices[0])
+    knight2 = remaining_squares.pop(knight_indices[1] - 1)  # second index adjusts after first removal
+
+    # Step e: Place the rooks and king
+    rook1 = remaining_squares[0]
+    king = remaining_squares[1]
+    rook2 = remaining_squares[2]
+
+    # Combine all pieces to form the final starting position
+    pieces_order = {
+        first_bishop: 'b',
+        second_bishop: 'b',
+        queen: 'q',
+        knight1: 'n',
+        knight2: 'n',
+        rook1: 'r',
+        king: 'k',
+        rook2: 'r'
+    }
+
+    final_position = ''.join([pieces_order[square] for square in 'abcdefgh'])
+    
+    return final_position

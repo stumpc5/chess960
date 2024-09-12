@@ -124,7 +124,7 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
         else:
             nr_matches, (percent_white, percent_draw, percent_black) = stats
             board_datas.append( {
-                'board_index'   : i+1,
+                'board_index'   : i,
                 'board_name'    : board.upper(),
                 'board_link'    : board,
                 'nr_matches'    : nr_matches,

@@ -19,7 +19,7 @@ def GenerateOpeningTable(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbos
     Returns:
         tuple: A tuple containing statistics and an openings table for each threshold.
     """
-    matches = ReadPGN(board, max_size=100, verbose=verbose)
+    matches = ReadPGN(board, max_size=500000, verbose=verbose)
 
     openings_table = dict()
     winning  = 0

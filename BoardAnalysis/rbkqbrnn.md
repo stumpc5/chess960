@@ -1,4 +1,4 @@
-# Opening Analysis for the board `RBKQBRNN`
+# Opening Analysis for the board **SPI 904**: `RBKQBRNN`
 
 **Overall Statistics:**
 

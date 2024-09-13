@@ -1,4 +1,4 @@
-# Opening Analysis for the board `BNRBNQKR`
+# Opening Analysis for the board **SPI 145**: `BNRBNQKR`
 
 **Overall Statistics:**
 

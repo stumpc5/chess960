@@ -1,4 +1,4 @@
-# Opening Analysis for the board `NNRKRBBQ`
+# Opening Analysis for the board **SPI 94**: `NNRKRBBQ`
 
 **Overall Statistics:**
 

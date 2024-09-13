@@ -1,4 +1,4 @@
-# Opening Analysis for the board `NQBNRKRB`
+# Opening Analysis for the board **SPI 23**: `NQBNRKRB`
 
 **Overall Statistics:**
 

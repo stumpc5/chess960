@@ -1,4 +1,4 @@
-# Opening Analysis for the board `NQNRKBBR`
+# Opening Analysis for the board **SPI 30**: `NQNRKBBR`
 
 **Overall Statistics:**
 

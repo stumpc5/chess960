@@ -1,4 +1,4 @@
-# Opening Analysis for the board `QRBBKNRN`
+# Opening Analysis for the board **SPI 773**: `QRBBKNRN`
 
 **Overall Statistics:**
 

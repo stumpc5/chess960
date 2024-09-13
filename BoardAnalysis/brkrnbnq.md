@@ -1,4 +1,4 @@
-# Opening Analysis for the board `BRKRNBNQ`
+# Opening Analysis for the board **SPI 946**: `BRKRNBNQ`
 
 **Overall Statistics:**
 

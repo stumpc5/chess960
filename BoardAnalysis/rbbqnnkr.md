@@ -1,4 +1,4 @@
-# Opening Analysis for the board `RBBQNNKR`
+# Opening Analysis for the board **SPI 404**: `RBBQNNKR`
 
 **Overall Statistics:**
 

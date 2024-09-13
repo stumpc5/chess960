@@ -1,4 +1,4 @@
-# Opening Analysis for the board `RBBKNQNR`
+# Opening Analysis for the board **SPI 724**: `RBBKNQNR`
 
 **Overall Statistics:**
 

@@ -1,4 +1,4 @@
-# Opening Analysis for the board `NBRKBRQN`
+# Opening Analysis for the board **SPI 360**: `NBRKBRQN`
 
 **Overall Statistics:**
 

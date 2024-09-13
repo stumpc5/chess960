@@ -1,4 +1,4 @@
-# Opening Analysis for the board `BBQNRKNR`
+# Opening Analysis for the board **SPI 192**: `BBQNRKNR`
 
 **Overall Statistics:**
 

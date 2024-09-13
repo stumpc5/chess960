@@ -1,4 +1,4 @@
-# Opening Analysis for the board `NRKBBNRQ`
+# Opening Analysis for the board **SPI 281**: `NRKBBNRQ`
 
 **Overall Statistics:**
 

@@ -1,4 +1,4 @@
-# Opening Analysis for the board `QBNNBRKR`
+# Opening Analysis for the board **SPI 8**: `QBNNBRKR`
 
 **Overall Statistics:**
 

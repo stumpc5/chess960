@@ -1,4 +1,4 @@
-# Opening Analysis for the board `BRKQNBNR`
+# Opening Analysis for the board **SPI 706**: `BRKQNBNR`
 
 **Overall Statistics:**
 

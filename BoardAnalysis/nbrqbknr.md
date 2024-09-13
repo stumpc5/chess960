@@ -1,4 +1,4 @@
-# Opening Analysis for the board `NBRQBKNR`
+# Opening Analysis for the board **SPI 232**: `NBRQBKNR`
 
 **Overall Statistics:**
 

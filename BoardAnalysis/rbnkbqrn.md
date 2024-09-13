@@ -1,4 +1,4 @@
-# Opening Analysis for the board `RBNKBQRN`
+# Opening Analysis for the board **SPI 632**: `RBNKBQRN`
 
 **Overall Statistics:**
 

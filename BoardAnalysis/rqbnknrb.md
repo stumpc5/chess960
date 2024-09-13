@@ -1,4 +1,4 @@
-# Opening Analysis for the board `RQBNKNRB`
+# Opening Analysis for the board **SPI 503**: `RQBNKNRB`
 
 **Overall Statistics:**
 

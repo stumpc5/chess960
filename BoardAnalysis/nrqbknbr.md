@@ -1,4 +1,4 @@
-# Opening Analysis for the board `NRQBKNBR`
+# Opening Analysis for the board **SPI 237**: `NRQBKNBR`
 
 **Overall Statistics:**
 

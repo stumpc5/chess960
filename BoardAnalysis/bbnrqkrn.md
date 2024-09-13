@@ -1,4 +1,4 @@
-# Opening Analysis for the board `BBNRQKRN`
+# Opening Analysis for the board **SPI 320**: `BBNRQKRN`
 
 **Overall Statistics:**
 

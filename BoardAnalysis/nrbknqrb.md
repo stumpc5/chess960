@@ -1,4 +1,4 @@
-# Opening Analysis for the board `NRBKNQRB`
+# Opening Analysis for the board **SPI 263**: `NRBKNQRB`
 
 **Overall Statistics:**
 

@@ -1,4 +1,4 @@
-# Opening Analysis for the board `RNKRNBBQ`
+# Opening Analysis for the board **SPI 670**: `RNKRNBBQ`
 
 **Overall Statistics:**
 

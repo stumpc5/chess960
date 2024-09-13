@@ -1,4 +1,4 @@
-# Opening Analysis for the board `BBRKNNRQ`
+# Opening Analysis for the board **SPI 752**: `BBRKNNRQ`
 
 **Overall Statistics:**
 

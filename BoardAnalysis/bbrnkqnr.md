@@ -1,4 +1,4 @@
-# Opening Analysis for the board `BBRNKQNR`
+# Opening Analysis for the board **SPI 528**: `BBRNKQNR`
 
 **Overall Statistics:**
 

@@ -1,4 +1,4 @@
-# Opening Analysis for the board `RKRNQBBN`
+# Opening Analysis for the board **SPI 942**: `RKRNQBBN`
 
 **Overall Statistics:**
 

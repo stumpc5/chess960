@@ -1,4 +1,4 @@
-# Opening Analysis for the board `QNBRKBNR`
+# Opening Analysis for the board **SPI 198**: `QNBRKBNR`
 
 **Overall Statistics:**
 

@@ -1,4 +1,4 @@
-# Opening Analysis for the board `NBNRBQKR`
+# Opening Analysis for the board **SPI 56**: `NBNRBQKR`
 
 **Overall Statistics:**
 

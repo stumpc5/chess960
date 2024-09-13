@@ -1,4 +1,4 @@
-# Opening Analysis for the board `NRBKRBQN`
+# Opening Analysis for the board **SPI 358**: `NRBKRBQN`
 
 **Overall Statistics:**
 

@@ -1,4 +1,4 @@
-# Opening Analysis for the board `RQNKBBRN`
+# Opening Analysis for the board **SPI 602**: `RQNKBBRN`
 
 **Overall Statistics:**
 

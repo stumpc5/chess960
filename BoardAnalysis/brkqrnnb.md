@@ -1,4 +1,4 @@
-# Opening Analysis for the board `BRKQRNNB`
+# Opening Analysis for the board **SPI 899**: `BRKQRNNB`
 
 **Overall Statistics:**
 

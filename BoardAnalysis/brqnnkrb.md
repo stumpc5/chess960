@@ -1,4 +1,4 @@
-# Opening Analysis for the board `BRQNNKRB`
+# Opening Analysis for the board **SPI 403**: `BRQNNKRB`
 
 **Overall Statistics:**
 

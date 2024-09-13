@@ -1,4 +1,4 @@
-# Opening Analysis for the board `RQNBKNBR`
+# Opening Analysis for the board **SPI 509**: `RQNBKNBR`
 
 **Overall Statistics:**
 

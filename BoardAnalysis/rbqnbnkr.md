@@ -1,4 +1,4 @@
-# Opening Analysis for the board `RBQNBNKR`
+# Opening Analysis for the board **SPI 408**: `RBQNBNKR`
 
 **Overall Statistics:**
 

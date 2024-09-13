@@ -1,4 +1,4 @@
-# Opening Analysis for the board `QRKNNBBR`
+# Opening Analysis for the board **SPI 686**: `QRKNNBBR`
 
 **Overall Statistics:**
 

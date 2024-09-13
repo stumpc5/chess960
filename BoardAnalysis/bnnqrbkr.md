@@ -1,4 +1,4 @@
-# Opening Analysis for the board `BNNQRBKR`
+# Opening Analysis for the board **SPI 34**: `BNNQRBKR`
 
 **Overall Statistics:**
 

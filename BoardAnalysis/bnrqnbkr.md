@@ -1,4 +1,4 @@
-# Opening Analysis for the board `BNRQNBKR`
+# Opening Analysis for the board **SPI 130**: `BNRQNBKR`
 
 **Overall Statistics:**
 

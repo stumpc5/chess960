@@ -421,6 +421,8 @@
 | 411 | [RQNNBKRB](BoardAnalysis/rqnnbkrb.md) | 19680            | 29.0% | 54.1% | 17.0% | 0.560
 | 412 | [RBQNNKBR](BoardAnalysis/rbqnnkbr.md) | 19670            | 25.2% | 54.4% | 20.4% | 0.524
 | 413 | [RQNBNKBR](BoardAnalysis/rqnbnkbr.md) | 19670            | 24.2% | 55.9% | 19.9% | 0.522
+| 414 | [RQNNKBBR](BoardAnalysis/rqnnkbbr.md) | 20000            | 17.4% | 70.6% | 12.0% | 0.527
+| 415 | [RQNNKRBB](BoardAnalysis/rqnnkrbb.md) | 20000            | 14.9% | 71.2% | 13.8% | 0.505
 | 416 | [BBRNQNKR](BoardAnalysis/bbrnqnkr.md) | 19660            | 31.4% | 47.4% | 21.2% | 0.551
 | 417 | [BRNBQNKR](BoardAnalysis/brnbqnkr.md) | 19660            | 26.6% | 54.5% | 18.8% | 0.539
 | 418 | [BRNQNBKR](BoardAnalysis/brnqnbkr.md) | 19660            | 22.7% | 57.2% | 20.2% | 0.513
@@ -1758,6 +1760,7 @@
 | 409 | [RQNBBNKR](BoardAnalysis/rqnbbnkr.md) | 19680            | 25.2% | 55.2% | 19.6% | 0.528
 | 412 | [RBQNNKBR](BoardAnalysis/rbqnnkbr.md) | 19670            | 25.2% | 54.4% | 20.4% | 0.524
 | 413 | [RQNBNKBR](BoardAnalysis/rqnbnkbr.md) | 19670            | 24.2% | 55.9% | 19.9% | 0.522
+| 414 | [RQNNKBBR](BoardAnalysis/rqnnkbbr.md) | 20000            | 17.4% | 70.6% | 12.0% | 0.527
 | 419 | [BRNQNKRB](BoardAnalysis/brnqnkrb.md) | 19650            | 22.8% | 60.0% | 17.1% | 0.529
 | 423 | [RNBQNKRB](BoardAnalysis/rnbqnkrb.md) | 19690            | 23.5% | 57.1% | 19.4% | 0.521
 | 428 | [RBNQNKBR](BoardAnalysis/rbnqnkbr.md) | 19680            | 23.3% | 58.1% | 18.6% | 0.524
@@ -1924,6 +1927,7 @@
 | 225 | [BNRBQKNR](BoardAnalysis/bnrbqknr.md) | 19700            | 23.3% | 54.6% | 22.1% | 0.506
 | 291 | [BQNRKRNB](BoardAnalysis/bqnrkrnb.md) | 19680            | 20.4% | 61.0% | 18.7% | 0.509
 | 383 | [NRKRNQBB](BoardAnalysis/nrkrnqbb.md) | 19670            | 23.9% | 52.8% | 23.3% | 0.503
+| 415 | [RQNNKRBB](BoardAnalysis/rqnnkrbb.md) | 20000            | 14.9% | 71.2% | 13.8% | 0.505
 | 563 | [BRNKNRQB](BoardAnalysis/brnknrqb.md) | 19640            | 18.3% | 65.0% | 16.8% | 0.507
 | 644 | [RBBNKRQN](BoardAnalysis/rbbnkrqn.md) | 19630            | 23.6% | 53.1% | 23.3% | 0.502
 | 647 | [RNBKRQNB](BoardAnalysis/rnbkrqnb.md) | 19640            | 21.0% | 58.9% | 20.2% | 0.504

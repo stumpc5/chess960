@@ -30,7 +30,7 @@ def GenerateOpeningTable(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbos
 
     return stats, openings_table
 
-def GenerateBoardMarkdown(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbose=True, save_result=False):
+def GenerateBoardMarkdown(board=("rnbqkbnr", 518), thresholds=[0.01, 0.02, 0.05], verbose=True, save_result=False):
     """
     Generates markdown content summarizing the analysis of chess openings for a specific board position.
 
@@ -40,15 +40,18 @@ def GenerateBoardMarkdown(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbo
         save_result (bool): If True, saves the result to a markdown file.
 
     Returns:
-        str or tuple: If save_result is False, returns the markdown content. 
+        str or tuple: If save_result is False, returns the markdown content.
                       If save_result is True, returns the analysis statistics.
     """
+    board, index = board
     stats, opening_tables = GenerateOpeningTable(board=board, thresholds=thresholds, verbose=verbose)
 
     # formating the header
     nr_matches, (percent_white, percent_draw, percent_black) = stats
+
     header_data = {
         'board'         : board.upper(),
+        'index'         : index,
         'nr_matches'    : nr_matches,
         'percent_white' : ToPer(percent_white),
         'percent_draw'  : ToPer(percent_draw),
@@ -74,7 +77,7 @@ def GenerateBoardMarkdown(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbo
                 min_prob = 0
             moves = [ move for move in moves if move[1][0] >= min_prob ]
             opening_data = {
-                # old separator &rarr; 
+                # old separator &rarr;
                 'opening'       : " ".join(opening),
                 'moves'         : " <p> ".join(move for move,_ in moves),
                 'move_prob'     : " <p> ".join(ToPer(prob) for _,(prob,_) in moves),
@@ -116,7 +119,7 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
 
     for i, board in enumerate(boards):
         try:
-            stats = GenerateBoardMarkdown(board=board, thresholds=thresholds, verbose=False, save_result=True)
+            stats = GenerateBoardMarkdown(board=(board,i), thresholds=thresholds, verbose=False, save_result=True)
         except FileNotFoundError:
             print(f"                  ERROR: no pgn's found for board { board.upper() }")
             pass

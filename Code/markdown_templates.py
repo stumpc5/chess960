@@ -1,4 +1,4 @@
-header_template = """# Opening Analysis for the board **SPI {index}**: `{board}`
+header_template = """# Opening Analysis **SPI {index}**: `{board}`
 
 **Overall Statistics:**
 

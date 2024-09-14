@@ -80,7 +80,7 @@ By definition, if a sequence of moves qualifies as an opening under the lower th
 
 This means in particular, that one sees the base of an opening for a larger threshold which then branches out into multiple variations of the same opening when lowering the threshold.
 This is a well-known phenomenon in classical chess, see for example the [many variations of the **Ruy Lopez** opening](https://www.chess.com/forum/view/chess-openings/all-ruy-lopez-variations).
-This phenomenon can be seen in several variations of this opening that we can identify in the analysis of [classical chess](https://github.com/stumpc5/chess960/blob/main/BoardAnalysis/rnbqkbnr.md).
+This phenomenon can be seen in several variations of this opening that we can identify in the analysis of [classical chess](https://github.com/stumpc5/chess960/blob/main/BoardAnalysis/rnbqkbnr.md), such as [Queen's Gambit](https://www.chess.com/openings/Queens-Gambit), [Sicilian Defnese](https://www.chess.com/openings/Sicilian-Defense), and the [Ruy Lopez](https://www.chess.com/forum/view/chess-openings/all-ruy-lopez-variations).
 
 **Observation:** The given formal definition of opening recovers multiple important well-known openings for classical chess.
 

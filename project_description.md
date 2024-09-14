@@ -61,18 +61,7 @@ This is a longest initial sequence of moves that appears in at least the fractio
 
 Longest means that if you add one more move it appears in less than the fraction **t** of matches.
 
-#### Examples of Openings
-
-For example the threshold value **t=1/10** means that an opening appears in at least every 10th match.
-Consider two trivial scenarios:
-
-##### Every Match as an Opening
-
-If the dataset **D** has only 100 matches and the threshold **t** is set to **t=1/100**, then **every full match** qualifies as an opening.
-
-##### The Empty Opening
-
-If the dataset contains matches with different initial moves and **t** is set to **t=1**, the only opening sequence would be **no moves at all**.
+* For example the threshold value **t=1/10** means that an opening appears in at least every 10th match.
 
 ---
 
@@ -82,14 +71,14 @@ If the dataset contains matches with different initial moves and **t** is set to
 
 Identifying openings within a dataset depends on selecting a **threshold** value between 0 and 1.
 This threshold determines how often an initial sequence of moves must occur to be considered an opening.
-A higher threshold means that an initial sequence must be played more frequently to be recognized.
+A higher threshold means that an initial sequence must have been played in the dataset more frequently to be recognized.
 
 #### Threshold Sensitivity:
 
 Consider two thresholds, **t1 < t2**.
-By definition, if a sequence of moves qualifies as an opening under the higher threshold **t2**, then (a prefix of) this sequence will also be an opening under the lower threshold **t1**.
+By definition, if a sequence of moves qualifies as an opening under the lower threshold **t1**, then (a prefix of) this sequence will also be an opening under the higher threshold **t2**.
 
-This means in particular, that one might see the base of an opening for a larger threshold which then branches out into multiple variations of the same opening.
+This means in particular, that one sees the base of an opening for a larger threshold which then branches out into multiple variations of the same opening when lowering the threshold.
 This is a well-known phenomenon in classical chess, see for example the [many variations of the **Ruy Lopez** opening](https://www.chess.com/forum/view/chess-openings/all-ruy-lopez-variations).
 This phenomenon can be seen in several variations of this opening that we can identify in the analysis of [classical chess](https://github.com/stumpc5/chess960/blob/main/BoardAnalysis/rnbqkbnr.md).
 

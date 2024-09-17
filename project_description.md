@@ -11,15 +11,15 @@ Identify openings for all Chess960 variants.
 
 **Our Approach:**
 
-- **Formalize Openings:** We formalize the above intuitive definition of an opening, based on a dataset of Chess960 matches.
+- **Formalize Openings:** We formalize the above intuitive definition of an opening, based on a dataset of Chess960 games.
 - **Identify Openings:** We identify openings for all Chess960 variants through this formalized approach.
 
 **Our Experiments:**
 
 We applied our method to two key datasets:
 
-1. Classical chess matches downloaded from [Lichess](https://database.lichess.org/).
-2. Chess960 matches we generated using the super-human capabilities of [Stockfish 16](https://stockfishchess.org/).
+1. Classical chess games downloaded from [Lichess](https://database.lichess.org/).
+2. Chess960 games we generated using the super-human capabilities of [Stockfish 16](https://stockfishchess.org/).
 
 **Key Discoveries:**
 
@@ -32,47 +32,39 @@ We applied our method to two key datasets:
 
 **Looking Ahead:**
 
-Our methods may as well be applied to other datasets of chess matches, or to entirely different games to gain new insights.
+Our methods may as well be applied to other datasets of chess games, or to entirely different types of games to gain new insights.
 
 ---
 
 ## Defining a Opening
 
-_We now give the technical definitions of a "game", a "match", and an "opening."_
+_We now give the technical definitions of a "board", a "game", and an "opening."_
 
 ### Basic Concepts
 
-- **Game:** A game starts with an initial state and proceeds through a series of valid moves, alternating between the two players.
-- **Match:** A match is a sequence of these valid moves, culminating in a result: win (1), loss (0), or draw (1/2), seen from the player doing the first move.
+- **Board:** A board is an initial state and rules how to proceed through a series of valid moves, alternating between the two players.
+- **Game:** A game is a sequence of these valid moves, culminating in a result: win (1), loss (0), or draw (1/2), seen from the player doing the first move.
 
 Moreover:
 - A game’s current state dictates which possible next moves are valid.
 - Each valid move modifies the current state, leading to the next state.
-- The match result is determined by the entire sequence of valid moves from the initial state.
+- The game's result is determined by the entire sequence of valid moves from the initial state.
 
 ### An Opening
 
-An opening in a game (such as standard chess or a Chess960 variant) depends on:
-1. A dataset **D** of many matches of the game.
+An opening of a board (such as standard chess or a Chess960 variant) depends on:
+1. A dataset **D** of many games of the board.
 2. A threshold **t** which is a value between 0 and 1.
 
-**Opening of a game:**
-This is a longest initial sequence of moves that appears in at least the fraction **t** of the matches in the dataset **D**.
+**Opening of a board:**
+This is a longest initial sequence of moves that appears in at least the fraction **t** of the games in the dataset **D**.
 
-Longest means that if you add one more move it appears in less than the fraction **t** of matches.
+Longest means that if you add one more move it appears in less than the fraction **t** of games.
 
 #### Examples of Openings
 
-For example the threshold value **t=1/10** means that an opening appears in at least every 10th match.
+For example the threshold value **t=1/10** means that an opening appears in at least every 10th game.
 Consider two trivial scenarios:
-
-##### Every Match as an Opening
-
-If the dataset **D** has only 100 matches and the threshold **t** is set to **t=1/100**, then **every full match** qualifies as an opening.
-
-##### The Empty Opening
-
-If the dataset contains matches with different initial moves and **t** is set to **t=1**, the only opening sequence would be **no moves at all**.
 
 ---
 

@@ -5,13 +5,13 @@
 
 ## Sorted by Starting Position Index
 
-| SPI | Board                            | # Played Matches        | White           | Draw           | Black           | Average points for White |
+| SPI | Board                            | # Played Games          | White           | Draw           | Black           | Average points for White |
 |:---:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
 %s
 
 ----
 # Sorted by Average points for White
 
-| SPI | Board                            | # Played Matches        | White           | Draw           | Black           | Average points for White |
+| SPI | Board                            | # Played Games          | White           | Draw           | Black           | Average points for White |
 |:---:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
 %s

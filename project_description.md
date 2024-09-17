@@ -61,10 +61,7 @@ This is a longest initial sequence of moves that appears in at least the fractio
 
 Longest means that if you add one more move it appears in less than the fraction **t** of games.
 
-#### Examples of Openings
-
 For example the threshold value **t=1/10** means that an opening appears in at least every 10th game.
-Consider two trivial scenarios:
 
 ---
 
@@ -74,16 +71,16 @@ Consider two trivial scenarios:
 
 Identifying openings within a dataset depends on selecting a **threshold** value between 0 and 1.
 This threshold determines how often an initial sequence of moves must occur to be considered an opening.
-A higher threshold means that an initial sequence must be played more frequently to be recognized.
+A higher threshold means that an initial sequence must have been played in the dataset more frequently to be recognized.
 
 #### Threshold Sensitivity:
 
 Consider two thresholds, **t1 < t2**.
-By definition, if a sequence of moves qualifies as an opening under the higher threshold **t2**, then (a prefix of) this sequence will also be an opening under the lower threshold **t1**.
+By definition, if a sequence of moves qualifies as an opening under the lower threshold **t1**, then (a prefix of) this sequence will also be an opening under the higher threshold **t2**.
 
-This means in particular, that one might see the base of an opening for a larger threshold which then branches out into multiple variations of the same opening.
+This means in particular, that one sees the base of an opening for a larger threshold which then branches out into multiple variations of the same opening when lowering the threshold.
 This is a well-known phenomenon in classical chess, see for example the [many variations of the **Ruy Lopez** opening](https://www.chess.com/forum/view/chess-openings/all-ruy-lopez-variations).
-This phenomenon can be seen in several variations of this opening that we can identify in the analysis of [classical chess](https://github.com/stumpc5/chess960/blob/main/BoardAnalysis/rnbqkbnr.md).
+This phenomenon can be seen in several variations of this opening that we can identify in the analysis of [classical chess](https://github.com/stumpc5/chess960/blob/main/BoardAnalysis/rnbqkbnr.md), such as [Queen's Gambit](https://www.chess.com/openings/Queens-Gambit), [Sicilian Defnese](https://www.chess.com/openings/Sicilian-Defense), and the [Ruy Lopez](https://www.chess.com/forum/view/chess-openings/all-ruy-lopez-variations).
 
 **Observation:** The given formal definition of opening recovers multiple important well-known openings for classical chess.
 
@@ -91,8 +88,8 @@ This phenomenon can be seen in several variations of this opening that we can id
 
 We analyzed approximately **100 million games** from the [Lichess database](https://database.lichess.org/). However, this dataset did not provide significant insights into Chess960 openings, nor did it for traditional chess. The primary reasons were:
 
-- **Insufficient high-level matches**: There were not enough matches played at the highest levels to accurately identify optimal or near-optimal moves.
-- **Prevalence of blitz matches**: Many matches were blitz matches, where time constraints prevented players from consistently making optimal moves.
+- **Insufficient high-level games**: There were not enough games played at the highest levels to accurately identify optimal or near-optimal moves.
+- **Prevalence of blitz games**: Many games were blitz games, where time constraints prevented players from consistently making optimal moves.
 
 Due to these limitations, we decided not to use the Lichess dataset for Chess960 opening analysis.
 
@@ -103,25 +100,25 @@ Due to these limitations, we decided not to use the Lichess dataset for Chess960
 To overcome the limitations of human games, we turned to [Stockfish 16](https://stockfishchess.org/), running it at super-human skill levels.
 Stockfish played **20,000 games** for each of the 960 different Chess960 starting positions.
 
-#### Match Setup
+#### Game Setup
 
-Here are the key settings we used for these matches:
+Here are the key settings we used for these games:
 
-| **Attribute**               | **Value**             |
-|-----------------------------|-----------------------|
+| **Attribute**                | **Value**            |
+|------------------------------|----------------------|
 | **Skill Level**              | 18-20                |
-| **CPU Threads per Match**    | 4                    |
-| **Total Time per Match**     | 3.75 sec             |
+| **CPU Threads per Game**     | 4                    |
+| **Total Time per Game**      | 3.75 sec             |
 | **Max Time per Move**        | 0.0625 sec           |
 
 Both players were always at the same skill level to ensure consistency.
 
 #### Defining Openings: Intuition vs. Formality
 
-Since the matches were played at a super-human level, we assumed that a move sequence qualifies as an "opening" if it appears frequently enough across all games.
+Since the games were played at a super-human level, we assumed that a move sequence qualifies as an "opening" if it appears frequently enough across all games.
 At each step, both players made optimal (or near-optimal) moves.
 
 #### Key Theoretical Insight:
 
-The super-human level and the large number of analyzed matches ensure that the formal and intuitive definitions of an opening coincide within this dataset.
+The super-human level and the large number of analyzed games ensure that the formal and intuitive definitions of an opening coincide within this dataset.
 The formal definition can therefore be used to idenfity openings for the various Chess960 openings.

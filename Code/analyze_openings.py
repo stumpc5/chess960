@@ -19,13 +19,13 @@ def GenerateOpeningTable(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbos
     Returns:
         tuple: A tuple containing statistics and an openings table for each threshold.
     """
-    matches = ReadPGN(board, max_size=500000, verbose=verbose)
+    games = ReadPGN(board, max_size=500000, verbose=verbose)
 
     openings_table = dict()
     winning  = 0
 
     for threshold in thresholds:
-        stats, openings = IdentifyOpenings(matches, threshold)
+        stats, openings = IdentifyOpenings(games, threshold)
         openings_table[threshold] = openings
 
     return stats, openings_table
@@ -47,12 +47,12 @@ def GenerateBoardMarkdown(board=("rnbqkbnr", 518), thresholds=[0.01, 0.02, 0.05]
     stats, opening_tables = GenerateOpeningTable(board=board, thresholds=thresholds, verbose=verbose)
 
     # formating the header
-    nr_matches, (percent_white, percent_draw, percent_black) = stats
+    nr_games, (percent_white, percent_draw, percent_black) = stats
 
     header_data = {
         'board'         : board.upper(),
         'index'         : index,
-        'nr_matches'    : nr_matches,
+        'nr_games'    : nr_games,
         'percent_white' : ToPer(percent_white),
         'percent_draw'  : ToPer(percent_draw),
         'percent_black' : ToPer(percent_black),
@@ -70,15 +70,14 @@ def GenerateBoardMarkdown(board=("rnbqkbnr", 518), thresholds=[0.01, 0.02, 0.05]
         }
         openings_header = openings_template.format(**threshold_data)
 
+        openings = sorted(openings, key = lambda opening: -sum(move[1][0] for move in opening[1]))
+
         for opening, moves in openings:
-            if moves:
-                min_prob = moves[0][1][0] / 3
-            else:
-                min_prob = 0
-            moves = [ move for move in moves if move[1][0] >= min_prob ]
+            opening_prob = sum(move[1][0] for move in moves)
+            moves       = moves[:5]
             opening_data = {
-                # old separator &rarr;
-                'opening'       : " ".join(opening),
+                'opening'       : AlgebraicNotation(opening),
+                'opening_prob'  : ToPer(opening_prob),
                 'moves'         : " <p> ".join(move for move,_ in moves),
                 'move_prob'     : " <p> ".join(ToPer(prob) for _,(prob,_) in moves),
                 'percent_white' : " <p> ".join(ToPer(per[0]) for _,(_,per) in moves),
@@ -123,14 +122,14 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
         except FileNotFoundError:
             print(f"                  ERROR: no pgn's found for board { board.upper() }")
             pass
-            nr_matches = 0
+            nr_games = 0
         else:
-            nr_matches, (percent_white, percent_draw, percent_black) = stats
+            nr_games, (percent_white, percent_draw, percent_black) = stats
             board_datas.append( {
                 'board_index'   : i,
                 'board_name'    : board.upper(),
                 'board_link'    : board,
-                'nr_matches'    : nr_matches,
+                'nr_games'    : nr_games,
                 'percent_white' : ToPer(percent_white),
                 'percent_draw'  : ToPer(percent_draw),
                 'percent_black' : ToPer(percent_black),
@@ -149,7 +148,7 @@ def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True
                 file.write(readme)
         if verbose:
             elapsed_time = time.time() - start_time
-            print(f"{ i }/{ len(boards) } (time: {elapsed_time:.1f} sec): Generated { board.upper() } with { nr_matches } matches")
+            print(f"{ i }/{ len(boards) } (time: {elapsed_time:.1f} sec): Generated { board.upper() } with { nr_games } games")
 
 def ToPer(x, absolute=False):
     """
@@ -159,3 +158,12 @@ def ToPer(x, absolute=False):
         return f"{100*x:.1f}%"
     else:
         return f"{x:.3f}"
+
+def AlgebraicNotation(opening):
+    result = ""
+    for idx, move in enumerate(opening):
+        if idx % 2 == 0:
+            result += f" {1 + idx//2}.{move}"
+        else:
+            result += f" {move}"
+    return result

@@ -9,7 +9,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 
 ## Sorted by board name
 
-| Index | Board                            | # Played Matches        | White           | Draw           | Black           | Average points for White |
+| Index | Board                            | # Played Games        | White           | Draw           | Black           | Average points for White |
 |:-----:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
 |1 | BBNNQRKR | 4648 | 50.0% | 3.6% | 46.3% | 51.9%|
 |2 | BBNNRKQR | 4860 | 49.8% | 3.5% | 46.7% | 51.5%|
@@ -975,7 +975,7 @@ We provide the same list twice, first sorted by [board name](#sorted-by-board-na
 ----
 # Sorted by Advantage for White
 
-| Index | Board                            | # Played Matches        | White           | Draw           | Black           | Average points for White |
+| Index | Board                            | # Played Games        | White           | Draw           | Black           | Average points for White |
 |:-----:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
 |820 | RNBKRBQN | 4826 | 51.5% | 3.8% | 44.8% | 53.3%|
 |51 | BBRNNQKR | 4845 | 51.6% | 3.3% | 45.2% | 53.2%|

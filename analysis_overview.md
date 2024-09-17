@@ -5,7 +5,7 @@
 
 ## Sorted by Starting Position Index
 
-| SPI | Board                            | # Played Matches        | White           | Draw           | Black           | Average points for White |
+| SPI | Board                            | # Played Games        | White           | Draw           | Black           | Average points for White |
 |:---:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
 | 0 | [BBQNNRKR](BoardAnalysis/bbqnnrkr.md) | 19618            | 23.5% | 56.9% | 19.6% | 0.520
 | 1 | [BQNBNRKR](BoardAnalysis/bqnbnrkr.md) | 19716            | 25.9% | 52.0% | 22.1% | 0.519
@@ -971,7 +971,7 @@
 ----
 # Sorted by Average points for White
 
-| SPI | Board                            | # Played Matches        | White           | Draw           | Black           | Average points for White |
+| SPI | Board                            | # Played Games        | White           | Draw           | Black           | Average points for White |
 |:---:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
 | 935 | [RKBRNQNB](BoardAnalysis/rkbrnqnb.md) | 19630            | 43.5% | 42.0% | 14.5% | 0.645
 | 332 | [NBRQKRBN](BoardAnalysis/nbrqkrbn.md) | 19690            | 42.2% | 44.0% | 13.8% | 0.642

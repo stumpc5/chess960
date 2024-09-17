@@ -2,19 +2,19 @@ header_template = """# Opening Analysis **SPI {index}**: `{board}`
 
 **Overall Statistics:**
 
-| # Matches                | White wins      | Draw           | Black wins      | Average points for White |
+| # Games                  | White wins      | Draw           | Black wins      | Average points for White |
 |:------------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
-| {nr_matches}             | {percent_white} | {percent_draw} | {percent_black} | {points}                 |
+| {nr_games}               | {percent_white} | {percent_draw} | {percent_black} | {points}                 |
 
-For all openings, the next moves are sorted by likeliness. We only show those with at least 1/3 of the most likely next move.
+The openings and the next moves are sorted by likeliness. We show at most the five most likely next moves.
 """
 
 openings_template = """## Openings for threshold = {threshold}
 
-| Opening   | Next moves | Likeliness | White wins      | Draw           | Black wins      | Average points for White |
-|-----------|------------|:----------:|:---------------:|:--------------:|:---------------:|:------------------------:|
+| Opening   | Likeliness | Next moves | Likeliness | White wins      | Draw           | Black wins      | Average points for White |
+|-----------|------------|------------|:----------:|:---------------:|:--------------:|:---------------:|:------------------------:|
 """
 
-opening_template = """| {opening} | {moves} | {move_prob} | {percent_white} | {percent_draw} | {percent_black} | {points} |"""
+opening_template = """| {opening} | {opening_prob} | {moves} | {move_prob} | {percent_white} | {percent_draw} | {percent_black} | {points} |"""
 
-board_template = """| {board_index} | [{board_name}](BoardAnalysis/{board_link}.md) | {nr_matches}            | {percent_white} | {percent_draw} | {percent_black} | {points}"""
+board_template = """| {board_index} | [{board_name}](BoardAnalysis/{board_link}.md) | {nr_games}            | {percent_white} | {percent_draw} | {percent_black} | {points}"""

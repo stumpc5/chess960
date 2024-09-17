@@ -6,7 +6,7 @@
 
 Identify optimal openings.
 
-* We analyze about **20 million Chess960 matches** generated with **Stockfish 16**.
+* We analyze about **20 million Chess960 games** generated with **Stockfish 16**.
 
 * We give a formal definition of an opening and apply it to the dataset.
 
@@ -26,7 +26,7 @@ We rediscover well-known openings and their variations, such as [Queen's Gambit]
 Click on the board link for details.
 
 
-| SPI | Board                            | # Played Matches        | White           | Draw           | Black           | Average points for White |
+| SPI | Board                            | # Played Games        | White           | Draw           | Black           | Average points for White |
 |:-----:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
 | 518 | [RNBQKBNR](BoardAnalysis/rnbqkbnr.md) | 19640            | 24.6% | 57.9% | 17.5% | 0.536 |
 | 534 | [RNBKQBNR](BoardAnalysis/rnbkqbnr.md) | 19640            | 32.0% | 51.1% | 16.9% | 0.575 |
@@ -47,18 +47,18 @@ Please send an email to christian.stump@rub.de and to dorpalen-barry@tamu.edu fo
 
 ## Comparison to other Chess960 databases
 
-The following two projects have both analyzed Chess960 matches from Lichess.
+The following two projects have both analyzed Chess960 games from Lichess.
 
 ### The "Chess960 Win by Position Setup" data
 
-An analysis of more than 4 million Chess960 matches from Lichess has been conducted [here](https://github.com/welyab/chess960-win-by-position-setup).
+An analysis of more than 4 million Chess960 games from Lichess has been conducted [here](https://github.com/welyab/chess960-win-by-position-setup).
 We represent [their data in our format](chess960_win_by_position_data.md)  for comparison.
 
 They conclude that "white pieces have an advantage, \[and that\] the positions setup where black have an advantage are expressively less that positions where white won more."
 
 ### No variation is better than another
 
-Using A/B testing, 14 million Chess960 matches from Lichess were analyzed [here](https://towardsdatascience.com/analyzing-chess960-data-da5c8cdb01de).
+Using A/B testing, 14 million Chess960 games from Lichess were analyzed [here](https://towardsdatascience.com/analyzing-chess960-data-da5c8cdb01de).
 
 They conclude that "there are no starting positions that favor any of the players more than other positions."
 

@@ -19,7 +19,7 @@ def ReadPGN(board, folder=DATAFOLDER, max_size=float('inf'), verbose=False):
         List[Tuple[Tuple[str], float]]: A list of tuples where each tuple contains the moves as strings and the game result as a float.
     """
 
-    matches = []
+    games = []
     filename = f"data_{board}.pgn"
     tar_path = os.path.join(folder, f"{filename}.tar.gz")
 
@@ -31,14 +31,14 @@ def ReadPGN(board, folder=DATAFOLDER, max_size=float('inf'), verbose=False):
             fileobj = tar.extractfile(filename)
             if fileobj is None:
                 raise FileNotFoundError(f"File {filename} not found inside the archive.")
-            match = []
+            game = []
             empty_line_count = 0
             for line in fileobj:
                 line = line.decode('utf-8').strip()
                 if line == "":
                     empty_line_count += 1
                     if empty_line_count % 2 == 0:
-                        moves, res = ParseMatch("\n".join(match))
+                        moves, res = ParseGame("\n".join(game))
 
                         if res == "1-0":
                             res = 1.0
@@ -49,34 +49,34 @@ def ReadPGN(board, folder=DATAFOLDER, max_size=float('inf'), verbose=False):
                         else:
                             raise ValueError(f"Unrecognized result: {result}")
 
-                        matches.append((moves, res))
-                        match = []
-                        if len(matches) == max_size:
+                        games.append((moves, res))
+                        game = []
+                        if len(games) == max_size:
                             break
                         empty_line_count = False
                     else:
                         empty_line_count = True
-                match.append(line)
+                game.append(line)
         if verbose:
-            print(f"Total matches processed for board '{board}': {len(matches)}")
-        return matches
+            print(f"Total games processed for board '{board}': {len(games)}")
+        return games
 
     except tarfile.TarError as e:
         raise RuntimeError(f"Error processing tar archive: {str(e)}")
     except Exception as e:
         raise RuntimeError(f"Unexpected error occurred: {str(e)}")
 
-def ParseMatch(match):
-    meta, match = match.split("\n\n")
-    match = " ".join(match.splitlines())
-    match = re.sub(r'\{.*?\}', '', match)
-    match = re.sub(r'\d+\.\.\.', '', match).strip()
-    match = re.sub(r'\s+', ' ', match)
-    match = re.sub(r'\d+\.\s*', '', match)
+def ParseGame(game):
+    meta, game = game.split("\n\n")
+    game = " ".join(game.splitlines())
+    game = re.sub(r'\{.*?\}', '', game)
+    game = re.sub(r'\d+\.\.\.', '', game).strip()
+    game = re.sub(r'\s+', ' ', game)
+    game = re.sub(r'\d+\.\s*', '', game)
 
-    match = match.split(" ")
-    res = match[-1]
-    match = match[:-1]
+    game = game.split(" ")
+    res = game[-1]
+    game = game[:-1]
     assert res in ["0-1", "1/2-1/2", "1-0"]
 
-    return match, res
+    return game, res

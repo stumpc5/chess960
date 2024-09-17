@@ -2,7 +2,7 @@ header_template = """# Opening Analysis **SPI {index}**: `{board}`
 
 **Overall Statistics:**
 
-| # Games                  | White wins      | Draw           | Black wins      | Average points for White |
+| # Played Games           | White           | Draw           | Black           | Average points for White |
 |:------------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
 | {nr_games}               | {percent_white} | {percent_draw} | {percent_black} | {points}                 |
 

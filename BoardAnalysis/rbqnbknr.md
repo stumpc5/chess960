@@ -2,7 +2,7 @@
 
 **Overall Statistics:**
 
-| # Games                | White wins      | Draw           | Black wins      | Average points for White |
+| # Played Games                | White      | Draw           | Black      | Average points for White |
 |:------------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
 | 19640             | 33.7% | 49.1% | 17.2% | 0.582                 |
 
@@ -11,7 +11,7 @@ The openings and the next moves are sorted by likeliness. We show at most the fi
 
 ## Openings for threshold = 5.0%
 
-| Opening   | Likeliness | Next moves | Likeliness | White wins      | Draw           | Black wins      | Average points for White |
+| Opening   | Likeliness | Next moves | Likeliness | White      | Draw           | Black      | Average points for White |
 |-----------|------------|------------|:----------:|:---------------:|:--------------:|:---------------:|:------------------------:|
 |  1.d4 f5 2.c4 e6 3.d5 c6 4.Bb4+ d6 5.dxe6 Ne7 | 10.0% | Qd2 <p> h4 <p> g4 <p> e4 <p> Nf3 | 3.5% <p> 3.0% <p> 2.4% <p> 1.2% <p> 0.0% | 30.3% <p> 41.4% <p> 26.7% <p> 21.7% <p> 42.9% | 56.2% <p> 51.2% <p> 59.5% <p> 66.1% <p> 57.1% | 13.5% <p> 7.4% <p> 13.8% <p> 12.2% <p> 0.0% | 0.584 <p> 0.670 <p> 0.565 <p> 0.548 <p> 0.714 |
 |  1.d4 c5 2.d5 c4 3.c3 e6 4.e4 Ne7 5.Ne3 | 9.0% | O-O <p> f5 <p> Bf4 <p> f6 <p> exd5 | 4.9% <p> 3.9% <p> 0.1% <p> 0.1% <p> 0.0% | 32.1% <p> 30.9% <p> 22.2% <p> 30.0% <p> 28.6% | 56.7% <p> 56.3% <p> 66.7% <p> 50.0% <p> 71.4% | 11.2% <p> 12.8% <p> 11.1% <p> 20.0% <p> 0.0% | 0.604 <p> 0.590 <p> 0.556 <p> 0.550 <p> 0.643 |
@@ -22,7 +22,7 @@ The openings and the next moves are sorted by likeliness. We show at most the fi
 
 ## Openings for threshold = 2.0%
 
-| Opening   | Likeliness | Next moves | Likeliness | White wins      | Draw           | Black wins      | Average points for White |
+| Opening   | Likeliness | Next moves | Likeliness | White      | Draw           | Black      | Average points for White |
 |-----------|------------|------------|:----------:|:---------------:|:--------------:|:---------------:|:------------------------:|
 |  1.d4 c5 2.d5 c4 3.Ne3 | 3.3% | Nf6 <p> h5 <p> e6 <p> f6 <p> a5 | 1.4% <p> 0.9% <p> 0.5% <p> 0.4% <p> 0.1% | 37.4% <p> 33.5% <p> 40.2% <p> 38.9% <p> 28.6% | 48.2% <p> 50.3% <p> 44.6% <p> 50.0% <p> 23.8% | 14.4% <p> 16.2% <p> 15.2% <p> 11.1% <p> 47.6% | 0.615 <p> 0.587 <p> 0.625 <p> 0.639 <p> 0.405 |
 |  1.d4 f5 2.c4 e6 3.d5 c6 4.Bc3 Nf7 5.Nf3 Nf6 6.Bxf6 gxf6 7.Qd2 h5 | 3.3% | g3 <p> Nh4 <p> Nc3 <p> Ne3 <p> Bc2 | 1.7% <p> 0.7% <p> 0.5% <p> 0.2% <p> 0.1% | 34.3% <p> 16.9% <p> 41.1% <p> 44.1% <p> 26.9% | 50.1% <p> 62.7% <p> 46.7% <p> 47.1% <p> 57.7% | 15.5% <p> 20.4% <p> 12.2% <p> 8.8% <p> 15.4% | 0.594 <p> 0.482 <p> 0.644 <p> 0.676 <p> 0.558 |
@@ -48,7 +48,7 @@ The openings and the next moves are sorted by likeliness. We show at most the fi
 
 ## Openings for threshold = 1.0%
 
-| Opening   | Likeliness | Next moves | Likeliness | White wins      | Draw           | Black wins      | Average points for White |
+| Opening   | Likeliness | Next moves | Likeliness | White      | Draw           | Black      | Average points for White |
 |-----------|------------|------------|:----------:|:---------------:|:--------------:|:---------------:|:------------------------:|
 |  1.d4 f5 2.c4 e6 3.d5 Ne7 | 3.1% | g4 <p> Bc3 <p> Nf3 <p> Qd2 <p> h4 | 0.9% <p> 0.9% <p> 0.7% <p> 0.4% <p> 0.2% | 57.8% <p> 19.9% <p> 30.5% <p> 21.6% <p> 35.3% | 35.7% <p> 65.9% <p> 56.2% <p> 58.1% <p> 47.1% | 6.5% <p> 14.2% <p> 13.3% <p> 20.3% <p> 17.6% | 0.757 <p> 0.528 <p> 0.586 <p> 0.507 <p> 0.588 |
 |  1.c4 c5 | 2.1% | h4 <p> e3 <p> Nf3 <p> Nc3 <p> f3 | 0.8% <p> 0.6% <p> 0.4% <p> 0.2% <p> 0.0% | 33.1% <p> 39.4% <p> 42.0% <p> 33.3% <p> 60.0% | 27.3% <p> 31.5% <p> 27.3% <p> 23.1% <p> 20.0% | 39.6% <p> 29.1% <p> 30.7% <p> 43.6% <p> 20.0% | 0.468 <p> 0.551 <p> 0.557 <p> 0.449 <p> 0.700 |

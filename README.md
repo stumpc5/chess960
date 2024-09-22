@@ -70,7 +70,7 @@ They conclude that "there are no starting positions that favor any of the player
 ## Acknowledgements
 
 * The experiments were conducted using large computers at both involved universities.
-* The authors thank Nathan Chapelier-Laget and Alexander Ivanov for useful discussions.
+* The authors thank **Nathan Chapelier-Laget**, **Torsten Hoge**, and **Alexander Ivanov** for useful discussions.
 
 ## License
 

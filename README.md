@@ -2,6 +2,11 @@
 
 **This project is still under development**
 
+Next major steps:
+
+- [ ] Identify the best setup to re-run all 960 x 20.000 games in SF17.
+- [ ] Plot, for the standard opening and maybe one other opening, the white/black wins and draws for up to 50-100k games.
+
 ## Objective
 
 Identify optimal openings.

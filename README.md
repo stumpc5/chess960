@@ -2,6 +2,11 @@
 
 **This project is still under development**
 
+Next major steps:
+
+- [ ] Identify the best setup to re-run all 960 x 20.000 games in SF17.
+- [ ] Plot, for the standard opening and maybe one other opening, the white/black wins and draws for up to 50-100k games.
+
 ## Objective
 
 Identify optimal openings.
@@ -28,8 +33,8 @@ Click on the board link for details.
 
 | SPI | Board                            | # Played Games        | White           | Draw           | Black           | Average points for White |
 |:-----:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
-| 518 | [RNBQKBNR](BoardAnalysis/rnbqkbnr.md) | 19640            | 24.6% | 57.9% | 17.5% | 0.536 |
-| 534 | [RNBKQBNR](BoardAnalysis/rnbkqbnr.md) | 19640            | 32.0% | 51.1% | 16.9% | 0.575 |
+| 518 | [RNBQKBNR](BoardAnalysis/rnbqkbnr.md) | 20000            | 24.4% | 58.1% | 17.4% | 0.535 |
+| 534 | [RNBKQBNR](BoardAnalysis/rnbkqbnr.md) | 20000            | 31.7% | 51.4% | 16.9% | 0.574 |
 
 [Results for all 960 starting positions](analysis_overview.md)
 

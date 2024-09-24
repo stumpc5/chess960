@@ -8,7 +8,7 @@ MARKDOWN_FOLDER   = "../BoardAnalysis"
 OVERVIEW_FILE     = "../analysis_overview.md"
 OVERVIEW_TEMPLATE = "templates/overview_template.md"
 
-def GenerateOpeningTable(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbose=True):
+def GenerateOpeningTable(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05, 0.10], verbose=True):
     """
     Generates a table of chess openings based on the board position and thresholds provided.
 
@@ -19,7 +19,7 @@ def GenerateOpeningTable(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbos
     Returns:
         tuple: A tuple containing statistics and an openings table for each threshold.
     """
-    games = ReadPGN(board, max_size=500000, verbose=verbose)
+    games = ReadPGN(board, max_size=20000, verbose=verbose)
 
     openings_table = dict()
     winning  = 0
@@ -30,7 +30,7 @@ def GenerateOpeningTable(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05], verbos
 
     return stats, openings_table
 
-def GenerateBoardMarkdown(board=("rnbqkbnr", 518), thresholds=[0.01, 0.02, 0.05], verbose=True, save_result=False):
+def GenerateBoardMarkdown(board=("rnbqkbnr", 518), thresholds=[0.01, 0.02, 0.05, 0.10], verbose=True, save_result=False):
     """
     Generates markdown content summarizing the analysis of chess openings for a specific board position.
 
@@ -52,7 +52,7 @@ def GenerateBoardMarkdown(board=("rnbqkbnr", 518), thresholds=[0.01, 0.02, 0.05]
     header_data = {
         'board'         : board.upper(),
         'index'         : index,
-        'nr_games'    : nr_games,
+        'nr_games'      : nr_games,
         'percent_white' : ToPer(percent_white),
         'percent_draw'  : ToPer(percent_draw),
         'percent_black' : ToPer(percent_black),
@@ -96,7 +96,7 @@ def GenerateBoardMarkdown(board=("rnbqkbnr", 518), thresholds=[0.01, 0.02, 0.05]
     else:
         return header
 
-def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05], verbose=True):
+def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05, 0.10], verbose=True):
     """
     Generates markdown files for all board positions or a list of specific board positions.
 

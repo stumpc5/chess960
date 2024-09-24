@@ -20,7 +20,7 @@ def ReadPGN(board, folder=DATAFOLDER, max_size=float('inf'), verbose=False):
     """
 
     games = []
-    filename = f"data_{board}.pgn"
+    filename = f"data_{board}_new.pgn"
     tar_path = os.path.join(folder, f"{filename}.tar.gz")
 
     if not os.path.exists(tar_path):

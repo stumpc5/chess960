@@ -38,6 +38,13 @@ Click on the board link for details.
 
 [Results for all 960 starting positions](analysis_overview.md)
 
+## Raw data
+
+The complete 20.000 played games per starting position in ``pgn.tar.gz`` format is available at [https://ruhr-uni-bochum.sciebo.de/s/mlGqHPYH8orXHS0](https://ruhr-uni-bochum.sciebo.de/s/mlGqHPYH8orXHS0).
+
+**Password:** Board name with highest average points for white in all caps.
+**Hint:** The board has **PSI 935**.
+
 ## Feedback
 
 Please send an email to christian.stump@rub.de and to dorpalen-barry@tamu.edu for any feedback.

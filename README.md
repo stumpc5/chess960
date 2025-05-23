@@ -4,14 +4,13 @@
 
 Next major steps:
 
-- [ ] Identify the best setup to re-run all 960 x 20.000 games in SF17.
 - [ ] Plot, for the standard opening and maybe one other opening, the white/black wins and draws for up to 50-100k games.
 
 ## Objective
 
 Identify optimal openings.
 
-* We analyze about **20 million Chess960 games** generated with **Stockfish 16**.
+* We analyze about **20 million Chess960 games** generated with **Stockfish 17.1**.
 
 * We give a formal definition of an opening and apply it to the dataset.
 
@@ -77,12 +76,13 @@ They conclude that "there are no starting positions that favor any of the player
 ## Authors
 
 * [Galen Dorpalen-Barry](https://galen.dorpalen-barry.org/) (Texas A&M, USA)
+* [Nupur Jain](https://math.ruhr-uni-bochum.de/fakultaet/arbeitsbereiche/algebra/research-team-stump/team/nupur-jain/) (Ruhr University Bochum, Germany)
 * [Christian Stump](https://homepage.rub.de/christian.stump/) (Ruhr University Bochum, Germany)
 
 ## Acknowledgements
 
 * The experiments were conducted using large computers at both involved universities.
-* The authors thank **Nathan Chapelier-Laget**, **Torsten Hoge**, and **Alexander Ivanov** for useful discussions.
+* The authors thank **Ingo Althöfer**, **Nathan Chapelier-Laget**, **Torsten Hoge**, and **Alexander Ivanov** for useful discussions.
 
 ## License
 

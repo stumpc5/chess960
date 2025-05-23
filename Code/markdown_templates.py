@@ -2,9 +2,9 @@ header_template = """# Opening Analysis **SPI {index}**: `{board}`
 
 **Overall Statistics:**
 
-| # Played Games           | White           | Draw           | Black           | Average points for White |
-|:------------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
-| {nr_games}               | {percent_white} | {percent_draw} | {percent_black} | {points}                 |
+| # Played Games           | Average time & moves | White           | Draw           | Black           | Average points for White |
+|:------------------------:|:--------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
+| {nr_games}               | {time_moves}         | {percent_white} | {percent_draw} | {percent_black} | {points}                 |
 
 The openings and the next moves are sorted by likeliness. We show at most the five most likely next moves.
 """

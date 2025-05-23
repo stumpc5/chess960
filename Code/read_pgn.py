@@ -4,7 +4,7 @@ import os
 import tarfile
 import chess.pgn
 
-DATAFOLDER = "../../Data960/"
+DATAFOLDER = "../../../Data960/full-run_compressed/"
 
 def ReadPGN(board, folder=DATAFOLDER, max_size=float('inf'), verbose=False):
     """
@@ -20,8 +20,8 @@ def ReadPGN(board, folder=DATAFOLDER, max_size=float('inf'), verbose=False):
     """
 
     games = []
-    filename = f"data_{board}_new.pgn"
-    tar_path = os.path.join(folder, f"{filename}.tar.gz")
+    filename = f"full-run_data_{board}_new.pgn"
+    tar_path = os.path.abspath(os.path.join(folder, f"{filename}.tar.gz"))
 
     if not os.path.exists(tar_path):
         raise FileNotFoundError(f"Archive {tar_path} not found.")
@@ -38,7 +38,7 @@ def ReadPGN(board, folder=DATAFOLDER, max_size=float('inf'), verbose=False):
                 if line == "":
                     empty_line_count += 1
                     if empty_line_count % 2 == 0:
-                        moves, res = ParseGame("\n".join(game))
+                        moves, res, (nr_moves, wall_time) = ParseGame("\n".join(game))
 
                         if res == "1-0":
                             res = 1.0
@@ -49,7 +49,7 @@ def ReadPGN(board, folder=DATAFOLDER, max_size=float('inf'), verbose=False):
                         else:
                             raise ValueError(f"Unrecognized result: {result}")
 
-                        games.append((moves, res))
+                        games.append((moves, res, nr_moves, wall_time))
                         game = []
                         if len(games) == max_size:
                             break
@@ -77,6 +77,17 @@ def ParseGame(game):
     game = game.split(" ")
     res = game[-1]
     game = game[:-1]
+    if res not in ["0-1", "1/2-1/2", "1-0"]:
+        print(game)
+        print(meta)
+        raise ValueError(f"Unrecognized result: {res}")
+
+    for l in meta.splitlines():
+        if l.startswith("[NrMoves"):
+            nr_moves = l.split('"')[1]
+        if l.startswith("[WallTime"):
+            wall_time = l.split('"')[1]
+
     assert res in ["0-1", "1/2-1/2", "1-0"]
 
-    return game, res
+    return game, res, (nr_moves, wall_time)

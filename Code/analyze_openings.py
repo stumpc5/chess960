@@ -19,16 +19,18 @@ def GenerateOpeningTable(board="rnbqkbnr", thresholds=[0.01, 0.02, 0.05, 0.10], 
     Returns:
         tuple: A tuple containing statistics and an openings table for each threshold.
     """
-    games = ReadPGN(board, max_size=20000, verbose=verbose)
+    games = ReadPGN(board, max_size=100000, verbose=verbose)
 
     openings_table = dict()
-    winning  = 0
 
     for threshold in thresholds:
         stats, openings = IdentifyOpenings(games, threshold)
         openings_table[threshold] = openings
 
-    return stats, openings_table
+    avg_nr_moves = sum(int(game[2]) for game in games) / len(games)
+    avg_wall_time = sum(float(game[3][:-4]) for game in games) / len(games)
+
+    return stats, openings_table, avg_nr_moves, avg_wall_time
 
 def GenerateBoardMarkdown(board=("rnbqkbnr", 518), thresholds=[0.01, 0.02, 0.05, 0.10], verbose=True, save_result=False):
     """
@@ -44,7 +46,7 @@ def GenerateBoardMarkdown(board=("rnbqkbnr", 518), thresholds=[0.01, 0.02, 0.05,
                       If save_result is True, returns the analysis statistics.
     """
     board, index = board
-    stats, opening_tables = GenerateOpeningTable(board=board, thresholds=thresholds, verbose=verbose)
+    stats, opening_tables, avg_nr_moves, avg_wall_time = GenerateOpeningTable(board=board, thresholds=thresholds, verbose=verbose)
 
     # formating the header
     nr_games, (percent_white, percent_draw, percent_black) = stats
@@ -53,12 +55,13 @@ def GenerateBoardMarkdown(board=("rnbqkbnr", 518), thresholds=[0.01, 0.02, 0.05,
         'board'         : board.upper(),
         'index'         : index,
         'nr_games'      : nr_games,
+        'time_moves'    : f"{avg_wall_time} time, {avg_nr_moves} moves",
         'percent_white' : ToPer(percent_white),
         'percent_draw'  : ToPer(percent_draw),
         'percent_black' : ToPer(percent_black),
         'points'        : ToPer(percent_white + percent_draw/2, absolute=True),
     }
-    header = header_template.format(**header_data)
+    content = header_template.format(**header_data)
 
     #formating each opening and append it to the opening header
     for threshold in reversed(sorted(opening_tables)):
@@ -87,14 +90,14 @@ def GenerateBoardMarkdown(board=("rnbqkbnr", 518), thresholds=[0.01, 0.02, 0.05,
             }
             opening_tmp = opening_template.format(**opening_data)
             openings_header += opening_tmp + "\n"
-        header += "\n\n" + openings_header
+        content += "\n\n" + openings_header
 
     if save_result:
         with open(MARKDOWN_FOLDER + f'/{ board }.md', 'w') as file:
-            file.write(header)
+            file.write(content)
         return stats
     else:
-        return header
+        return content
 
 def GenerateAllMarkdown(boards=None, thresholds=[0.01, 0.02, 0.05, 0.10], verbose=True):
     """
@@ -167,3 +170,7 @@ def AlgebraicNotation(opening):
         else:
             result += f" {move}"
     return result
+
+
+if __name__ == "__main__":
+    GenerateAllMarkdown(boards=None, verbose=True)

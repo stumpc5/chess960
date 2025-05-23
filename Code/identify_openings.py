@@ -45,9 +45,9 @@ def IdentifyOpenings(games, threshold):
     if nr_games == 0:
         raise ValueError("No games provided")
 
-    white_wins = sum(1 for _, result in games if result == 1.0) / nr_games
-    draws      = sum(1 for _, result in games if result == 0.5) / nr_games
-    black_wins = sum(1 for _, result in games if result == 0.0) / nr_games
+    white_wins = sum(1 for _, result,_,_ in games if result == 1.0) / nr_games
+    draws      = sum(1 for _, result,_,_ in games if result == 0.5) / nr_games
+    black_wins = sum(1 for _, result,_,_ in games if result == 0.0) / nr_games
 
     winning_summary = (nr_games, (white_wins, draws, black_wins))
 
@@ -71,7 +71,7 @@ def BetterOpenings(games, opening):
     next_steps: Dict[str, Tuple[int, Tuple[int, int, int]]] = {}
     opening_length = len(opening)
 
-    for game, result in games:
+    for game, result, _, _ in games:
         if opening_length < len(game):
             for i in range(opening_length):
                 if game[i] != opening[i]:

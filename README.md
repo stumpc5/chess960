@@ -42,7 +42,7 @@ Click on the board link for details.
 The complete 20.000 played games per starting position in ``pgn.tar.gz`` format is available at [https://ruhr-uni-bochum.sciebo.de/s/mlGqHPYH8orXHS0](https://ruhr-uni-bochum.sciebo.de/s/mlGqHPYH8orXHS0).
 
 **Password:** Board name with highest average points for white in all caps.
-**Hint:** The board has **SPI 935**.
+**Hint:** The board has **SPI 18**.
 
 ## Feedback
 

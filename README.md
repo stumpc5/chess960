@@ -32,8 +32,8 @@ Click on the board link for details.
 
 | SPI | Board                            | # Played Games        | White           | Draw           | Black           | Average points for White |
 |:-----:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
-| 518 | [RNBQKBNR](BoardAnalysis/rnbqkbnr.md) | 20000            | 24.4% | 58.1% | 17.4% | 0.535 |
-| 534 | [RNBKQBNR](BoardAnalysis/rnbkqbnr.md) | 20000            | 31.7% | 51.4% | 16.9% | 0.574 |
+| 518 | [RNBQKBNR](BoardAnalysis/rnbqkbnr.md) | 20000            | 15.5% | 77.6% | 6.8% | 0.543 |
+| 534 | [RNBKQBNR](BoardAnalysis/rnbkqbnr.md) | 20000            | 14.1% | 76.0% | 9.9% | 0.521 |
 
 [Results for all 960 starting positions](analysis_overview.md)
 

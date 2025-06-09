@@ -34,18 +34,11 @@ Click on the board link for details.
 
 ### Results Overview
 
-The [Results Overview Page](BoardAnalysis/2025-06_SF17.1_analysis_overview.md)shows each starting position with their
-
-* Starting Position Index (SPI),
-* the number of Played Games,
-* the percentages of White, Draw, Black winning, and
-* the average points for White.
-
-In addition, a second list sorts all starting positions by the average points for White.
+The [Results Overview Page](BoardAnalysis/2025-06_SF17.1_analysis_overview.md) shows each starting position, either [ordered by starting position](BoardAnalysis/2025-06_SF17.1_analysis_overview.md#sorted-by-starting-position-index) or [ordered by average points for White](BoardAnalysis/2025-06_SF17.1_analysis_overview.md#sorted-by-average-points-for-white).
 
 ### Results for Individual Starting Positions
 
-Each starting position has its own page. It shows
+Each starting position has its own page linked from the overview page. It shows
 
 * The average time and number of moves per game, 
 * the most common openings and their variants.
@@ -86,17 +79,8 @@ They conclude that "there are no starting positions that favor any of the player
 
 ## Authors
 
-This project was initiated and is maintained by
-
-* [Christian Stump](https://homepage.rub.de/christian.stump/) (Ruhr University Bochum, Germany)
-
-The first version was created in collaboration with
-
-* [Galen Dorpalen-Barry](https://galen.dorpalen-barry.org/) (Texas A&M, USA)
-
-and the second version in collaboration with
-
-* [Nupur Jain](https://math.ruhr-uni-bochum.de/fakultaet/arbeitsbereiche/algebra/research-team-stump/team/nupur-jain/) (Ruhr University Bochum, Germany)
+This project was initiated and is maintained by [Christian Stump](https://homepage.rub.de/christian.stump/) (Ruhr University Bochum, Germany).
+The first version was created in collaboration with [Galen Dorpalen-Barry](https://galen.dorpalen-barry.org/) (Texas A&M, USA) and the second version in collaboration with [Nupur Jain](https://math.ruhr-uni-bochum.de/fakultaet/arbeitsbereiche/algebra/research-team-stump/team/nupur-jain/) (Ruhr University Bochum, Germany).
 
 ## Acknowledgements
 

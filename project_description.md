@@ -97,8 +97,8 @@ Due to these limitations, we decided not to use the Lichess dataset for Chess960
 
 ### Stockfish Data
 
-To overcome the limitations of human games, we turned to [Stockfish 16](https://stockfishchess.org/), running it at super-human skill levels.
-Stockfish played **20,000 games** for each of the 960 different Chess960 starting positions.
+To overcome the limitations of human games, we turned to [Stockfish 16 & 17.1](https://stockfishchess.org/), running it at super-human skill levels.
+Stockfish played **100,000 games** for each of the 960 different Chess960 starting positions.
 
 #### Game Setup
 
@@ -106,12 +106,10 @@ Here are the key settings we used for these games:
 
 | **Attribute**                | **Value**            |
 |------------------------------|----------------------|
-| **Skill Level**              | 18-20                |
+| **Skill Level**              | 20                   |
 | **CPU Threads per Game**     | 4                    |
-| **Total Time per Game**      | 3.75 sec             |
-| **Max Time per Move**        | 0.0625 sec           |
-
-Both players were always at the same skill level to ensure consistency.
+| **Total Time per Game**      | 3.0 sec              |
+| **Max Time per Move**        | 0.1 sec              |
 
 #### Defining Openings: Intuition vs. Formality
 

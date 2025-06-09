@@ -34,7 +34,7 @@ Click on the board link for details.
 
 ### Results Overview
 
-The [Results Overview Page]((BoardAnalysis/analysis_overview.md)) shows each starting position with their
+The [Results Overview Page](BoardAnalysis/2025-06_SF17.1_analysis_overview.md)shows each starting position with their
 
 * Starting Position Index (SPI),
 * the number of Played Games,

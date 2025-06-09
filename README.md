@@ -32,16 +32,18 @@ Click on the board link for details.
 | 518 | [RNBQKBNR](BoardAnalysis/2025-06_SF17.1/rnbqkbnr.md) | 50000            | 11.1% | 83.9% | 5.0% | 0.531 |
 | 534 | [RNBKQBNR](BoardAnalysis/2025-06_SF17.1/rnbkqbnr.md) | 50000            | 10.0% | 82.9% | 7.1% | 0.515 |
 
-### Results Overview
+Each starting position has its own page showing
 
-The [Results Overview Page](BoardAnalysis/2025-06_SF17.1_analysis_overview.md) shows each starting position, either [ordered by starting position](BoardAnalysis/2025-06_SF17.1_analysis_overview.md#sorted-by-starting-position-index) or [ordered by average points for White](BoardAnalysis/2025-06_SF17.1_analysis_overview.md#sorted-by-average-points-for-white).
-
-### Results for Individual Starting Positions
-
-Each starting position has its own page linked from the overview page. It shows
-
-* The average time and number of moves per game, 
+* the average time and number of moves per game, and
 * the most common openings and their variants.
+
+### Results Overview SF17.1
+
+The [Results Overview Page](BoardAnalysis/2025-06_SF17.1_analysis_overview.md) shows each starting position, either [sorted by starting position](BoardAnalysis/2025-06_SF17.1_analysis_overview.md#sorted-by-starting-position-index) or [sorted by average points for White](BoardAnalysis/2025-06_SF17.1_analysis_overview.md#sorted-by-average-points-for-white).
+
+### Results Overview SF16
+
+tba
 
 ## Raw data
 

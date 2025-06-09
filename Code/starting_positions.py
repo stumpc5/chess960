@@ -83,3 +83,13 @@ def Chess960StartingPosition(N):
     final_position = ''.join([pieces_order[square] for square in 'abcdefgh'])
     
     return final_position
+
+def GetChess960Index(fen):
+    """
+    Given a FEN string for the first rank, return its Chess960 index (0-959).
+    Raises ValueError if not found.
+    """
+    for idx in range(960):
+        if Chess960StartingPosition(idx) == fen:
+            return idx
+    raise ValueError(f"FEN {fen} not found in Chess960 starting positions.")

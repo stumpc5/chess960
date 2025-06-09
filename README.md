@@ -1,8 +1,6 @@
 # Opening Analysis for Chess960
 
-**This project is still under development**
-
-Next major steps:
+Next steps:
 
 - [ ] Plot, for the standard opening and maybe one other opening, the white/black wins and draws for up to 50-100k games.
 
@@ -10,7 +8,7 @@ Next major steps:
 
 Identify optimal openings.
 
-* We analyze about **20 million Chess960 games** generated with **Stockfish 17.1**.
+* We analyze about **100 million Chess960 games** generated with **Stockfish 16** and with **Stockfish 17.1**.
 
 * We give a formal definition of an opening and apply it to the dataset.
 
@@ -39,18 +37,14 @@ Click on the board link for details.
 
 ## Raw data
 
-The complete 20.000 played games per starting position in ``pgn.tar.gz`` format is available at [https://ruhr-uni-bochum.sciebo.de/s/mlGqHPYH8orXHS0](https://ruhr-uni-bochum.sciebo.de/s/mlGqHPYH8orXHS0).
-
-**Password:** Board name with highest average points for white in all caps.
-**Hint:** The board has **SPI 18**.
+The complete 100.000 played games per starting position in ``pgn.tar.gz`` format is available at [https://ruhr-uni-bochum.sciebo.de/s/mlGqHPYH8orXHS0](https://ruhr-uni-bochum.sciebo.de/s/mlGqHPYH8orXHS0).
 
 ## Feedback
 
-Please send an email to christian.stump@rub.de and to dorpalen-barry@tamu.edu for any feedback.
+For any feedback, or to request access to the raw data, please send an email to [Christian Stump](mailto:christian.stump@rub.de).
 
 * Do you have comments about our Stockfish setup?
   - Do you see better ways to generate datasets?
-  - Would it be reasonable to increase the database size?
 
 * Are there reasonable ways to group openings into categories?
   - The board setup might suggest certain types of opening strategies.
@@ -75,13 +69,20 @@ They conclude that "there are no starting positions that favor any of the player
 
 ## Authors
 
-* [Galen Dorpalen-Barry](https://galen.dorpalen-barry.org/) (Texas A&M, USA)
-* [Nupur Jain](https://math.ruhr-uni-bochum.de/fakultaet/arbeitsbereiche/algebra/research-team-stump/team/nupur-jain/) (Ruhr University Bochum, Germany)
+This project was initiated and is maintained by
+
 * [Christian Stump](https://homepage.rub.de/christian.stump/) (Ruhr University Bochum, Germany)
+
+The first version was created in collaboration with
+
+* [Galen Dorpalen-Barry](https://galen.dorpalen-barry.org/) (Texas A&M, USA)
+
+and the second version in collaboration with
+
+* [Nupur Jain](https://math.ruhr-uni-bochum.de/fakultaet/arbeitsbereiche/algebra/research-team-stump/team/nupur-jain/) (Ruhr University Bochum, Germany)
 
 ## Acknowledgements
 
-* The experiments were conducted using large computers at both involved universities.
 * The authors thank **Ingo Althöfer**, **Nathan Chapelier-Laget**, **Torsten Hoge**, and **Alexander Ivanov** for useful discussions.
 
 ## License

@@ -1,0 +1,11 @@
+{
+  "DATAFOLDER": "../../Data960/2025-06_SF17.1",
+  "MARKDOWN_BASE_FOLDER": "../BoardAnalysis/",
+  "MARKDOWN_FOLDER": "2025-06_SF17.1/",
+  "OVERVIEW_FILE": "analysis_overview.md",
+  "OVERVIEW_TEMPLATE": "templates/overview_template.md",
+  "THRESHOLDS": [0.05, 0.10],
+  "MAX_SIZE": 50000,
+  "FILENAME_TEMPLATE": "full-run-17_data_{}_new.pgn",
+  "N_WORKERS": 18
+}

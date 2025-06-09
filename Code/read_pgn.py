@@ -4,9 +4,7 @@ import os
 import tarfile
 import chess.pgn
 
-DATAFOLDER = "../../../Data960/full-run_compressed/"
-
-def ReadPGN(board, folder=DATAFOLDER, max_size=float('inf'), verbose=False):
+def ReadPGN(board, folder, filename_template, max_size=float('inf'), verbose=False):
     """
     Reads chess games from a compressed PGN file within a .tar.gz archive and extracts the moves and results.
 
@@ -20,7 +18,7 @@ def ReadPGN(board, folder=DATAFOLDER, max_size=float('inf'), verbose=False):
     """
 
     games = []
-    filename = f"full-run_data_{board}_new.pgn"
+    filename = filename_template.format(board)
     tar_path = os.path.abspath(os.path.join(folder, f"{filename}.tar.gz"))
 
     if not os.path.exists(tar_path):
@@ -31,32 +29,27 @@ def ReadPGN(board, folder=DATAFOLDER, max_size=float('inf'), verbose=False):
             fileobj = tar.extractfile(filename)
             if fileobj is None:
                 raise FileNotFoundError(f"File {filename} not found inside the archive.")
-            game = []
-            empty_line_count = 0
-            for line in fileobj:
-                line = line.decode('utf-8').strip()
-                if line == "":
-                    empty_line_count += 1
-                    if empty_line_count % 2 == 0:
-                        moves, res, (nr_moves, wall_time) = ParseGame("\n".join(game))
-
-                        if res == "1-0":
-                            res = 1.0
-                        elif res == "1/2-1/2":
-                            res = 0.5
-                        elif res == "0-1":
-                            res = 0.0
-                        else:
-                            raise ValueError(f"Unrecognized result: {result}")
-
-                        games.append((moves, res, nr_moves, wall_time))
-                        game = []
-                        if len(games) == max_size:
-                            break
-                        empty_line_count = False
+            # Read and decode the entire file at once
+            content = fileobj.read().decode('utf-8')
+            # Split games by two or more newlines followed by a header (robust PGN split)
+            raw_games = [g for g in re.split(r'\n\s*\n(?=\[)', content) if g.strip()]
+            for raw_game in raw_games:
+                try:
+                    moves, res, (nr_moves, wall_time) = ParseGame(raw_game)
+                    if res == "1-0":
+                        res = 1.0
+                    elif res == "1/2-1/2":
+                        res = 0.5
+                    elif res == "0-1":
+                        res = 0.0
                     else:
-                        empty_line_count = True
-                game.append(line)
+                        raise ValueError(f"Unrecognized result: {res}")
+                    games.append((moves, res, nr_moves, wall_time))
+                    if len(games) == max_size:
+                        break
+                except Exception as e:
+                    if verbose:
+                        print(f"Skipping game due to error: {e}")
         if verbose:
             print(f"Total games processed for board '{board}': {len(games)}")
         return games
@@ -66,22 +59,34 @@ def ReadPGN(board, folder=DATAFOLDER, max_size=float('inf'), verbose=False):
     except Exception as e:
         raise RuntimeError(f"Unexpected error occurred: {str(e)}")
 
-def ParseGame(game):
-    meta, game = game.split("\n\n")
-    game = " ".join(game.splitlines())
-    game = re.sub(r'\{.*?\}', '', game)
-    game = re.sub(r'\d+\.\.\.', '', game).strip()
-    game = re.sub(r'\s+', ' ', game)
-    game = re.sub(r'\d+\.\s*', '', game)
+# Pre-compile regex patterns for performance
+RE_COMMENT = re.compile(r'\{.*?\}')
+RE_MOVE_NUM_AND_DOTS = re.compile(r'\d+\.(?:\.\.)?\s*')
+RE_WHITESPACE = re.compile(r'\s+')
 
-    game = game.split(" ")
-    res = game[-1]
-    game = game[:-1]
+def ParseGame(game):
+    # Split only on the first double newline to separate meta and moves
+    meta, moves_section = game.split("\n\n", 1)
+    moves = " ".join(moves_section.splitlines())
+    # Only call regex if needed
+    if '{' in moves:
+        moves = RE_COMMENT.sub('', moves)
+    moves = RE_MOVE_NUM_AND_DOTS.sub('', moves)
+    moves = RE_WHITESPACE.sub(' ', moves).strip()
+
+    # Get result and moves efficiently
+    if ' ' in moves:
+        moves, res = moves.rsplit(' ', 1)
+        moves = moves.split(' ')
+    else:
+        raise ValueError("No moves found")
+
     if res not in ["0-1", "1/2-1/2", "1-0"]:
-        print(game)
+        print(moves)
         print(meta)
         raise ValueError(f"Unrecognized result: {res}")
 
+    nr_moves = wall_time = None
     for l in meta.splitlines():
         if l.startswith("[NrMoves"):
             nr_moves = l.split('"')[1]
@@ -90,4 +95,4 @@ def ParseGame(game):
 
     assert res in ["0-1", "1/2-1/2", "1-0"]
 
-    return game, res, (nr_moves, wall_time)
+    return moves, res, (nr_moves, wall_time)

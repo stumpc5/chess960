@@ -8,7 +8,7 @@ Next steps:
 
 Identify optimal openings.
 
-* We analyze about **100 million Chess960 games** generated with **Stockfish 16** and with **Stockfish 17.1**.
+* We analyzed about **100 million Chess960 games** generated with **Stockfish 16** and with **Stockfish 17.1**.
 
 * We give a formal definition of an opening and apply it to the dataset.
 
@@ -27,21 +27,38 @@ Here is the example for the standard opening and the opening with Queen and King
 We rediscover well-known openings and their variations, such as [Queen's Gambit](https://www.chess.com/openings/Queens-Gambit), [Sicilian Defense](https://www.chess.com/openings/Sicilian-Defense), and the [Ruy Lopez](https://www.chess.com/forum/view/chess-openings/all-ruy-lopez-variations).
 Click on the board link for details.
 
-
 | SPI | Board                            | # Played Games        | White           | Draw           | Black           | Average points for White |
 |:-----:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
-| 518 | [RNBQKBNR](BoardAnalysis/rnbqkbnr.md) | 20000            | 15.5% | 77.6% | 6.8% | 0.543 |
-| 534 | [RNBKQBNR](BoardAnalysis/rnbkqbnr.md) | 20000            | 14.1% | 76.0% | 9.9% | 0.521 |
+| 518 | [RNBQKBNR](BoardAnalysis/2025-06_SF17.1/rnbqkbnr.md) | 50000            | 11.1% | 83.9% | 5.0% | 0.531 |
+| 534 | [RNBKQBNR](BoardAnalysis/2025-06_SF17.1/rnbkqbnr.md) | 50000            | 10.0% | 82.9% | 7.1% | 0.515 |
 
-[Results for all 960 starting positions](analysis_overview.md)
+### Results Overview
+
+The [Results Overview Page]((BoardAnalysis/analysis_overview.md)) shows each starting position with their
+
+* Starting Position Index (SPI),
+* the number of Played Games,
+* the percentages of White, Draw, Black winning, and
+* the average points for White.
+
+In addition, a second list sorts all starting positions by the average points for White.
+
+### Results for Individual Starting Positions
+
+Each starting position has its own page. It shows
+
+* The average time and number of moves per game, 
+* the most common openings and their variants.
 
 ## Raw data
 
 The complete 100.000 played games per starting position in ``pgn.tar.gz`` format is available at [https://ruhr-uni-bochum.sciebo.de/s/mlGqHPYH8orXHS0](https://ruhr-uni-bochum.sciebo.de/s/mlGqHPYH8orXHS0).
 
+To request access to the raw data, please send an email to [Christian Stump](mailto:christian.stump@rub.de).
+
 ## Feedback
 
-For any feedback, or to request access to the raw data, please send an email to [Christian Stump](mailto:christian.stump@rub.de).
+For any feedback, please send an email to [Christian Stump](mailto:christian.stump@rub.de).
 
 * Do you have comments about our Stockfish setup?
   - Do you see better ways to generate datasets?

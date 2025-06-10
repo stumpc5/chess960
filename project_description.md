@@ -14,26 +14,6 @@ Identify openings for all Chess960 variants.
 - **Formalize Openings:** We formalize the above intuitive definition of an opening, based on a dataset of Chess960 games.
 - **Identify Openings:** We identify openings for all Chess960 variants through this formalized approach.
 
-**Our Experiments:**
-
-We applied our method to two key datasets:
-
-1. Classical chess games downloaded from [Lichess](https://database.lichess.org/).
-2. Chess960 games we generated using the super-human capabilities of [Stockfish 16](https://stockfishchess.org/).
-
-**Key Discoveries:**
-
-- **Lichess Dataset:**
-  - This dataset did not lead to meaningful openings.
-- **Stockfish Dataset:**
-  - We rediscovered traditional chess openings.
-  - We identified novel openings across various Chess960 variants.
-  - We discuss why the above intuitive definition of opening and the formal definition given below coincide for this dataset.
-
-**Looking Ahead:**
-
-Our methods may as well be applied to other datasets of chess games, or to entirely different types of games to gain new insights.
-
 ---
 
 ## Defining a Opening
@@ -91,32 +71,12 @@ We analyzed approximately **100 million games** from the [Lichess database](http
 - **Insufficient high-level games**: There were not enough games played at the highest levels to accurately identify optimal or near-optimal moves.
 - **Prevalence of blitz games**: Many games were blitz games, where time constraints prevented players from consistently making optimal moves.
 
-Due to these limitations, we decided not to use the Lichess dataset for Chess960 opening analysis.
-
-**TBA:** clarify
-
 ### Stockfish Data
 
 To overcome the limitations of human games, we turned to [Stockfish 16 & 17.1](https://stockfishchess.org/), running it at super-human skill levels.
 Stockfish played **100,000 games** for each of the 960 different Chess960 starting positions.
 
-#### Game Setup
-
-Here are the key settings we used for these games:
-
-| **Attribute**                | **Value**            |
-|------------------------------|----------------------|
-| **Skill Level**              | 20                   |
-| **CPU Threads per Game**     | 4                    |
-| **Total Time per Game**      | 4.0  sec             |
-| **Max Time per Move**        | 0.05 sec             |
-
 #### Defining Openings: Intuition vs. Formality
 
 Since the games were played at a super-human level, we assumed that a move sequence qualifies as an "opening" if it appears frequently enough across all games.
 At each step, both players made optimal (or near-optimal) moves.
-
-#### Key Theoretical Insight:
-
-The super-human level and the large number of analyzed games ensure that the formal and intuitive definitions of an opening coincide within this dataset.
-The formal definition can therefore be used to idenfity openings for the various Chess960 openings.

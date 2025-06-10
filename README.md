@@ -36,6 +36,16 @@ TBA: Add why we chose exactly this setup.
 
 ## Results
 
+### Results Overview SF16
+
+*  [Results Overview](BoardAnalysis/2025-06_SF16_analysis_overview.md) / [Sorted by starting position](BoardAnalysis/2025-06_SF16_analysis_overview.md#sorted-by-starting-position-index) / [Sorted by average points for White](BoardAnalysis/2025-06_SF16_analysis_overview.md#sorted-by-average-points-for-white).
+
+### Results Overview SF17.1
+
+* [Results Overview](BoardAnalysis/2025-06_SF17.1_analysis_overview.md) / [Sorted by starting position](BoardAnalysis/2025-06_SF17.1_analysis_overview.md#sorted-by-starting-position-index) / [Sorted by average points for White](BoardAnalysis/2025-06_SF17.1_analysis_overview.md#sorted-by-average-points-for-white).
+
+### How To Read The Results
+
 Here is the example for the standard opening and the opening with Queen and King interchanged, indexed by their [Starting Position Index](https://en.wikipedia.org/wiki/Fischer_random_chess_numbering_scheme).
 We rediscover well-known openings and their variations, such as [Queen's Gambit](https://www.chess.com/openings/Queens-Gambit), [Sicilian Defense](https://www.chess.com/openings/Sicilian-Defense), and the [Ruy Lopez](https://www.chess.com/forum/view/chess-openings/all-ruy-lopez-variations).
 Click on the board link for details.
@@ -52,13 +62,30 @@ Each starting position has its own page showing
 * the average time and number of moves per game, and
 * the most common openings and their variants.
 
-### Results Overview SF16
+For classical chess with SF16, we identify the following most common opening among the 50.000 games:
 
-*  [Results Overview](BoardAnalysis/2025-06_SF16_analysis_overview.md) / [Sorted by starting position](BoardAnalysis/2025-06_SF16_analysis_overview.md#sorted-by-starting-position-index) / [Sorted by average points for White](BoardAnalysis/2025-06_SF16_analysis_overview.md#sorted-by-average-points-for-white).
+| Opening   | Likeliness | Next moves | Likeliness | White wins      | Draw           | Black wins      | Average points for White |
+|-----------|------------|------------|:----------:|:---------------:|:--------------:|:---------------:|:------------------------:|
+|  1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 4.O-O Nxe4 5.Re1 Nd6 6.Nxe5 Be7 7.Bf1 Nxe5 8.Rxe5 O-O 9.d4 | 13.6% | Ne8 <p> Bf6 | 7.2% <p> 6.4% | 6.7% <p> 5.4% | 89.7% <p> 91.4% | 3.6% <p> 3.2% | 0.516 <p> 0.511 |
 
-### Results Overview SF17.1
+This is an [open variation of the Berlin Defence of the Ruy Lopez](https://chessopenings.com/eco/C67/).
+Is has been played in 13.6% of the games and the next most common move is 9...Ne8, which has been played in 7.2% of the games.
 
-* [Results Overview](BoardAnalysis/2025-06_SF17.1_analysis_overview.md) / [Sorted by starting position](BoardAnalysis/2025-06_SF17.1_analysis_overview.md#sorted-by-starting-position-index) / [Sorted by average points for White](BoardAnalysis/2025-06_SF17.1_analysis_overview.md#sorted-by-average-points-for-white).
+Overall, White wins 13.0% of the games, while it only wins 6.7% of the games in this variant.
+
+### Fair And Unfair Starting Positions
+
+The following table shows
+* the starting position most in favor of White,
+* the two starting positions that are most fair, and
+* the starting position most in favor of Black.
+
+| SF | SPI | Board                            | # Played Games        | White           | Draw           | Black           | Average points for White |
+|:-----:|:-----:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
+| SF17.1   | 18  | [BNQNRBKR](BoardAnalysis/2025-06_SF17.1/bnqnrbkr.md) | 50000            | 44.8% | 51.3% |  3.9% | 0.704 |
+| SF17.1   | 39  | [NNBQRKRB](BoardAnalysis/2025-06_SF17.1/nnbqrkrb.md) | 50000            |  9.5% | 81.0% |  9.6% | 0.500 |
+| SF17.1   | 671 | [RNKRNQBB](BoardAnalysis/2025-06_SF17.1/rnkrnqbb.md) | 50000            | 11.1% | 77.9% | 11.0% | 0.500 |
+| SF17.1   | 240 | [BBNRKQNR](BoardAnalysis/2025-06_SF17.1/bbnrkqnr.md) | 50000            |  9.8% | 77.7% | 12.5% | 0.487 |
 
 ## Raw data
 

@@ -62,7 +62,7 @@ Each starting position has its own page showing
 * the average time and number of moves per game, and
 * the most common openings and their variants.
 
-For classical chess with SF16, we identify the following most common opening among the 50.000 games:
+For **classical chess with SF17.1**, we identify the following most common opening among the 50.000 games:
 
 | Opening   | Likeliness | Next moves | Likeliness | White wins      | Draw           | Black wins      | Average points for White |
 |-----------|------------|------------|:----------:|:---------------:|:--------------:|:---------------:|:------------------------:|
@@ -86,6 +86,8 @@ The following table shows
 | SF17.1   | 39  | [NNBQRKRB](BoardAnalysis/2025-06_SF17.1/nnbqrkrb.md) | 50000            |  9.5% | 81.0% |  9.6% | 0.500 |
 | SF17.1   | 671 | [RNKRNQBB](BoardAnalysis/2025-06_SF17.1/rnkrnqbb.md) | 50000            | 11.1% | 77.9% | 11.0% | 0.500 |
 | SF17.1   | 240 | [BBNRKQNR](BoardAnalysis/2025-06_SF17.1/bbnrkqnr.md) | 50000            |  9.8% | 77.7% | 12.5% | 0.487 |
+
+(Observe that the differences between W/B in the fair starting positions are marginal rounding differences only.)
 
 ## Raw data
 

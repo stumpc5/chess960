@@ -108,8 +108,8 @@ Here are the key settings we used for these games:
 |------------------------------|----------------------|
 | **Skill Level**              | 20                   |
 | **CPU Threads per Game**     | 4                    |
-| **Total Time per Game**      | 3.0 sec              |
-| **Max Time per Move**        | 0.1 sec              |
+| **Total Time per Game**      | 4.0  sec             |
+| **Max Time per Move**        | 0.05 sec             |
 
 #### Defining Openings: Intuition vs. Formality
 

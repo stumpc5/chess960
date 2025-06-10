@@ -29,7 +29,9 @@ Click on the board link for details.
 
 | SF | SPI | Board                            | # Played Games        | White           | Draw           | Black           | Average points for White |
 |:-----:|:-----:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
+| SF16 | 518 | [RNBQKBNR](2025-06_SF16/rnbqkbnr.md) | 50000            | 13.0% | 78.1% | 9.0% | 0.520
 | SF17.1 | 518 | [RNBQKBNR](BoardAnalysis/2025-06_SF17.1/rnbqkbnr.md) | 50000            | 11.1% | 83.9% | 5.0% | 0.531 |
+| SF16 | 534 | [RNBKQBNR](2025-06_SF16/rnbkqbnr.md) | 50000            | 11.1% | 78.7% | 10.2% | 0.504
 | SF17.1 | 534 | [RNBKQBNR](BoardAnalysis/2025-06_SF17.1/rnbkqbnr.md) | 50000            | 10.0% | 82.9% | 7.1% | 0.515 |
 
 Each starting position has its own page showing

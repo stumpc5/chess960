@@ -21,6 +21,19 @@ Consult the [project description](project_description.md) for details.
 - Amateur and professional Chess960 players.
 - Anyone curious about the scientific analysis of Chess960 openings.
 
+## Data Setup
+
+We generated 100 million games with Stockfish 16 and Stockfish 17.1 using the following setup:
+
+| **Attribute**                | **Value**            |
+|------------------------------|----------------------|
+| **Skill Level**              | 20                   |
+| **CPU Threads per Game**     | 4                    |
+| **Total Time per Game**      | 4.0  sec             |
+| **Max Time per Move**        | 0.05 sec             |
+
+TBA: Add why we chose exactly this setup.
+
 ## Results
 
 Here is the example for the standard opening and the opening with Queen and King interchanged, indexed by their [Starting Position Index](https://en.wikipedia.org/wiki/Fischer_random_chess_numbering_scheme).
@@ -29,23 +42,23 @@ Click on the board link for details.
 
 | SF | SPI | Board                            | # Played Games        | White           | Draw           | Black           | Average points for White |
 |:-----:|:-----:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
-| SF16 | 518 | [RNBQKBNR](2025-06_SF16/rnbqkbnr.md) | 50000            | 13.0% | 78.1% | 9.0% | 0.520
-| SF17.1 | 518 | [RNBQKBNR](BoardAnalysis/2025-06_SF17.1/rnbqkbnr.md) | 50000            | 11.1% | 83.9% | 5.0% | 0.531 |
-| SF16 | 534 | [RNBKQBNR](2025-06_SF16/rnbkqbnr.md) | 50000            | 11.1% | 78.7% | 10.2% | 0.504
-| SF17.1 | 534 | [RNBKQBNR](BoardAnalysis/2025-06_SF17.1/rnbkqbnr.md) | 50000            | 10.0% | 82.9% | 7.1% | 0.515 |
+| SF16   | 518 | [RNBQKBNR](BoardAnalysis/2025-06_SF16/rnbqkbnr.md) | 50000            | 13.0% | 78.1% |  9.0% | 0.520 |
+| SF16   | 534 | [RNBKQBNR](BoardAnalysis/2025-06_SF16/rnbkqbnr.md) | 50000            | 11.1% | 78.7% | 10.2% | 0.504 |
+| SF17.1 | 518 | [RNBQKBNR](BoardAnalysis/2025-06_SF17.1/rnbqkbnr.md) | 50000            | 11.1% | 83.9% |  5.0% | 0.531 |
+| SF17.1 | 534 | [RNBKQBNR](BoardAnalysis/2025-06_SF17.1/rnbkqbnr.md) | 50000            | 10.0% | 82.9% |  7.1% | 0.515 |
 
 Each starting position has its own page showing
 
 * the average time and number of moves per game, and
 * the most common openings and their variants.
 
-### Results Overview SF17.1
-
-The [Results Overview Page](BoardAnalysis/2025-06_SF17.1_analysis_overview.md) shows each starting position, either [sorted by starting position](BoardAnalysis/2025-06_SF17.1_analysis_overview.md#sorted-by-starting-position-index) or [sorted by average points for White](BoardAnalysis/2025-06_SF17.1_analysis_overview.md#sorted-by-average-points-for-white).
-
 ### Results Overview SF16
 
-tba
+*  [Results Overview](BoardAnalysis/2025-06_SF16_analysis_overview.md) / [Sorted by starting position](BoardAnalysis/2025-06_SF16_analysis_overview.md#sorted-by-starting-position-index) / [Sorted by average points for White](BoardAnalysis/2025-06_SF16_analysis_overview.md#sorted-by-average-points-for-white).
+
+### Results Overview SF17.1
+
+* [Results Overview](BoardAnalysis/2025-06_SF17.1_analysis_overview.md) / [Sorted by starting position](BoardAnalysis/2025-06_SF17.1_analysis_overview.md#sorted-by-starting-position-index) / [Sorted by average points for White](BoardAnalysis/2025-06_SF17.1_analysis_overview.md#sorted-by-average-points-for-white).
 
 ## Raw data
 

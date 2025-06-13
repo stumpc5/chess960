@@ -1,20 +1,14 @@
-# Opening Analysis for Chess960
+# Opening Analysis for Chess960 aka Fischer Random
 
-Next steps:
+## Goals
 
-- [ ] Plot, for the standard opening and maybe one other opening, the white/black wins and draws for up to 50-100k games.
+* We analyzed about **100 million games** for all 960 starting positions, generated with **Stockfish 16** and with **Stockfish 17.1**.
 
-## Objective
+* We give a [formal definition of an opening](project_description.md) and apply it to the dataset.
 
-Identify optimal openings.
-
-* We analyzed about **100 million Chess960 games** generated with **Stockfish 16** and with **Stockfish 17.1**.
-
-* We give a formal definition of an opening and apply it to the dataset.
+* We identify the best openings for all 960 starting positions.
 
 * We rediscover well-known chess openings and identify novel openings for all Chess960 variants.
-
-Consult the [project description](project_description.md) for details.
 
 ## Who Should Read This
 
@@ -25,14 +19,12 @@ Consult the [project description](project_description.md) for details.
 
 We generated 100 million games with Stockfish 16 and Stockfish 17.1 using the following setup:
 
-| **Attribute**                | **Value**            |
-|------------------------------|----------------------|
-| **Skill Level**              | 20                   |
-| **CPU Threads per Game**     | 4                    |
-| **Total Time per Game**      | 4.0  sec             |
-| **Max Time per Move**        | 0.05 sec             |
-
-TBA: Add why we chose exactly this setup.
+| **Attribute**                 | **Value**            |
+|-------------------------------|----------------------|
+| **Skill Level**               | 20                   |
+| **CPU Threads per Game**      | 4                    |
+| **Time per Game**             | 4.0  sec             |
+| **Additional Time per Move**  | 0.05 sec             |
 
 ## Results
 
@@ -46,9 +38,7 @@ TBA: Add why we chose exactly this setup.
 
 ### How To Read The Results
 
-Here is the example for the standard opening and the opening with Queen and King interchanged, indexed by their [Starting Position Index](https://en.wikipedia.org/wiki/Fischer_random_chess_numbering_scheme).
-We rediscover well-known openings and their variations, such as [Queen's Gambit](https://www.chess.com/openings/Queens-Gambit), [Sicilian Defense](https://www.chess.com/openings/Sicilian-Defense), and the [Ruy Lopez](https://www.chess.com/forum/view/chess-openings/all-ruy-lopez-variations).
-Click on the board link for details.
+The standard opening and the opening with Queen and King interchanged, indexed by their [Starting Position Index](https://en.wikipedia.org/wiki/Fischer_random_chess_numbering_scheme):
 
 | SF | SPI | Board                            | # Played Games        | White           | Draw           | Black           | Average points for White |
 |:-----:|:-----:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
@@ -56,6 +46,8 @@ Click on the board link for details.
 | SF16   | 534 | [RNBKQBNR](BoardAnalysis/2025-06_SF16/rnbkqbnr.md) | 50000            | 11.1% | 78.7% | 10.2% | 0.504 |
 | SF17.1 | 518 | [RNBQKBNR](BoardAnalysis/2025-06_SF17.1/rnbqkbnr.md) | 50000            | 11.1% | 83.9% |  5.0% | 0.531 |
 | SF17.1 | 534 | [RNBKQBNR](BoardAnalysis/2025-06_SF17.1/rnbkqbnr.md) | 50000            | 10.0% | 82.9% |  7.1% | 0.515 |
+
+We rediscover well-known openings and their variations, such as [Queen's Gambit](https://www.chess.com/openings/Queens-Gambit), [Sicilian Defense](https://www.chess.com/openings/Sicilian-Defense), and the [Ruy Lopez](https://www.chess.com/forum/view/chess-openings/all-ruy-lopez-variations).
 
 Each starting position has its own page showing
 
@@ -72,13 +64,14 @@ This is an [open variation of the Berlin Defence of the Ruy Lopez](https://chess
 Is has been played in 13.6% of the games and the next most common move is 9...Ne8, which has been played in 7.2% of the games.
 
 Overall, White wins 13.0% of the games, while it only wins 6.7% of the games in this variant.
+The Average points for white have not changed significantly, in alignment with the theoretical assumptions on what constitues an opening.
 
 ### Fair And Unfair Starting Positions
 
 The following table shows
-* the starting position most in favor of White,
-* the two starting positions that are most fair, and
-* the starting position most in favor of Black.
+* the starting position **SPI18** most in favor of White,
+* the two starting positions **SPI39** and **SPI671** that are most fair, and
+* the starting position **240** most in favor of Black.
 
 | SF | SPI | Board                            | # Played Games        | White           | Draw           | Black           | Average points for White |
 |:-----:|:-----:|----------------------------------|:-----------------------:|:---------------:|:--------------:|:---------------:|:------------------------:|
@@ -87,12 +80,75 @@ The following table shows
 | SF17.1   | 671 | [RNKRNQBB](BoardAnalysis/2025-06_SF17.1/rnkrnqbb.md) | 50000            | 11.1% | 77.9% | 11.0% | 0.500 |
 | SF17.1   | 240 | [BBNRKQNR](BoardAnalysis/2025-06_SF17.1/bbnrkqnr.md) | 50000            |  9.8% | 77.7% | 12.5% | 0.487 |
 
-(Observe that the differences between W/B in the fair starting positions are marginal rounding differences only.)
+(Observe that the differences between White and Black winning in the two most fair starting positions are marginal rounding differences only.)
 
 ## Raw data
 
-The complete 100.000 played games per starting position in ``pgn.tar.gz`` format is available at [https://ruhr-uni-bochum.sciebo.de/s/mlGqHPYH8orXHS0](https://ruhr-uni-bochum.sciebo.de/s/mlGqHPYH8orXHS0).
+The following is one randomly chosen game from the dataset:
+```
+[Event "Opening Analysis, AG Prof. Stump, RUB, Germany"]
+[Site "https://github.com/stumpc5/chess960"]
+[Date "2025/05/23"]
+[Round "1"]
+[White "Stockfish 17.1"]
+[Black "Stockfish 17.1"]
+[Result "1/2-1/2"]
+[Variant "Chess960"]
+[WhiteSkillLevel "20"]
+[BlackSkillLevel "20"]
+[TimeControl "4.0+0.05"]
+[FEN "bbrnkqrn/pppppppp/8/8/8/8/PPPPPPPP/BBRNKQRN w KQkq - 0 1"]
+[NrMoves "23"]
+[WallTime "9.739 sec"]
 
+1. c4 { [%clk 3.799] [%eval 0.39] [%depth 19] [%nodes 345565] }
+1... c5 { [%clk 3.773] [%eval -0.4] [%depth 17] [%nodes 331111] }
+2. f4 { [%clk 3.594] [%eval 0.38] [%depth 15] [%nodes 259374] }
+2... g5 { [%clk 3.656] [%eval -0.34] [%depth 14] [%nodes 219920] }
+3. b3 { [%clk 3.198] [%eval 0.21] [%depth 16] [%nodes 615956] }
+3... gxf4 { [%clk 3.648] [%eval -0.02] [%depth 11] [%nodes 83109] }
+4. Bxh7 { [%clk 3.196] [%eval 0.43] [%depth 13] [%nodes 113432] }
+4... Rg5 { [%clk 3.551] [%eval -0.01] [%depth 13] [%nodes 187012] }
+5. g4 { [%clk 2.84] [%eval 0.37] [%depth 15] [%nodes 444957] }
+5... Ng6 { [%clk 3.525] [%eval 0.16] [%depth 13] [%nodes 132538] }
+6. Nhf2 { [%clk 2.834] [%eval 0.43] [%depth 13] [%nodes 110197] }
+6... Ne6 { [%clk 3.449] [%eval 0.47] [%depth 12] [%nodes 154593] }
+7. Ne4 { [%clk 2.449] [%eval -0.53] [%depth 14] [%nodes 478469] }
+7... Qh6 { [%clk 3.413] [%eval 0.72] [%depth 15] [%nodes 150052] }
+8. Nxg5 { [%clk 2.446] [%eval -0.56] [%depth 11] [%nodes 96351] }
+8... Nxg5 { [%clk 3.37] [%eval 0.66] [%depth 12] [%nodes 80104] }
+9. Bxg6 { [%clk 2.395] [%eval -0.53] [%depth 11] [%nodes 127731] }
+9... fxg6 { [%clk 3.227] [%eval 0.7] [%depth 13] [%nodes 229570] }
+10. Nc3 { [%clk 1.956] [%eval -0.36] [%depth 14] [%nodes 404119] }
+10... Nh3 { [%clk 2.634] [%eval 0.5] [%depth 15] [%nodes 631322] }
+11. Rg2 { [%clk 1.927] [%eval -0.21] [%depth 11] [%nodes 104460] }
+11... b6 { [%clk 2.594] [%eval 0.51] [%depth 11] [%nodes 114815] }
+12. Kd1 { [%clk 1.91] [%eval -0.26] [%depth 12] [%nodes 109778] }
+12... Be5 { [%clk 2.054] [%eval 0.11] [%depth 15] [%nodes 595203] }
+13. Nb5 { [%clk 1.831] [%eval -0.27] [%depth 12] [%nodes 131114] }
+13... Bb8 { [%clk 1.908] [%eval 0.03] [%depth 13] [%nodes 191892] }
+14. Nc3 { [%clk 1.818] [%eval -0.18] [%depth 12] [%nodes 83012] }
+14... e6 { [%clk 1.837] [%eval 0.06] [%depth 16] [%nodes 124745] }
+15. d3 { [%clk 1.751] [%eval 0.06] [%depth 12] [%nodes 128343] }
+15... Ng5 { [%clk 1.751] [%eval 0.0] [%depth 13] [%nodes 149524] }
+16. Rf2 { [%clk 1.677] [%eval 0.0] [%depth 24] [%nodes 144549] }
+16... Nh3 { [%clk 1.756] [%eval 0.0] [%depth 18] [%nodes 74812] }
+17. Rg2 { [%clk 1.617] [%eval 0.0] [%depth 37] [%nodes 151451] }
+17... Ng5 { [%clk 1.732] [%eval 0.0] [%depth 20] [%nodes 88976] }
+18. Rf2 { [%clk 1.588] [%eval 0.0] [%depth 22] [%nodes 78212] }
+18... Nh3 { [%clk 1.692] [%eval 0.0] [%depth 26] [%nodes 138011] }
+19. Rg2 { [%clk 1.447] [%eval 0.0] [%depth 24] [%nodes 172620] }
+19... Ng5 { [%clk 1.689] [%eval 0.0] [%depth 27] [%nodes 71174] }
+20. Rf2 { [%clk 1.467] [%eval 0.0] [%depth 17] [%nodes 52138] }
+20... Nh3 { [%clk 1.669] [%eval 0.0] [%depth 32] [%nodes 86421] }
+21. Rg2 { [%clk 1.47] [%eval 0.0] [%depth 27] [%nodes 138073] }
+21... Ng5 { [%clk 1.629] [%eval 0.0] [%depth 29] [%nodes 96286] }
+22. Rf2 { [%clk 1.437] [%eval 0.0] [%depth 27] [%nodes 97500] }
+22... Nh3 { [%clk 1.634] [%eval 0.0] [%depth 35] [%nodes 88062] }
+23. Rg2 { [%clk 1.388] [%eval 0.0] [%depth 28] [%nodes 119623] } 1/2-1/2
+```
+
+The complete 100.000 played games per starting position in ``pgn.tar.gz`` format is available at [https://ruhr-uni-bochum.sciebo.de/s/mlGqHPYH8orXHS0](https://ruhr-uni-bochum.sciebo.de/s/mlGqHPYH8orXHS0).
 To request access to the raw data, please send an email to [Christian Stump](mailto:christian.stump@rub.de).
 
 ## Feedback
